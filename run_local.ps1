@@ -33,6 +33,11 @@ Log "pull selesai (exit $LASTEXITCODE)"
 & $py "fetcher/scrape.py" 2>&1 | ForEach-Object { Log "  $_" }
 if ($LASTEXITCODE -ne 0) { Log "scraper gagal (exit $LASTEXITCODE)"; exit 1 }
 
+# Ringkas dokumen baru (Gemini). Kalau gagal (mis. kuota harian habis), JANGAN
+# gagalkan seluruh run -- data pengumuman tetap di-commit, ringkasan menyusul nanti.
+& $py "fetcher/summarize.py" 2>&1 | ForEach-Object { Log "  $_" }
+if ($LASTEXITCODE -ne 0) { Log "summarize gagal (exit $LASTEXITCODE) - dilanjut tanpa ringkasan baru" }
+
 # Commit hanya bila data berubah.
 $changed = & git status --porcelain docs/announcements.json
 if ([string]::IsNullOrWhiteSpace($changed)) {

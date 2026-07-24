@@ -13,6 +13,7 @@ Ambil di: https://aistudio.google.com/apikey
 import base64
 import io
 import json
+import os
 import time
 import urllib.error
 import urllib.request
@@ -27,8 +28,8 @@ OUT_FILE = ROOT / "docs" / "announcements.json"
 KEY_FILE = ROOT / ".gemini_key"
 KETERBUKAAN_URL = "https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi/"
 
-MODEL = "gemini-2.0-flash"       # model free tier
-MAX_PER_RUN = 15                 # batas dokumen per jalan (hemat kuota/waktu)
+MODEL = "gemini-flash-lite-latest"   # model free tier; "latest" = tahan ganti versi
+MAX_PER_RUN = int(os.environ.get("IDX_MAX_SUM", "15"))   # batas dokumen per jalan (hemat kuota/waktu)
 MIN_TEXT = 200                   # < ini dianggap PDF scan/tanpa teks
 MAX_TEXT = 12000                 # potong teks panjang sebelum kirim ke AI
 SLEEP_BETWEEN = 4.5              # detik antar panggilan (free tier ~15 req/menit)
@@ -63,7 +64,12 @@ def gemini_summarize(text: str, key: str) -> str:
         try:
             with urllib.request.urlopen(req, timeout=60) as r:
                 data = json.loads(r.read())
-            return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+            cand = data["candidates"][0]
+            parts = cand.get("content", {}).get("parts", [])
+            txt = "".join(p.get("text", "") for p in parts).strip()
+            if not txt:
+                raise RuntimeError(f"balasan kosong (finish={cand.get('finishReason')})")
+            return txt
         except urllib.error.HTTPError as e:
             msg = e.read().decode("utf-8", "ignore")[:200]
             if e.code == 429 and attempt == 0:      # rate limit -> tunggu & ulang sekali

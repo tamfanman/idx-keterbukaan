@@ -58,6 +58,11 @@
   .files a { font-size:13px; color:var(--accent); text-decoration:none; border:1px solid var(--line);
     padding:4px 10px; border-radius:8px; }
   .files a:hover { border-color:var(--accent); }
+  .sum { margin-top:8px; font-size:14px; line-height:1.45; background:rgba(79,209,161,.10);
+    border-left:3px solid var(--lap); padding:8px 11px; border-radius:6px; }
+  .sum .tag { font-size:11px; color:var(--lap); font-weight:700; margin-right:6px; }
+  .sum.scan { background:transparent; border-left-color:var(--spam); color:var(--muted); font-size:13px; }
+  .sum.pending { background:transparent; border-left-color:var(--line); color:var(--muted); font-size:13px; }
   .empty { color:var(--muted); text-align:center; padding:48px 0; }
   footer { margin-top:32px; color:var(--muted); font-size:12px; text-align:center; }
 </style>
@@ -130,6 +135,13 @@ function badge(cat){
   return `<span class="badge"><span class="dot ${c.cls}"></span>${c.label}</span>`;
 }
 
+// Kotak ringkasan AI (gratis, dibuat di PC via Gemini).
+function summaryHTML(a){
+  if (a.summary) return `<div class="sum"><span class="tag">🧠 RINGKASAN</span>${esc(a.summary)}</div>`;
+  if (a.summary_status === "scan") return `<div class="sum scan">📄 Dokumen berupa scan/gambar — tidak bisa diringkas otomatis.</div>`;
+  return `<div class="sum pending">⏳ Ringkasan sedang diproses (muncul dalam beberapa siklus).</div>`;
+}
+
 // ---- Render daftar ----
 function currentItems(){
   const q = $("#q").value.trim().toLowerCase();
@@ -151,6 +163,7 @@ function itemHTML(a){
     </div>
     <div class="judul">${esc(a.judul||"(tanpa judul)")}</div>
     <div class="date">${esc(tgl)}</div>
+    ${summaryHTML(a)}
     ${files?`<div class="files">${files}</div>`:""}
   </div>`;
 }
@@ -202,8 +215,10 @@ function doSummary(){
     const tgl = (a.tanggal||"").slice(0,10);
     const pdf = (a.attachments||[])[0];
     const link = pdf ? ` — <a href="${esc(pdf.url)}" target="_blank" rel="noopener">PDF</a>` : "";
-    return `<div class="date" style="margin:6px 0">${badge(a._cat)}
-      <span style="color:var(--fg)"> ${esc(tgl)} — ${esc(a.judul||"")}</span>${link}</div>`;
+    return `<div style="margin:10px 0; padding-bottom:10px; border-bottom:1px dashed var(--line)">
+      <div class="date">${badge(a._cat)} <span style="color:var(--fg)">${esc(tgl)} — ${esc(a.judul||"")}</span>${link}</div>
+      ${summaryHTML(a)}
+    </div>`;
   }).join("");
 
   box.innerHTML = `
