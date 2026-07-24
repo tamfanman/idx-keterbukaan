@@ -17,7 +17,9 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from playwright.sync_api import sync_playwright
+# patchright = fork Playwright dengan patch anti-deteksi (lolos Cloudflare).
+# API-nya identik dengan playwright biasa.
+from patchright.sync_api import sync_playwright
 
 # --- Konfigurasi ----------------------------------------------------------
 KETERBUKAAN_URL = "https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi/"
@@ -110,8 +112,18 @@ def capture() -> dict | None:
     seen = []   # semua response (url, status, content-type) untuk diagnosa
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
-        context = browser.new_context(user_agent=UA, locale="id-ID")
+        # Best-practice patchright agar lolos Cloudflare:
+        #  - channel="chrome" (Chrome asli, bukan Chromium)
+        #  - headless=False (dijalankan di bawah xvfb pada CI)
+        #  - JANGAN override user_agent/viewport (bisa merusak stealth)
+        #  - persistent context (profil nyata)
+        context = p.chromium.launch_persistent_context(
+            user_data_dir="/tmp/pw-idx-profile",
+            channel="chrome",
+            headless=False,
+            no_viewport=True,
+            args=["--no-sandbox", "--disable-blink-features=AutomationControlled"],
+        )
         page = context.new_page()
 
         def on_response(resp):
@@ -136,7 +148,22 @@ def capture() -> dict | None:
         print(f"[nav] membuka {KETERBUKAAN_URL} ...")
         page.goto(KETERBUKAAN_URL, timeout=NAV_TIMEOUT_MS, wait_until="domcontentloaded")
 
-        # Coba picu XHR: tunggu jaringan tenang lalu scroll (banyak SPA lazy-load).
+        # Tunggu challenge Cloudflare selesai: judul akan berubah dari
+        # "Just a moment..." / "Attention Required" jadi judul asli halaman.
+        cf_deadline = time.time() + 45
+        while time.time() < cf_deadline:
+            try:
+                t = page.title()
+            except Exception:
+                t = ""
+            if not any(m in t for m in ("Just a moment", "Attention Required", "Cloudflare")):
+                print(f"[cf] challenge lewat. judul: {t!r}")
+                break
+            page.wait_for_timeout(2000)
+        else:
+            print("[cf] challenge belum lewat setelah 45s (mungkin masih diblokir).")
+
+        # Picu XHR: tunggu jaringan tenang lalu scroll (banyak SPA lazy-load).
         try:
             page.wait_for_load_state("networkidle", timeout=15_000)
         except Exception:
@@ -170,7 +197,6 @@ def capture() -> dict | None:
                 print(f"[debug] gagal ambil screenshot/html: {e}")
 
         context.close()
-        browser.close()
 
     return captured["payload"]
 
