@@ -30,12 +30,18 @@ KETERBUKAAN_URL = "https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-info
 # Cocokkan beberapa kemungkinan nama endpoint pengumuman IDX (case-insensitive).
 API_PATTERNS = ["announcement", "pengumuman", "disclosure", "keterbukaan"]
 
-# Kandidat URL API pengumuman untuk dipanggil langsung (variasi nama parameter).
-API_CANDIDATES = [
-    "/primary/ListedCompany/GetAnnouncement?indexFrom=1&pageSize=50&dateFrom=&dateTo=&lang=id&keyword=&emitenType=*",
-    "/primary/ListedCompany/GetAnnouncement?indexFrom=0&pageSize=50&lang=id",
-    "/primary/ListedCompany/GetAnnouncement?pageNumber=1&pageSize=50&lang=id",
-]
+# PENTING: API IDX meng-cache respons PER (indexFrom,pageSize). pageSize besar
+# (50/100/200) mengembalikan data BASI (bisa telat berjam-jam). pageSize kecil
+# dari indexFrom=0 selalu SEGAR & urut tanggal desc. Jadi kita paginasi halaman
+# kecil: indexFrom=0,10,20,... pageSize=10 -> gabung.
+PAGE_SIZE = 10
+PAGES = int(os.environ.get("IDX_PAGES", "8"))   # 8 x 10 = 80 pengumuman terbaru/refresh
+
+
+def _api_url(index_from: int) -> str:
+    return (f"/primary/ListedCompany/GetAnnouncement?indexFrom={index_from}"
+            f"&pageSize={PAGE_SIZE}&dateFrom=&dateTo=&lang=id&keyword=&emitenType=*"
+            f"&_={int(time.time() * 1000)}")
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 OUT_FILE = DOCS / "announcements.json"
 RAW_DEBUG = DOCS / "_raw_last_response.json"
@@ -153,21 +159,13 @@ def capture() -> dict | None:
         page = context.new_page()
 
         def on_response(resp):
+            # Hanya untuk log diagnosa; payload diambil eksplisit via try_api (paginasi).
             ct = ""
             try:
                 ct = resp.headers.get("content-type", "")
             except Exception:
                 pass
             seen.append({"url": resp.url, "status": resp.status, "content_type": ct})
-            # Kandidat: URL yang namanya cocok pola pengumuman DAN balikannya JSON.
-            if captured["payload"] is None and looks_like_api(resp.url) and "json" in ct.lower():
-                try:
-                    data = resp.json()
-                    captured["payload"] = data
-                    captured["hit_url"] = resp.url
-                    print(f"[capture] API tertangkap: {resp.url}")
-                except Exception as e:
-                    print(f"[capture] cocok pola tapi gagal parse JSON dari {resp.url}: {e}")
 
         page.on("response", on_response)
 
@@ -192,33 +190,39 @@ def capture() -> dict | None:
                             pass
 
         def try_api() -> bool:
-            """Panggil API pengumuman langsung dari konteks halaman (same-origin,
-            cookie ikut). Sering berhasil walau challenge visual belum kelar karena
-            cookie __cf_bm dari navigasi awal sudah cukup untuk XHR."""
-            for api in API_CANDIDATES:
+            """Paginasi halaman kecil (pageSize=10) dari indexFrom=0 -> data SEGAR &
+            urut tanggal (menghindari cache basi pada pageSize besar). Gabungkan
+            Replies dari beberapa halaman jadi satu payload."""
+            combined, got_any = [], False
+            for i in range(PAGES):
+                url = _api_url(i * PAGE_SIZE)
                 try:
                     res = page.evaluate(
                         """async (u) => {
-                            const r = await fetch(u, {headers:{'Accept':'application/json'}, credentials:'include'});
+                            const r = await fetch(u, {headers:{'Accept':'application/json'}, credentials:'include', cache:'no-store'});
                             return {status: r.status, body: await r.text()};
                         }""",
-                        api,
+                        url,
                     )
                 except Exception as e:
-                    print(f"[api] gagal fetch {api}: {e}")
+                    print(f"[api] gagal fetch halaman {i}: {e}")
                     continue
-                if res["status"] == 200:
-                    try:
-                        captured["payload"] = json.loads(res["body"])
-                        captured["hit_url"] = api
-                        print(f"[api] 200 JSON OK <- {api}")
-                        return True
-                    except Exception as e:
-                        print(f"[api] 200 tapi bukan JSON ({e}); cuplikan: {res['body'][:120]}")
-                else:
-                    # 403 = masih diblok Cloudflare; jangan dump HTML-nya.
-                    print(f"[api] {res['status']} (diblok) <- ...{api[-40:]}")
-                    return False  # semua kandidat endpoint sama; kalau 1 diblok, semua diblok
+                if res["status"] != 200:
+                    # 403 = masih diblok Cloudflare -> biarkan fallback challenge jalan.
+                    print(f"[api] {res['status']} (diblok) di halaman {i}")
+                    return False
+                try:
+                    reps = (json.loads(res["body"]).get("Replies")) or []
+                except Exception as e:
+                    print(f"[api] halaman {i} bukan JSON ({e})")
+                    continue
+                combined.extend(reps)
+                got_any = True
+            if got_any and combined:
+                captured["payload"] = {"Replies": combined}
+                print(f"[api] {len(combined)} pengumuman dari {PAGES} halaman (pageSize={PAGE_SIZE}).")
+                return True
+            return False
             return False
 
         # Beri halaman waktu settle sebentar, lalu coba API DULUAN.
