@@ -1,10 +1,13 @@
 """
-Ringkasan kontekstual gratis untuk pengumuman Keterbukaan Informasi BEI.
+Ringkasan kontekstual gratis untuk pengumuman Keterbukaan Informasi BEI (via Gemini).
 
-Alur: unduh PDF tiap pengumuman (in-page fetch, lolos Cloudflare) -> ekstrak teks
-(pypdf) -> kirim ke Google Gemini (free tier) -> simpan ringkasan ke record.
-Dijalankan di PC setelah scrape.py. Inkremental: hanya memproses pengumuman yang
-belum punya ringkasan, maksimal MAX_PER_RUN per jalan (hemat kuota & waktu).
+Dua tahap:
+1. MAP  - ringkasan PER-DOKUMEN: unduh PDF (in-page fetch, lolos Cloudflare) ->
+          ekstrak teks (pypdf) -> Gemini. HANYA kategori 'aksi' & 'lap'
+          (Spam & Not Sure di-skip). Inkremental, maks MAX_PER_RUN/jalan.
+2. REDUCE - ringkasan LEVEL-PERUSAHAAN: gabungkan ringkasan semua dokumen aksi/lap
+          milik satu emiten jadi SATU rangkuman menyeluruh. Regenerasi hanya bila
+          kumpulan dokumennya berubah.
 
 Butuh API key Gemini gratis di file `.gemini_key` (root repo, tidak di-commit).
 Ambil di: https://aistudio.google.com/apikey
@@ -18,28 +21,43 @@ import time
 import urllib.error
 import urllib.request
 import tempfile
+from collections import defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
 
 from patchright.sync_api import sync_playwright
 from pypdf import PdfReader
+
+from categorize import classify
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_FILE = ROOT / "docs" / "announcements.json"
 KEY_FILE = ROOT / ".gemini_key"
 KETERBUKAAN_URL = "https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi/"
 
-MODEL = "gemini-flash-lite-latest"   # model free tier; "latest" = tahan ganti versi
-MAX_PER_RUN = int(os.environ.get("IDX_MAX_SUM", "15"))   # batas dokumen per jalan (hemat kuota/waktu)
-MIN_TEXT = 200                   # < ini dianggap PDF scan/tanpa teks
-MAX_TEXT = 12000                 # potong teks panjang sebelum kirim ke AI
-SLEEP_BETWEEN = 4.5              # detik antar panggilan (free tier ~15 req/menit)
+MODEL = "gemini-flash-lite-latest"   # free tier; "latest" = tahan ganti versi
+CATS_TO_SUMMARIZE = {"aksi", "lap"}  # HANYA ini yang diringkas (bukan spam/notsure)
+MAX_PER_RUN = int(os.environ.get("IDX_MAX_SUM", "15"))       # dokumen/jalan
+MAX_COMPANY = int(os.environ.get("IDX_MAX_COMPANY", "12"))   # ringkasan perusahaan/jalan
+MIN_TEXT = 200            # < ini dianggap PDF scan/tanpa teks
+MAX_TEXT = 12000         # potong teks panjang sebelum kirim ke AI
+SLEEP_BETWEEN = 4.5      # detik antar panggilan (free tier ~15 req/menit)
 
-PROMPT = (
+PROMPT_DOC = (
     "Kamu asisten yang meringkas dokumen Keterbukaan Informasi Bursa Efek Indonesia. "
     "Ringkas isi dokumen berikut dalam 2-4 kalimat bahasa Indonesia yang jelas dan padat, "
     "fokus pada inti peristiwa dan dampak/relevansinya bagi investor. "
     "Jangan mengarang; hanya berdasarkan teks. Jangan sekadar mengulang judul.\n\n"
     "=== DOKUMEN ===\n"
+)
+
+PROMPT_COMPANY = (
+    "Kamu meringkas aktivitas Keterbukaan Informasi sebuah emiten BEI berkode {code}. "
+    "Di bawah ini ringkasan tiap pengumuman (kategori Aksi Korporasi & Laporan/Perjanjian). "
+    "Buat SATU rangkuman menyeluruh 3-6 kalimat bahasa Indonesia yang MENYATUKAN poin-poin "
+    "penting lintas pengumuman: tema utama, aksi korporasi/transaksi signifikan, dan hal "
+    "yang relevan bagi investor. Sintesiskan, jangan sekadar menyalin. Jika hanya ada satu "
+    "pengumuman, ringkas itu saja.\n\n=== RINGKASAN TIAP PENGUMUMAN ===\n{bullets}\n"
 )
 
 
@@ -53,11 +71,11 @@ def load_key() -> str:
     return key
 
 
-def gemini_summarize(text: str, key: str) -> str:
+def gemini(prompt_text: str, key: str, max_tokens: int = 400) -> str:
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={key}"
     body = json.dumps({
-        "contents": [{"parts": [{"text": PROMPT + text[:MAX_TEXT]}]}],
-        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 400},
+        "contents": [{"parts": [{"text": prompt_text}]}],
+        "generationConfig": {"temperature": 0.2, "maxOutputTokens": max_tokens},
     }).encode("utf-8")
     req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
     for attempt in range(2):
@@ -72,7 +90,7 @@ def gemini_summarize(text: str, key: str) -> str:
             return txt
         except urllib.error.HTTPError as e:
             msg = e.read().decode("utf-8", "ignore")[:200]
-            if e.code == 429 and attempt == 0:      # rate limit -> tunggu & ulang sekali
+            if e.code == 429 and attempt == 0:
                 print("[gemini] 429 rate limit, tunggu 20s...")
                 time.sleep(20)
                 continue
@@ -91,25 +109,26 @@ def fetch_pdf_text(page, url: str) -> str:
     }""", url)
     if res["status"] != 200 or not res["data"]:
         raise RuntimeError(f"unduh PDF gagal (status {res['status']})")
-    raw = base64.b64decode(res["data"])
-    reader = PdfReader(io.BytesIO(raw))
+    reader = PdfReader(io.BytesIO(base64.b64decode(res["data"])))
     return "\n".join((pg.extract_text() or "") for pg in reader.pages).strip()
 
 
-def main() -> int:
-    key = load_key()
-    data = json.loads(OUT_FILE.read_text(encoding="utf-8"))
-    anns = data.get("announcements", [])
+def cat_of(a) -> str:
+    return a.get("kategori") or classify(a.get("judul"), a.get("perihal"))
 
-    # Target: yang belum punya 'summary' dan punya lampiran PDF. Terbaru dulu.
+
+def summarize_docs(anns, key) -> int:
+    """Tahap MAP: ringkasan per-dokumen untuk kategori aksi & lap."""
     targets = [a for a in anns
-               if not a.get("summary") and any(str(f.get("url", "")).lower().endswith(".pdf")
-                                               for f in a.get("attachments", []))]
+               if cat_of(a) in CATS_TO_SUMMARIZE
+               and not a.get("summary")
+               and a.get("summary_status") != "scan"
+               and any(str(f.get("url", "")).lower().endswith(".pdf") for f in a.get("attachments", []))]
     targets = targets[:MAX_PER_RUN]
     if not targets:
-        print("[done] tidak ada dokumen baru untuk diringkas.")
+        print("[map] tidak ada dokumen baru (aksi/lap) untuk diringkas.")
         return 0
-    print(f"[info] {len(targets)} dokumen akan diringkas (maks {MAX_PER_RUN}/jalan).")
+    print(f"[map] {len(targets)} dokumen aksi/lap akan diringkas (maks {MAX_PER_RUN}).")
 
     done = 0
     with sync_playwright() as p:
@@ -123,7 +142,7 @@ def main() -> int:
 
         for a in targets:
             pdf = next((f for f in a["attachments"] if str(f.get("url", "")).lower().endswith(".pdf")), None)
-            label = f'{a.get("kode_emiten","?")} — {(a.get("judul") or "")[:50]}'
+            label = f'{a.get("kode_emiten","?")} — {(a.get("judul") or "")[:45]}'
             try:
                 text = fetch_pdf_text(page, pdf["url"])
             except Exception as e:
@@ -131,23 +150,70 @@ def main() -> int:
                 continue
             if len(text) < MIN_TEXT:
                 a["summary"] = None
-                a["summary_status"] = "scan"   # PDF gambar/scan, tak ada teks
+                a["summary_status"] = "scan"
                 print(f"[scan] {label}")
                 continue
             try:
-                summary = gemini_summarize(text, key)
+                a["summary"] = gemini(PROMPT_DOC + text[:MAX_TEXT], key)
+                a["summary_status"] = "ok"
+                done += 1
+                print(f"[ok] {label}\n      -> {a['summary'][:110]}...")
             except Exception as e:
                 print(f"[gemini-err] {label}: {e}")
                 continue
-            a["summary"] = summary
-            a["summary_status"] = "ok"
-            done += 1
-            print(f"[ok] {label}\n      -> {summary[:120]}...")
             time.sleep(SLEEP_BETWEEN)
         ctx.close()
+    return done
 
+
+def summarize_companies(anns, company_summaries, key) -> int:
+    """Tahap REDUCE: gabungkan ringkasan dok aksi/lap per emiten jadi 1 rangkuman."""
+    groups = defaultdict(list)
+    for a in anns:
+        if cat_of(a) in CATS_TO_SUMMARIZE and a.get("summary"):
+            code = (a.get("kode_emiten") or "").strip().upper()
+            if code:
+                groups[code].append(a)
+
+    done = 0
+    for code, rows in groups.items():
+        rows.sort(key=lambda r: str(r.get("tanggal") or ""), reverse=True)
+        sig = sorted([r.get("id") for r in rows if r.get("id")])
+        prev = company_summaries.get(code)
+        if prev and prev.get("based_on") == sig:
+            continue                      # kumpulan dokumen tak berubah -> lewati
+        if done >= MAX_COMPANY:
+            continue
+        bullets = "\n".join(
+            f"- [{(r.get('tanggal') or '')[:10]}] {r.get('judul','')}: {r.get('summary','')}"
+            for r in rows)
+        try:
+            csum = gemini(PROMPT_COMPANY.format(code=code, bullets=bullets), key, max_tokens=600)
+        except Exception as e:
+            print(f"[company-err] {code}: {e}")
+            continue
+        company_summaries[code] = {
+            "summary": csum, "based_on": sig, "doc_count": len(rows),
+            "updated_at": datetime.now(timezone.utc).isoformat(),
+        }
+        done += 1
+        print(f"[company] {code} ({len(rows)} dok) -> {csum[:100]}...")
+        time.sleep(SLEEP_BETWEEN)
+    return done
+
+
+def main() -> int:
+    key = load_key()
+    data = json.loads(OUT_FILE.read_text(encoding="utf-8"))
+    anns = data.get("announcements", [])
+    company_summaries = data.get("company_summaries", {})
+
+    doc_done = summarize_docs(anns, key)
+    comp_done = summarize_companies(anns, company_summaries, key)
+
+    data["company_summaries"] = company_summaries
     OUT_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"[done] {done} ringkasan baru disimpan -> {OUT_FILE}")
+    print(f"[done] {doc_done} ringkasan dokumen + {comp_done} ringkasan perusahaan disimpan.")
     return 0
 
 

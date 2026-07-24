@@ -23,6 +23,8 @@ from pathlib import Path
 # API-nya identik dengan playwright biasa.
 from patchright.sync_api import sync_playwright
 
+from categorize import classify   # modul kategori bersama (aksi/lap/spam/notsure)
+
 # --- Konfigurasi ----------------------------------------------------------
 KETERBUKAAN_URL = "https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi/"
 # Cocokkan beberapa kemungkinan nama endpoint pengumuman IDX (case-insensitive).
@@ -140,7 +142,7 @@ def capture() -> dict | None:
         print(f"[cfg] headless={headless}")
         args = ["--no-sandbox", "--disable-blink-features=AutomationControlled"]
         if not headless:
-            args += ["--window-position=-32000,-32000", "--window-size=1200,900"]
+            args += ["--window-position=-2400,-2400", "--window-size=1200,900"]
         context = p.chromium.launch_persistent_context(
             user_data_dir=profile_dir,
             channel="chrome",
@@ -295,19 +297,40 @@ def main() -> int:
     added = 0
     for rec in fresh:
         k = dedupe_key(rec)
-        if k not in by_key:
+        old = by_key.get(k)
+        if old is None:
             added += 1
+        else:
+            # PENTING: pertahankan hasil ringkasan yang sudah dibuat summarize.py,
+            # jangan sampai ditimpa data fresh (yang belum punya ringkasan).
+            for f in ("summary", "summary_status"):
+                if old.get(f) is not None and f not in rec:
+                    rec[f] = old[f]
         by_key[k] = rec
 
     merged = list(by_key.values())
     # Urutkan terbaru dulu bila tanggal bisa dibandingkan sebagai string ISO-ish.
     merged.sort(key=lambda r: str(r.get("tanggal") or ""), reverse=True)
 
+    # Klasifikasi (ulang) semua record -> field 'kategori'. Murah; memastikan
+    # perubahan kata kunci ikut terpakai & semua record punya kategori.
+    for r in merged:
+        r["kategori"] = classify(r.get("judul"), r.get("perihal"))
+
+    # Pertahankan ringkasan level-perusahaan yang sudah ada (dibuat summarize.py).
+    prev = {}
+    if OUT_FILE.exists():
+        try:
+            prev = json.loads(OUT_FILE.read_text(encoding="utf-8")).get("company_summaries", {})
+        except Exception:
+            prev = {}
+
     out = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "count": len(merged),
         "source": KETERBUKAAN_URL,
         "announcements": merged,
+        "company_summaries": prev,
     }
     OUT_FILE.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"[done] +{added} baru, total {len(merged)} -> {OUT_FILE}")

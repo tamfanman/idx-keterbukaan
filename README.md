@@ -1,9 +1,17 @@
 # Keterbukaan Informasi BEI — Auto Update (Gratis)
 
 Menarik data **Keterbukaan Informasi** dari [IDX/BEI](https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi/)
-otomatis **tiap 2 jam (07:00–21:00 WIB)** dan menampilkannya di web. **100% gratis.**
+otomatis (**tiap 1 jam pukul 07–10 WIB, sisanya tiap 2 jam s/d 20:00**), mengkategorikan,
+dan **meringkas** pengumuman penting pakai AI gratis. **100% gratis.**
 
 🌐 **Situs:** https://tamfanman.github.io/idx-keterbukaan/
+
+**Fitur:**
+- Kategori otomatis (gratis, dari judul): **Aksi Korporasi**, **Laporan & Perjanjian**,
+  **Not Sure** (mungkin penting, perlu ditinjau), **Spam** (rutin).
+- **Ringkasan AI kontekstual** (Gemini free tier) untuk kategori Aksi Korporasi & Laporan &
+  Perjanjian — per-dokumen **dan** rangkuman level-perusahaan (tombol "Ringkas"). Butuh
+  `.gemini_key` (lihat `fetcher/summarize.py`). Spam & Not Sure tidak diringkas.
 
 ## Arsitektur
 

@@ -8,11 +8,11 @@
   :root {
     --bg: #0f1115; --card: #171a21; --line: #262b36; --fg: #e6e9ef;
     --muted: #9aa4b2; --accent: #4f9cff; --chip: #1e2530;
-    --aksi: #4f9cff; --lap: #4fd1a1; --spam: #8a93a3;
+    --aksi: #4f9cff; --lap: #4fd1a1; --spam: #8a93a3; --notsure: #e0a33e;
   }
   @media (prefers-color-scheme: light) {
     :root { --bg:#f5f7fa; --card:#fff; --line:#e3e8ef; --fg:#1a1f2b; --muted:#5b6472; --accent:#1a6dff; --chip:#eef2f7;
-            --aksi:#1a6dff; --lap:#0f9d76; --spam:#8a93a3; }
+            --aksi:#1a6dff; --lap:#0f9d76; --spam:#8a93a3; --notsure:#c9820a; }
   }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--fg);
@@ -34,7 +34,8 @@
   .chip-btn .n { color:var(--muted); font-size:12px; }
   .chip-btn.active { border-color:var(--accent); color:var(--accent); }
   .dot { width:8px; height:8px; border-radius:50%; display:inline-block; }
-  .dot.aksi{background:var(--aksi)} .dot.lap{background:var(--lap)} .dot.spam{background:var(--spam)}
+  .dot.aksi{background:var(--aksi)} .dot.lap{background:var(--lap)}
+  .dot.spam{background:var(--spam)} .dot.notsure{background:var(--notsure)}
 
   .panel { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px; }
   .panel h2 { font-size:15px; margin:0 0 4px; }
@@ -104,30 +105,40 @@
 <script>
 const $ = s => document.querySelector(s);
 let ALL = [];
+let COMPANY = {};   // ringkasan level-perusahaan (data.company_summaries)
 let activeCat = "all";
 
 function esc(s){ return (s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 
-// ---- Pengategorian gratis berdasarkan judul (tanpa AI) ----
+// ---- Kategori: utamanya pakai a.kategori dari data (Python); fallback keyword di bawah ----
 const KW_AKSI = ["rups","rapat umum pemegang saham","dividen","stock split","pemecahan saham",
-  "reverse stock","rights issue","hmetd","penambahan modal","waran","merger","penggabungan",
+  "reverse stock","rights issue","hmetd","penambahan modal","merger","penggabungan",
   "akuisisi","pengambilalihan","tender","buyback","pembelian kembali saham","penawaran umum",
-  "obligasi","sukuk","medium term notes"," mtn"];
+  "obligasi","sukuk","medium term notes"," mtn ","penawaran tender","delisting","relisting",
+  "go private","spin off","spin-off","private placement"];
 const KW_LAP = ["laporan keuangan","laporan tahunan","perjanjian","penandatanganan",
   "transaksi material","transaksi afiliasi","transaksi benturan","penggunaan dana",
-  "realisasi","keterbukaan informasi","kerja sama","kerjasama","prospektus","laporan hasil"];
+  "realisasi","keterbukaan informasi","kerja sama","kerjasama","prospektus","laporan hasil",
+  "nota kesepahaman","mou"];
+const KW_SPAM = ["pencatatan saham","pencatatan tambahan","pencatatan awal","pencatatan efek",
+  "pencatatan perdana","pengumuman bursa pencatatan","laporan kepemilikan","perubahan kepemilikan",
+  "laporan bulanan","registrasi pemegang efek","penambahan saham","konversi","waran","esop","msop",
+  "pelaksanaan waran"];
 
 const CATS = {
-  aksi: { label:"Aksi Korporasi", cls:"aksi" },
-  lap:  { label:"Laporan & Perjanjian", cls:"lap" },
-  spam: { label:"Spam", cls:"spam" },
+  aksi:    { label:"Aksi Korporasi", cls:"aksi" },
+  lap:     { label:"Laporan & Perjanjian", cls:"lap" },
+  notsure: { label:"Not Sure", cls:"notsure" },
+  spam:    { label:"Spam", cls:"spam" },
 };
 
 function classify(a){
+  if (a.kategori && CATS[a.kategori]) return a.kategori;   // kategori dari data (Python)
   const t = ((a.judul||"") + " " + (a.perihal||"")).toLowerCase();
   if (KW_AKSI.some(k => t.includes(k))) return "aksi";
   if (KW_LAP.some(k => t.includes(k)))  return "lap";
-  return "spam";   // Pencatatan Saham, Kepemilikan Saham, & sisanya
+  if (KW_SPAM.some(k => t.includes(k))) return "spam";
+  return "notsure";   // tak cocok mana pun -> mungkin penting
 }
 
 function badge(cat){
@@ -135,11 +146,14 @@ function badge(cat){
   return `<span class="badge"><span class="dot ${c.cls}"></span>${c.label}</span>`;
 }
 
-// Kotak ringkasan AI (gratis, dibuat di PC via Gemini).
+// Kotak ringkasan AI (gratis, dibuat di PC via Gemini). Hanya kategori aksi & lap
+// yang diringkas; spam & notsure tidak (tak ada kotak).
 function summaryHTML(a){
   if (a.summary) return `<div class="sum"><span class="tag">🧠 RINGKASAN</span>${esc(a.summary)}</div>`;
   if (a.summary_status === "scan") return `<div class="sum scan">📄 Dokumen berupa scan/gambar — tidak bisa diringkas otomatis.</div>`;
-  return `<div class="sum pending">⏳ Ringkasan sedang diproses (muncul dalam beberapa siklus).</div>`;
+  if (a._cat === "aksi" || a._cat === "lap")
+    return `<div class="sum pending">⏳ Ringkasan sedang diproses (muncul dalam beberapa siklus).</div>`;
+  return "";   // spam / notsure: tidak diringkas
 }
 
 // ---- Render daftar ----
@@ -179,11 +193,12 @@ function render(){
 }
 
 function renderChips(){
-  const counts = { all: ALL.length, aksi:0, lap:0, spam:0 };
+  const counts = { all: ALL.length, aksi:0, lap:0, notsure:0, spam:0 };
   ALL.forEach(a => counts[a._cat]++);
   const defs = [
     ["all","Semua",""], ["aksi",CATS.aksi.label,"aksi"],
-    ["lap",CATS.lap.label,"lap"], ["spam",CATS.spam.label,"spam"],
+    ["lap",CATS.lap.label,"lap"], ["notsure",CATS.notsure.label,"notsure"],
+    ["spam",CATS.spam.label,"spam"],
   ];
   $("#chips").innerHTML = defs.map(([k,label,cls]) =>
     `<button class="chip-btn ${k===activeCat?'active':''}" data-cat="${k}">
@@ -205,7 +220,7 @@ function doSummary(){
       Data bertambah seiring waktu tiap 2 jam.</p>`;
     return;
   }
-  const cnt = { aksi:0, lap:0, spam:0 };
+  const cnt = { aksi:0, lap:0, notsure:0, spam:0 };
   rows.forEach(a => cnt[a._cat]++);
   const dates = rows.map(a => (a.tanggal||"").slice(0,10)).filter(Boolean).sort();
   const range = dates.length ? `${dates[0]} s/d ${dates[dates.length-1]}` : "-";
@@ -221,6 +236,15 @@ function doSummary(){
     </div>`;
   }).join("");
 
+  // Ringkasan LEVEL-PERUSAHAAN (gabungan semua dok aksi/lap), dari data.
+  const comp = COMPANY[code];
+  const compHTML = (comp && comp.summary)
+    ? `<div class="sum" style="margin:10px 0"><span class="tag">🧠 RINGKASAN PERUSAHAAN</span>${esc(comp.summary)}
+         <div style="color:var(--muted); font-size:12px; margin-top:6px">Merangkum ${comp.doc_count||0} pengumuman penting (Aksi Korporasi & Laporan/Perjanjian).</div></div>`
+    : ((cnt.aksi + cnt.lap) > 0
+        ? `<div class="sum pending" style="margin:10px 0">⏳ Ringkasan perusahaan sedang diproses (muncul dalam beberapa siklus).</div>`
+        : `<p class="meta" style="margin:8px 0">Tidak ada pengumuman Aksi Korporasi / Laporan & Perjanjian untuk diringkas.</p>`);
+
   box.innerHTML = `
     <div style="border-top:1px solid var(--line); margin-top:12px; padding-top:12px">
       <h2 style="margin:0 0 2px">Ringkasan — ${esc(code)}</h2>
@@ -228,8 +252,11 @@ function doSummary(){
       <div class="sumstat">
         <div><b style="color:var(--aksi)">${cnt.aksi}</b><span>Aksi Korporasi</span></div>
         <div><b style="color:var(--lap)">${cnt.lap}</b><span>Laporan & Perjanjian</span></div>
+        <div><b style="color:var(--notsure)">${cnt.notsure}</b><span>Not Sure</span></div>
         <div><b style="color:var(--spam)">${cnt.spam}</b><span>Spam</span></div>
       </div>
+      ${compHTML}
+      <div style="margin-top:10px; font-size:13px; color:var(--muted)">Rincian per pengumuman:</div>
       <div>${listHTML}</div>
     </div>`;
 }
@@ -240,6 +267,7 @@ async function boot(){
     const r = await fetch("./announcements.json?_=" + Date.now());
     const data = await r.json();
     ALL = (data.announcements || []).map(a => ({...a, _cat: classify(a)}));
+    COMPANY = data.company_summaries || {};
     $("#meta").textContent = `${ALL.length} pengumuman • update: ` +
       (data.updated_at ? new Date(data.updated_at).toLocaleString("id-ID") : "belum pernah");
     if(data.source){ $("#src").href = data.source; }
