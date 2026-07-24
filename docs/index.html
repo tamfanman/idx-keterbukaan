@@ -8,25 +8,50 @@
   :root {
     --bg: #0f1115; --card: #171a21; --line: #262b36; --fg: #e6e9ef;
     --muted: #9aa4b2; --accent: #4f9cff; --chip: #1e2530;
+    --aksi: #4f9cff; --lap: #4fd1a1; --spam: #8a93a3;
   }
   @media (prefers-color-scheme: light) {
-    :root { --bg:#f5f7fa; --card:#fff; --line:#e3e8ef; --fg:#1a1f2b; --muted:#5b6472; --accent:#1a6dff; --chip:#eef2f7; }
+    :root { --bg:#f5f7fa; --card:#fff; --line:#e3e8ef; --fg:#1a1f2b; --muted:#5b6472; --accent:#1a6dff; --chip:#eef2f7;
+            --aksi:#1a6dff; --lap:#0f9d76; --spam:#8a93a3; }
   }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--fg);
     font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
-  .wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 64px; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 24px 16px 64px; }
   header { display:flex; flex-wrap:wrap; align-items:baseline; gap:12px; margin-bottom:4px; }
   h1 { font-size: 20px; margin:0; }
   .meta { color:var(--muted); font-size:13px; }
-  .bar { display:flex; gap:10px; flex-wrap:wrap; margin:18px 0; }
-  input[type=search] { flex:1; min-width:200px; background:var(--card); border:1px solid var(--line);
+  a { color: var(--accent); }
+
+  .bar { display:flex; gap:10px; flex-wrap:wrap; margin:18px 0 10px; }
+  input[type=search], input.code { background:var(--card); border:1px solid var(--line);
     color:var(--fg); padding:10px 12px; border-radius:10px; font-size:14px; }
+  input[type=search] { flex:1; min-width:200px; }
+
+  .chips { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px; }
+  .chip-btn { cursor:pointer; background:var(--chip); color:var(--fg); border:1px solid var(--line);
+    padding:6px 12px; border-radius:999px; font-size:13px; display:flex; gap:6px; align-items:center; }
+  .chip-btn .n { color:var(--muted); font-size:12px; }
+  .chip-btn.active { border-color:var(--accent); color:var(--accent); }
+  .dot { width:8px; height:8px; border-radius:50%; display:inline-block; }
+  .dot.aksi{background:var(--aksi)} .dot.lap{background:var(--lap)} .dot.spam{background:var(--spam)}
+
+  .panel { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px; }
+  .panel h2 { font-size:15px; margin:0 0 4px; }
+  .sumrow { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+  .btn { cursor:pointer; background:var(--accent); color:#fff; border:0; padding:10px 14px;
+    border-radius:10px; font-size:14px; font-weight:600; }
+  .btn.ghost { background:transparent; color:var(--muted); border:1px solid var(--line); font-weight:400; }
+  .sumstat { display:flex; gap:16px; flex-wrap:wrap; margin:10px 0; }
+  .sumstat b { font-size:18px; }
+  .sumstat span { display:block; color:var(--muted); font-size:12px; }
+
   .list { display:flex; flex-direction:column; gap:10px; }
   .item { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
   .row1 { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:4px; }
-  .kode { font-weight:700; color:var(--accent); }
-  .chip { background:var(--chip); color:var(--muted); font-size:12px; padding:2px 8px; border-radius:999px; }
+  .kode { font-weight:700; color:var(--accent); cursor:pointer; }
+  .kode:hover { text-decoration:underline; }
+  .badge { font-size:11px; padding:2px 9px; border-radius:999px; border:1px solid var(--line); display:flex; gap:5px; align-items:center; }
   .judul { font-weight:500; }
   .date { color:var(--muted); font-size:13px; margin-top:2px; }
   .files { margin-top:8px; display:flex; flex-wrap:wrap; gap:8px; }
@@ -35,7 +60,6 @@
   .files a:hover { border-color:var(--accent); }
   .empty { color:var(--muted); text-align:center; padding:48px 0; }
   footer { margin-top:32px; color:var(--muted); font-size:12px; text-align:center; }
-  a { color: var(--accent); }
 </style>
 </head>
 <body>
@@ -44,69 +68,180 @@
     <h1>Keterbukaan Informasi BEI</h1>
     <span class="meta" id="meta">memuat…</span>
   </header>
-  <p class="meta">Data diambil otomatis dari IDX tiap 2 jam. Sumber:
+  <p class="meta">Data otomatis dari IDX tiap 2 jam. Sumber:
     <a id="src" href="#" target="_blank" rel="noopener">idx.co.id</a></p>
 
+  <!-- Ringkasan per perusahaan -->
+  <div class="panel">
+    <h2>🔎 Ringkas pengumuman satu perusahaan</h2>
+    <p class="meta" style="margin:2px 0 10px">Ketik kode emiten lalu klik Ringkas (atau klik kode saham mana pun di daftar).</p>
+    <div class="sumrow">
+      <input class="code" id="code" list="codes" placeholder="Kode emiten, mis. BBRI" autocomplete="off" style="width:200px" />
+      <datalist id="codes"></datalist>
+      <button class="btn" id="btnSum">Ringkas</button>
+      <button class="btn ghost" id="btnClear" hidden>Tutup ringkasan</button>
+    </div>
+    <div id="summary"></div>
+  </div>
+
+  <!-- Filter -->
   <div class="bar">
     <input type="search" id="q" placeholder="Cari kode emiten / judul…" autocomplete="off" />
   </div>
+  <div class="chips" id="chips"></div>
 
   <div class="list" id="list"></div>
-  <div class="empty" id="empty" hidden>Belum ada data. Jalankan workflow "Run workflow" di GitHub Actions untuk mengisi.</div>
+  <div class="empty" id="empty" hidden>Belum ada data.</div>
 
-  <footer>Auto-generated • GitHub Actions + GitHub Pages</footer>
+  <footer>Auto-generated • GitHub Actions runner lokal + GitHub Pages</footer>
 </div>
 
 <script>
 const $ = s => document.querySelector(s);
 let ALL = [];
+let activeCat = "all";
 
 function esc(s){ return (s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 
-function render(items){
-  const list = $("#list"), empty = $("#empty");
-  list.innerHTML = "";
-  if(!items.length){ empty.hidden = false; return; }
-  empty.hidden = true;
-  for(const a of items){
-    const files = (a.attachments||[]).map(f =>
-      `<a href="${esc(f.url)}" target="_blank" rel="noopener">📄 ${esc(f.name||"lampiran")}</a>`).join("");
-    list.insertAdjacentHTML("beforeend", `
-      <div class="item">
-        <div class="row1">
-          <span class="kode">${esc(a.kode_emiten||"—")}</span>
-          ${a.jenis?`<span class="chip">${esc(a.jenis)}</span>`:""}
-        </div>
-        <div class="judul">${esc(a.judul||"(tanpa judul)")}</div>
-        <div class="date">${esc(a.tanggal||"")}</div>
-        ${files?`<div class="files">${files}</div>`:""}
-      </div>`);
-  }
+// ---- Pengategorian gratis berdasarkan judul (tanpa AI) ----
+const KW_AKSI = ["rups","rapat umum pemegang saham","dividen","stock split","pemecahan saham",
+  "reverse stock","rights issue","hmetd","penambahan modal","waran","merger","penggabungan",
+  "akuisisi","pengambilalihan","tender","buyback","pembelian kembali saham","penawaran umum",
+  "obligasi","sukuk","medium term notes"," mtn"];
+const KW_LAP = ["laporan keuangan","laporan tahunan","perjanjian","penandatanganan",
+  "transaksi material","transaksi afiliasi","transaksi benturan","penggunaan dana",
+  "realisasi","keterbukaan informasi","kerja sama","kerjasama","prospektus","laporan hasil"];
+
+const CATS = {
+  aksi: { label:"Aksi Korporasi", cls:"aksi" },
+  lap:  { label:"Laporan & Perjanjian", cls:"lap" },
+  spam: { label:"Spam", cls:"spam" },
+};
+
+function classify(a){
+  const t = ((a.judul||"") + " " + (a.perihal||"")).toLowerCase();
+  if (KW_AKSI.some(k => t.includes(k))) return "aksi";
+  if (KW_LAP.some(k => t.includes(k)))  return "lap";
+  return "spam";   // Pencatatan Saham, Kepemilikan Saham, & sisanya
 }
 
-function applyFilter(){
+function badge(cat){
+  const c = CATS[cat];
+  return `<span class="badge"><span class="dot ${c.cls}"></span>${c.label}</span>`;
+}
+
+// ---- Render daftar ----
+function currentItems(){
   const q = $("#q").value.trim().toLowerCase();
-  if(!q){ render(ALL); return; }
-  render(ALL.filter(a =>
-    (a.kode_emiten||"").toLowerCase().includes(q) ||
-    (a.judul||"").toLowerCase().includes(q)));
+  return ALL.filter(a => {
+    if (activeCat !== "all" && a._cat !== activeCat) return false;
+    if (q && !((a.kode_emiten||"").toLowerCase().includes(q) || (a.judul||"").toLowerCase().includes(q))) return false;
+    return true;
+  });
 }
 
+function itemHTML(a){
+  const files = (a.attachments||[]).map(f =>
+    `<a href="${esc(f.url)}" target="_blank" rel="noopener">📄 ${esc(f.name||"lampiran")}</a>`).join("");
+  const tgl = (a.tanggal||"").replace("T"," ").slice(0,16);
+  return `<div class="item">
+    <div class="row1">
+      <span class="kode" data-code="${esc(a.kode_emiten||"")}">${esc(a.kode_emiten||"—")}</span>
+      ${badge(a._cat)}
+    </div>
+    <div class="judul">${esc(a.judul||"(tanpa judul)")}</div>
+    <div class="date">${esc(tgl)}</div>
+    ${files?`<div class="files">${files}</div>`:""}
+  </div>`;
+}
+
+function render(){
+  const items = currentItems();
+  const list = $("#list"), empty = $("#empty");
+  if(!items.length){ list.innerHTML=""; empty.hidden=false; return; }
+  empty.hidden = true;
+  list.innerHTML = items.map(itemHTML).join("");
+  list.querySelectorAll(".kode").forEach(el =>
+    el.addEventListener("click", () => { $("#code").value = el.dataset.code.trim(); doSummary(); }));
+}
+
+function renderChips(){
+  const counts = { all: ALL.length, aksi:0, lap:0, spam:0 };
+  ALL.forEach(a => counts[a._cat]++);
+  const defs = [
+    ["all","Semua",""], ["aksi",CATS.aksi.label,"aksi"],
+    ["lap",CATS.lap.label,"lap"], ["spam",CATS.spam.label,"spam"],
+  ];
+  $("#chips").innerHTML = defs.map(([k,label,cls]) =>
+    `<button class="chip-btn ${k===activeCat?'active':''}" data-cat="${k}">
+       ${cls?`<span class="dot ${cls}"></span>`:""}${label}<span class="n">${counts[k]}</span>
+     </button>`).join("");
+  $("#chips").querySelectorAll(".chip-btn").forEach(b =>
+    b.addEventListener("click", () => { activeCat = b.dataset.cat; renderChips(); render(); }));
+}
+
+// ---- Ringkasan per perusahaan (gratis, dihitung di browser) ----
+function doSummary(){
+  const code = $("#code").value.trim().toUpperCase();
+  const box = $("#summary");
+  if(!code){ box.innerHTML = `<p class="meta">Masukkan kode emiten dulu.</p>`; return; }
+  const rows = ALL.filter(a => (a.kode_emiten||"").toUpperCase() === code);
+  $("#btnClear").hidden = false;
+  if(!rows.length){
+    box.innerHTML = `<p class="meta">Belum ada pengumuman tersimpan untuk <b>${esc(code)}</b>.
+      Data bertambah seiring waktu tiap 2 jam.</p>`;
+    return;
+  }
+  const cnt = { aksi:0, lap:0, spam:0 };
+  rows.forEach(a => cnt[a._cat]++);
+  const dates = rows.map(a => (a.tanggal||"").slice(0,10)).filter(Boolean).sort();
+  const range = dates.length ? `${dates[0]} s/d ${dates[dates.length-1]}` : "-";
+  rows.sort((x,y)=> String(y.tanggal||"").localeCompare(String(x.tanggal||"")));
+
+  const listHTML = rows.map(a => {
+    const tgl = (a.tanggal||"").slice(0,10);
+    const pdf = (a.attachments||[])[0];
+    const link = pdf ? ` — <a href="${esc(pdf.url)}" target="_blank" rel="noopener">PDF</a>` : "";
+    return `<div class="date" style="margin:6px 0">${badge(a._cat)}
+      <span style="color:var(--fg)"> ${esc(tgl)} — ${esc(a.judul||"")}</span>${link}</div>`;
+  }).join("");
+
+  box.innerHTML = `
+    <div style="border-top:1px solid var(--line); margin-top:12px; padding-top:12px">
+      <h2 style="margin:0 0 2px">Ringkasan — ${esc(code)}</h2>
+      <p class="meta">Total <b>${rows.length}</b> pengumuman tersimpan • rentang ${esc(range)}</p>
+      <div class="sumstat">
+        <div><b style="color:var(--aksi)">${cnt.aksi}</b><span>Aksi Korporasi</span></div>
+        <div><b style="color:var(--lap)">${cnt.lap}</b><span>Laporan & Perjanjian</span></div>
+        <div><b style="color:var(--spam)">${cnt.spam}</b><span>Spam</span></div>
+      </div>
+      <div>${listHTML}</div>
+    </div>`;
+}
+
+// ---- Boot ----
 async function boot(){
   try{
     const r = await fetch("./announcements.json?_=" + Date.now());
     const data = await r.json();
-    ALL = data.announcements || [];
-    $("#meta").textContent = `${data.count||ALL.length} pengumuman • update: ` +
+    ALL = (data.announcements || []).map(a => ({...a, _cat: classify(a)}));
+    $("#meta").textContent = `${ALL.length} pengumuman • update: ` +
       (data.updated_at ? new Date(data.updated_at).toLocaleString("id-ID") : "belum pernah");
     if(data.source){ $("#src").href = data.source; }
-    render(ALL);
+    // datalist kode emiten unik
+    const codes = [...new Set(ALL.map(a => (a.kode_emiten||"").trim()).filter(Boolean))].sort();
+    $("#codes").innerHTML = codes.map(c => `<option value="${esc(c)}">`).join("");
+    renderChips();
+    render();
   }catch(e){
     $("#meta").textContent = "gagal memuat data";
     $("#empty").hidden = false;
   }
 }
-$("#q").addEventListener("input", applyFilter);
+$("#q").addEventListener("input", render);
+$("#btnSum").addEventListener("click", doSummary);
+$("#code").addEventListener("keydown", e => { if(e.key==="Enter") doSummary(); });
+$("#btnClear").addEventListener("click", () => { $("#summary").innerHTML=""; $("#btnClear").hidden=true; $("#code").value=""; });
 boot();
 </script>
 </body>
