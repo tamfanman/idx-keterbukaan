@@ -11,8 +11,10 @@ Output di-merge dengan data lama supaya riwayat pengumuman tidak hilang.
 """
 
 import json
+import os
 import re
 import sys
+import tempfile
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -25,6 +27,13 @@ from patchright.sync_api import sync_playwright
 KETERBUKAAN_URL = "https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi/"
 # Cocokkan beberapa kemungkinan nama endpoint pengumuman IDX (case-insensitive).
 API_PATTERNS = ["announcement", "pengumuman", "disclosure", "keterbukaan"]
+
+# Kandidat URL API pengumuman untuk dipanggil langsung (variasi nama parameter).
+API_CANDIDATES = [
+    "/primary/ListedCompany/GetAnnouncement?indexFrom=1&pageSize=50&dateFrom=&dateTo=&lang=id&keyword=&emitenType=*",
+    "/primary/ListedCompany/GetAnnouncement?indexFrom=0&pageSize=50&lang=id",
+    "/primary/ListedCompany/GetAnnouncement?pageNumber=1&pageSize=50&lang=id",
+]
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 OUT_FILE = DOCS / "announcements.json"
 RAW_DEBUG = DOCS / "_raw_last_response.json"
@@ -70,15 +79,21 @@ def normalize(raw: dict) -> list[dict]:
 
         def pick(*keys):
             for k in keys:
-                if isinstance(meta, dict) and meta.get(k) not in (None, ""):
-                    return meta[k]
+                if isinstance(meta, dict):
+                    v = meta.get(k)
+                    if isinstance(v, str):
+                        v = v.strip()
+                    if v not in (None, ""):
+                        return v
             return None
 
         records.append({
-            "id": pick("Id", "id", "NoPengumuman", "No_Pengumuman"),
+            # Id selalu 0 di respons IDX; Id2 / NoPengumuman yang unik.
+            "id": pick("Id2", "NoPengumuman", "No_Pengumuman"),
             "kode_emiten": pick("Kode_Emiten", "KodeEmiten", "Emiten"),
-            "judul": pick("JudulPengumuman", "Judul", "Title", "Perihal"),
-            "tanggal": pick("TanggalPengumuman", "Tanggal", "TglPengumuman", "PublishDate"),
+            "judul": pick("JudulPengumuman", "Judul", "Title"),
+            "perihal": pick("PerihalPengumuman", "Perihal"),
+            "tanggal": pick("TglPengumuman", "TanggalPengumuman", "Tanggal", "PublishDate"),
             "jenis": pick("JenisPengumuman", "Kategori", "Category"),
             "attachments": files,
         })
@@ -117,10 +132,15 @@ def capture() -> dict | None:
         #  - headless=False (dijalankan di bawah xvfb pada CI)
         #  - JANGAN override user_agent/viewport (bisa merusak stealth)
         #  - persistent context (profil nyata)
+        profile_dir = str(Path(tempfile.gettempdir()) / "pw-idx-profile")
+        # Headless bikin tanpa jendela popup; headed lebih andal lolos Cloudflare.
+        # Atur lewat env IDX_HEADLESS=1 (default: headed).
+        headless = os.environ.get("IDX_HEADLESS", "0") == "1"
+        print(f"[cfg] headless={headless}")
         context = p.chromium.launch_persistent_context(
-            user_data_dir="/tmp/pw-idx-profile",
+            user_data_dir=profile_dir,
             channel="chrome",
-            headless=False,
+            headless=headless,
             no_viewport=True,
             args=["--no-sandbox", "--disable-blink-features=AutomationControlled"],
         )
@@ -148,9 +168,6 @@ def capture() -> dict | None:
         print(f"[nav] membuka {KETERBUKAAN_URL} ...")
         page.goto(KETERBUKAAN_URL, timeout=NAV_TIMEOUT_MS, wait_until="domcontentloaded")
 
-        # Tunggu challenge Cloudflare selesai: judul akan berubah dari
-        # "Just a moment..." / "Attention Required" jadi judul asli halaman.
-        # Dari IP datacenter, challenge sering butuh waktu lama / klik Turnstile.
         def on_challenge(t):
             return any(m in t for m in ("Just a moment", "Attention Required", "Cloudflare"))
 
@@ -168,42 +185,67 @@ def capture() -> dict | None:
                         except Exception:
                             pass
 
-        cf_deadline = time.time() + 110
-        reloaded = False
-        while time.time() < cf_deadline:
-            try:
-                t = page.title()
-            except Exception:
-                t = ""
-            if not on_challenge(t):
-                print(f"[cf] challenge lewat. judul: {t!r}")
-                break
-            try_click_turnstile()
-            # Reload sekali di tengah kalau masih nyangkut.
-            if not reloaded and time.time() > cf_deadline - 70:
-                print("[cf] masih nyangkut, reload sekali...")
+        def try_api() -> bool:
+            """Panggil API pengumuman langsung dari konteks halaman (same-origin,
+            cookie ikut). Sering berhasil walau challenge visual belum kelar karena
+            cookie __cf_bm dari navigasi awal sudah cukup untuk XHR."""
+            for api in API_CANDIDATES:
                 try:
-                    page.reload(timeout=NAV_TIMEOUT_MS, wait_until="domcontentloaded")
+                    res = page.evaluate(
+                        """async (u) => {
+                            const r = await fetch(u, {headers:{'Accept':'application/json'}, credentials:'include'});
+                            return {status: r.status, body: await r.text()};
+                        }""",
+                        api,
+                    )
+                except Exception as e:
+                    print(f"[api] gagal fetch {api}: {e}")
+                    continue
+                print(f"[api] {res['status']} <- {api}")
+                if res["status"] == 200:
+                    try:
+                        captured["payload"] = json.loads(res["body"])
+                        captured["hit_url"] = api
+                        print(f"[api] JSON OK dari {api}")
+                        return True
+                    except Exception as e:
+                        print(f"[api] 200 tapi bukan JSON ({e}); cuplikan: {res['body'][:160]}")
+                else:
+                    print(f"[api] cuplikan body: {res['body'][:160]}")
+            return False
+
+        # Beri halaman waktu settle sebentar, lalu coba API DULUAN.
+        try:
+            page.wait_for_load_state("networkidle", timeout=8_000)
+        except Exception:
+            pass
+
+        # Kalau API langsung tembus, tak perlu menunggu challenge sama sekali (cepat,
+        # cocok untuk mode headless). Kalau belum, baru coba selesaikan challenge.
+        if not try_api():
+            print("[cf] API belum tembus, coba selesaikan challenge...")
+            cf_deadline = time.time() + 90
+            reloaded = False
+            while time.time() < cf_deadline and captured["payload"] is None:
+                try:
+                    t = page.title()
                 except Exception:
-                    pass
-                reloaded = True
-            page.wait_for_timeout(3000)
-        else:
-            print("[cf] challenge belum lewat setelah 110s (kemungkinan tembok reputasi IP datacenter).")
-
-        # Picu XHR: tunggu jaringan tenang lalu scroll (banyak SPA lazy-load).
-        try:
-            page.wait_for_load_state("networkidle", timeout=15_000)
-        except Exception:
-            pass
-        try:
-            page.mouse.wheel(0, 2000)
-        except Exception:
-            pass
-
-        deadline = time.time() + CAPTURE_WAIT_S
-        while time.time() < deadline and captured["payload"] is None:
-            page.wait_for_timeout(1000)
+                    t = ""
+                if not on_challenge(t):
+                    print(f"[cf] challenge lewat. judul: {t!r}")
+                    if try_api():
+                        break
+                try_click_turnstile()
+                if not reloaded and time.time() > cf_deadline - 55:
+                    print("[cf] masih nyangkut, reload sekali...")
+                    try:
+                        page.reload(timeout=NAV_TIMEOUT_MS, wait_until="domcontentloaded")
+                    except Exception:
+                        pass
+                    reloaded = True
+                page.wait_for_timeout(3000)
+                if captured["payload"] is None:
+                    try_api()
 
         # Selalu simpan artefak diagnosa (berguna baik sukses maupun gagal).
         try:
