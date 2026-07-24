@@ -1,8 +1,609 @@
 {
-  "updated_at": "2026-07-24T11:03:53.924234+00:00",
-  "count": 101,
+  "updated_at": "2026-07-24T12:12:14.580442+00:00",
+  "count": 132,
   "source": "https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi/",
   "announcements": [
+    {
+      "id": "20260724174522-240726/nav/xkms_id-id",
+      "kode_emiten": "XKMS",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T17:45:22",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XKMS_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114822.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/3d98c959c6_dfb3d8a822.pdf"
+        },
+        {
+          "name": "20260724_XKMS_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114822_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/318befcc39_f0511de292.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724174326-No.158/TBS/VII/2026_id-id",
+      "kode_emiten": "TOBA",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "perihal": "Laporan Bulanan Registrasi Pem",
+      "tanggal": "2026-07-24T17:43:26",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260723_TOBA_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32114321.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/3c43c299c7_9cb953d935.pdf"
+        },
+        {
+          "name": "20260723_TOBA_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32114321_lamp3.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/2181b8812f_534893475a.pdf"
+        },
+        {
+          "name": "20260723_TOBA_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32114321_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/5422833cb8_01a9275d00.pdf"
+        },
+        {
+          "name": "20260723_TOBA_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32114321_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/8ab37a095d_e953b4eeb8.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260724174303-S-35/1443/BRI-MI/ITO_id-id",
+      "kode_emiten": "XDIF",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T17:43:03",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114819.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/f510767196_26a82d41a8.pdf"
+        },
+        {
+          "name": "20260724_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114819_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/abcb21d4be_5b578bef79.pdf"
+        },
+        {
+          "name": "20260724_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114819_lamp2.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/f0ad2497ca_5743049c76.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724174221-1448/MAJORIS/VII/2026_id-id",
+      "kode_emiten": "XMIG",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T17:42:21",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XMIG_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114817.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/555ef395bc_f5e0d0609e.pdf"
+        },
+        {
+          "name": "20260724_XMIG_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114817_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/4970022e80_c864383e72.pdf"
+        },
+        {
+          "name": "20260724_XMIG_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114817_lamp2.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/70adcfe7cc_ef1d01e35f.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724174155-1447/MAJORIS/VII/2026_id-id",
+      "kode_emiten": "XMGB",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T17:41:55",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XMGB_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114813.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/cc9db62701_f51b090a80.pdf"
+        },
+        {
+          "name": "20260724_XMGB_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114813_lamp2.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/828dd9010b_300861fcbb.xlsx"
+        },
+        {
+          "name": "20260724_XMGB_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114813_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e8cbcc0654_9f3637af74.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724174109-0429/CSC-NPG/VII/2026_id-id",
+      "kode_emiten": "NPGF",
+      "judul": "Rencana Penyelenggaraan Public Expose - Tahunan (KOREKSI)",
+      "perihal": "Rencana Penyelenggaraan Public",
+      "tanggal": "2026-07-24T17:41:09",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_NPGF_Public Expose_32114811.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/6e6cc8716b_d3ee88642a.pdf"
+        },
+        {
+          "name": "20260724_NPGF_Public Expose_32114811_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/3ca39aa039_9365bbf4ee.pdf"
+        },
+        {
+          "name": "20260724_NPGF_Public Expose_32114811_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/f2b430b501_c05fcdefd7.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724173906-240726/nav/xkid_id-id",
+      "kode_emiten": "XKID",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T17:39:06",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XKID_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114815.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/c945a35cf7_ba05de76a9.pdf"
+        },
+        {
+          "name": "20260724_XKID_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114815_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/41daf68ec3_26dba0992b.xlsx"
+        },
+        {
+          "name": "20260724_XKID_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114815_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/90c7991c11_0f6a780843.xlsx"
+        },
+        {
+          "name": "20260724_XKID_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114815_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/bea2e731ce_8bcc8615c0.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724173110-010./DIR/HMR/VII/2026_id-id",
+      "kode_emiten": "HOME",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek",
+      "perihal": "Laporan Bulanan Registrasi Pem",
+      "tanggal": "2026-07-24T17:31:10",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_HOME_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32114812.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/0749b7ebb8_d4bd6d3b70.pdf"
+        },
+        {
+          "name": "20260724_HOME_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32114812_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e327e52f75_8082c3d39f.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260724172755-133/NAV-XPTD/VII/26_id-id",
+      "kode_emiten": "XPTD",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T17:27:55",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XPTD_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114810.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/c8fd8c472d_0b1908af2f.pdf"
+        },
+        {
+          "name": "20260724_XPTD_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114810_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/6cee442752_56578548bd.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724172025-133/ETFXCEG/24072026_id-id",
+      "kode_emiten": "XCEG",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T17:20:25",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XCEG_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114803.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/6542e4ffaf_6b92d4b555.pdf"
+        },
+        {
+          "name": "20260724_XCEG_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114803_lamp2.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/b653be49a3_a09cebbe90.xlsx"
+        },
+        {
+          "name": "20260724_XCEG_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114803_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e88d391cad_84e094cdc0.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724171606-004424/KU/SUP/50056838/2000/07.2026_id-id",
+      "kode_emiten": "SMGR",
+      "judul": "Rencana Penyampaian Laporan Keuangan Kuartal II 2026 Ditelaah secara terbatas",
+      "perihal": "Rencana Penyampaian Laporan Ke",
+      "tanggal": "2026-07-24T17:16:06",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_SMGR_Rencana Penyampaian Laporan Keuangan_32114620.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/1a422e2679_914cb36e1c.pdf"
+        },
+        {
+          "name": "20260724_SMGR_Rencana Penyampaian Laporan Keuangan_32114620_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/8487c80b82_9e0730d41b.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260724171029-0631/VII/DIR/SMRA/26._id-id",
+      "kode_emiten": "SMRA",
+      "judul": "Laporan Penggunaan Dana Hasil Penawaran Umum (KOREKSI)",
+      "perihal": "Laporan Penggunaan Dana Hasil",
+      "tanggal": "2026-07-24T17:10:29",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260721_SMRA_Laporan Penggunaan Dana Hasil Penawaran Umum_32113843.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/09561f1f5d_2fc5850910.pdf"
+        },
+        {
+          "name": "20260721_SMRA_Laporan Penggunaan Dana Hasil Penawaran Umum_32113843_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e8b7c7d4a8_c1729d7a23.pdf"
+        }
+      ],
+      "kategori": "aksi"
+    },
+    {
+      "id": "20260724171000-0630/VII/DIR/SMRA/26._id-id",
+      "kode_emiten": "SMRA",
+      "judul": "Laporan Penggunaan Dana Hasil Penawaran Umum (KOREKSI)",
+      "perihal": "Laporan Penggunaan Dana Hasil",
+      "tanggal": "2026-07-24T17:10:00",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260721_SMRA_Laporan Penggunaan Dana Hasil Penawaran Umum_32113845.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/c7a3867e63_d293ce9a03.pdf"
+        },
+        {
+          "name": "20260721_SMRA_Laporan Penggunaan Dana Hasil Penawaran Umum_32113845_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/6a205d5cbc_878d335a2e.pdf"
+        }
+      ],
+      "kategori": "aksi"
+    },
+    {
+      "id": "20260724170715-LK/24072026/0015/1_id-id",
+      "kode_emiten": "NSSS",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "perihal": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA - SAMUEL SEKURITAS INDONESIA - Group:-",
+      "tanggal": "2026-07-24T17:07:15",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "LK-24072026-5609-00.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-24072026-5609-00.pdf-0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260724170249-1697/CSE-IRC/2026_id-id",
+      "kode_emiten": "BJBR",
+      "judul": "Penyampaian Materi Public Expose - Tahunan",
+      "perihal": "Penyampaian Materi Public Expo",
+      "tanggal": "2026-07-24T17:02:49",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_BJBR_Public Expose_32114647.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/351f5a9ec2_1a39c1e296.pdf"
+        },
+        {
+          "name": "20260724_BJBR_Public Expose_32114647_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/695926a6c5_7a7e6267ac.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724170241-024/MNCKI/CORSEC/VII/2026_id-id",
+      "kode_emiten": "BCAP",
+      "judul": "Ringkasan Perubahan dan/atau Penyesuaian Anggaran Dasar PT MNC Kapital Indonesia Tbk",
+      "perihal": "Ringkasan Perubahan dan/atau P",
+      "tanggal": "2026-07-24T17:02:41",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_BCAP_Laporan Informasi dan Fakta Material_32114796.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/9bad02970a_f081705ed4.pdf"
+        },
+        {
+          "name": "20260724_BCAP_Laporan Informasi dan Fakta Material_32114796_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/4f60b81c52_75c554a1b6.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724165110-128/A/CORSEC/VII/2026_id-id",
+      "kode_emiten": "BSLT",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-24T16:51:10",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_BSLT_Penyampaian Bukti Iklan_32114794.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/9e363bec37_256c20b073.pdf"
+        },
+        {
+          "name": "20260724_BSLT_Penyampaian Bukti Iklan_32114794_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/2d4b9d8e60_ceb5f9e221.pdf"
+        },
+        {
+          "name": "20260724_BSLT_Penyampaian Bukti Iklan_32114794_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/7f24f17ee8_3ab866ef71.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260724165101-LK/24072026/0014/1_id-id",
+      "kode_emiten": "IMPC",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "perihal": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA - TUNGGAL JAYA INVESTAMA - Group:-",
+      "tanggal": "2026-07-24T16:51:01",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "LK-24072026-9664-00.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-24072026-9664-00.pdf-0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260724165038-LK/24072026/0013/1_id-id",
+      "kode_emiten": "ATIC",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "perihal": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA - ADRIANSYAH ADNAN - Group:-",
+      "tanggal": "2026-07-24T16:50:38",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "LK-24072026-8044-00.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-24072026-8044-00.pdf-0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260724164227-LK/24072026/0012/1_id-id",
+      "kode_emiten": "BKSL",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "perihal": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA - SAMUEL SEKURITAS INDONESIA - Group:-",
+      "tanggal": "2026-07-24T16:42:27",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "LK-24072026-6227-00.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-24072026-6227-00.pdf-0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260724164133-038/GSD-CORSEC/VII/2026._id-id",
+      "kode_emiten": "DOSS",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "perihal": "Laporan Bulanan Registrasi Pem",
+      "tanggal": "2026-07-24T16:41:33",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_DOSS_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32114762.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/0c6f793119_b55be9e064.pdf"
+        },
+        {
+          "name": "20260724_DOSS_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32114762_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/7c0890bde7_62cb13d669.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260724163853-00018/E087/KGI/07/2026_id-id",
+      "kode_emiten": "HD",
+      "judul": "Laporan Jumlah Structured Warrant Beredar",
+      "perihal": "Laporan Jumlah Structured Warr",
+      "tanggal": "2026-07-24T16:38:53",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_HD_Laporan Jumlah Structured Warrant Beredar_32114778.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/50c62cd592_15a0b82455.pdf"
+        },
+        {
+          "name": "20260724_HD_Laporan Jumlah Structured Warrant Beredar_32114778_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/5f207cdde1_30a86825bb.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724163442-SWS/DO/295/KISI-BEI/VII/2026_id-id",
+      "kode_emiten": "BQ",
+      "judul": "Laporan Jumlah Structured Warrant Beredar",
+      "perihal": "Laporan Jumlah Structured Warr",
+      "tanggal": "2026-07-24T16:34:42",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_BQ_Laporan Jumlah Structured Warrant Beredar_32114767.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/4ddfaff333_b38bf91d84.pdf"
+        },
+        {
+          "name": "20260724_BQ_Laporan Jumlah Structured Warrant Beredar_32114767_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/827baeb0a4_a652d44f31.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724163356-Peng-UK-00032/BEI.PLP/07-2026_id-id",
+      "kode_emiten": null,
+      "judul": "Perubahan Efek Bersifat Ekuitas Dalam Pemantauan Khusus",
+      "perihal": "Perubahan Efek Bersifat Ekuita",
+      "tanggal": "2026-07-24T16:33:56",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_Pemantauan Khusus_32114736.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/1360285bd1_3ed7114eb4.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724163328-068/ECD-MSI/VII/2026_id-id",
+      "kode_emiten": "ZP",
+      "judul": "Keterbukaan Informasi terkait Penyesuaian Syarat Ketentuan WT AKRA",
+      "perihal": "Keterbukaan Informasi terkait",
+      "tanggal": "2026-07-24T16:33:28",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_ZP_Keterbukaan Informasi_32114772.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/28521f2dd4_451deeceb3.pdf"
+        },
+        {
+          "name": "20260724_ZP_Keterbukaan Informasi_32114772_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/02cb4408d6_bf8d7b5186.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260724163140-067/ECD-MSI/VII/2026_id-id",
+      "kode_emiten": "ZP",
+      "judul": "Laporan Jumlah Structured Warrant Beredar",
+      "perihal": "Laporan Jumlah Structured Warr",
+      "tanggal": "2026-07-24T16:31:40",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_ZP_Laporan Jumlah Structured Warrant Beredar_32114751.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/51328ffc99_08169c264e.pdf"
+        },
+        {
+          "name": "20260724_ZP_Laporan Jumlah Structured Warrant Beredar_32114751_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/34a6ab9e04_38d099ea87.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724163128-LK/24072026/0011/1_id-id",
+      "kode_emiten": "FILM",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "perihal": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA - SAMUEL SEKURITAS INDONESIA - Group:-",
+      "tanggal": "2026-07-24T16:31:28",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "LK-24072026-5200-00.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-24072026-5200-00.pdf-0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260724163026-113/EQD/RHB/07/2026_id-id",
+      "kode_emiten": "DR",
+      "judul": "Pemberitahuan Tanggal Pelaksanaan Structured Warrant",
+      "perihal": "Pemberitahuan Tanggal Pelaksan",
+      "tanggal": "2026-07-24T16:30:26",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_DR_Pemberitahuan Tanggal Pelaksanaan Structured Warrant_32114593.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/33669bee0b_985c5f0742.pdf"
+        },
+        {
+          "name": "20260724_DR_Pemberitahuan Tanggal Pelaksanaan Structured Warrant_32114593_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/a0885cda75_36942b77df.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724162825-114/EQD/RHB/07/2026_id-id",
+      "kode_emiten": "DR",
+      "judul": "Laporan Jumlah Structured Warrant Beredar",
+      "perihal": "Laporan Jumlah Structured Warr",
+      "tanggal": "2026-07-24T16:28:25",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_DR_Laporan Jumlah Structured Warrant Beredar_32114763.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/fad104b754_d1e52ddae2.pdf"
+        },
+        {
+          "name": "20260724_DR_Laporan Jumlah Structured Warrant Beredar_32114763_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/0c1f75e3a8_3ae676e0c0.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724162708-37/MKTR-IDX/VII/2026_id-id",
+      "kode_emiten": "MKTR",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "perihal": "Laporan Bulanan Registrasi Pem",
+      "tanggal": "2026-07-24T16:27:08",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260723_MKTR_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32114335.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/82c359daa0_f6f04bc0d8.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260724162701-112/EQD/RHB/07/2026_id-id",
+      "kode_emiten": "DR",
+      "judul": "Keterbukaan Informasi terkait Syarat dan Ketentuan Penyesuaian WT AKRA",
+      "perihal": "Keterbukaan Informasi terkait",
+      "tanggal": "2026-07-24T16:27:01",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_DR_Keterbukaan Informasi_32114580.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/72fe31d6ec_58b9783205.pdf"
+        },
+        {
+          "name": "20260724_DR_Keterbukaan Informasi_32114580_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/6aa1dac48b_c7aa747dfe.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
     {
       "id": "20260724162315-137/MKNT-OJK/VII/2026_id-id",
       "kode_emiten": "MKNT",
@@ -206,9 +807,9 @@
           "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/d5844fb116_3b4bbe5de4.pdf"
         }
       ],
-      "kategori": "lap",
       "summary": "PT Lancartama Sejati Tbk. (TAMA) berencana menyampaikan Laporan Keuangan Kuartal II untuk tahun buku 2026 yang telah ditelaah secara terbatas oleh Akuntan Publik. Penyampaian laporan ini dilakukan untuk memenuhi kewajiban berdasarkan Peraturan Bursa No. I-E tentang Kewajiban Penyampaian Informasi.",
-      "summary_status": "ok"
+      "summary_status": "ok",
+      "kategori": "lap"
     },
     {
       "id": "20260724152908-SWS/KI/296/KISI-BEI/VII/2026_id-id",
@@ -227,9 +828,9 @@
           "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/315ac470c9_fff2668ee5.pdf"
         }
       ],
-      "kategori": "lap",
       "summary": "PT Korea Investment and Sekuritas Indonesia (BQ) mengumumkan penyesuaian syarat dan ketentuan untuk waran terstruktur dengan kode AKRABQCU6A dan AKRABQCZ6A. Pengumuman ini turut memuat lampiran terkait syarat dan ketentuan dividen interim AKRA yang relevan bagi investor.",
-      "summary_status": "ok"
+      "summary_status": "ok",
+      "kategori": "lap"
     },
     {
       "id": "20260724152641-031/RPI-CS/VII/2026_id-id",
@@ -248,9 +849,9 @@
           "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/1b0bdfa785_85e7887d53.pdf"
         }
       ],
-      "kategori": "lap",
       "summary": "PT Red Planet Indonesia Tbk (PSKT) menyampaikan bukti iklan pengumuman Laporan Keuangan Interim Q2 2026 yang telah dipublikasikan melalui situs web resminya pada 24 Juli 2026. Penyampaian dokumen ini merupakan bentuk keterbukaan informasi emiten agar dapat diketahui oleh para pemangku kepentingan dan investor.",
-      "summary_status": "ok"
+      "summary_status": "ok",
+      "kategori": "lap"
     },
     {
       "id": "20260724152446-044/MPRO/IDX/OJK/VII/2026_id-id",
@@ -338,9 +939,9 @@
           "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/bd7e01555c_1f7bfd3cc4.pdf"
         }
       ],
-      "kategori": "lap",
       "summary": "PT Indo Oil Perkasa Tbk (OILS) berencana menyampaikan Laporan Keuangan Kuartal II Tahun Buku 2026 yang telah ditelaah secara terbatas oleh Akuntan Publik. Penyampaian informasi ini dilakukan sebagai bentuk kepatuhan perusahaan terhadap Peraturan Bursa No. I-E mengenai Kewajiban Penyampaian Informasi.",
-      "summary_status": "ok"
+      "summary_status": "ok",
+      "kategori": "lap"
     },
     {
       "id": "20260724152209-035/SK/IOP/VII/2026_id-id",
