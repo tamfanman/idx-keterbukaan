@@ -1438,7 +1438,9 @@
           "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/4caa6fbd99_ddc0e6f76e.pdf"
         }
       ],
-      "kategori": "aksi"
+      "kategori": "aksi",
+      "summary": "PT Millennium Pharmacon International Tbk (SDPC) menyampaikan bukti iklan pemanggilan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) yang diterbitkan pada 23 Juli 2026. Pengumuman tersebut dipublikasikan melalui situs web Bursa Efek Indonesia, penyedia e-RUPS PT KSEI (eASY.KSEI), serta situs web resmi perseroan. Bagi investor, informasi ini menjadi acuan resmi untuk mengetahui jadwal dan akses pelaksanaan RUPSLB perusahaan.",
+      "summary_status": "ok"
     },
     {
       "id": "20260723185111-1549/CSD/CMPO/VII/2026_id-id",
@@ -1957,7 +1959,9 @@
           "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/7fffa19406_129381282d.pdf"
         }
       ],
-      "kategori": "aksi"
+      "kategori": "aksi",
+      "summary": "PT Millennium Pharmacon International Tbk (SDPC) mengumumkan penyelenggaraan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) yang akan dilaksanakan pada 14 Agustus 2026 di Jakarta. Agenda rapat meliputi pembahasan perubahan tempat kedudukan perseroan serta persetujuan pengangkatan kembali atau perubahan susunan Direksi dan Dewan Komisaris. Bagi investor, informasi ini penting untuk memantau perubahan manajemen dan arah operasional perusahaan ke depan.",
+      "summary_status": "ok"
     },
     {
       "id": "20260723173124-132/ETFXCEG/23072026_id-id",
@@ -2045,6 +2049,15 @@
       ],
       "doc_count": 1,
       "updated_at": "2026-07-24T11:04:56.000842+00:00"
+    },
+    "SDPC": {
+      "summary": "PT Millennium Pharmacon International Tbk (SDPC) telah mengumumkan pemanggilan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) yang dijadwalkan berlangsung pada 14 Agustus 2026 di Jakarta, dengan bukti iklan yang resmi disampaikan pada 23 Juli 2026 melalui berbagai platform seperti situs BEI, eASY.KSEI, dan situs web perseroan. Agenda utama dalam RUPSLB tersebut meliputi pembahasan mengenai perubahan tempat kedudukan perseroan serta persetujuan atas pengangkatan kembali atau perubahan susunan anggota Direksi dan Dewan Komisaris. Bagi para investor, keterbukaan informasi ini menjadi acuan penting untuk memantau jadwal pelaksanaan rapat serta mengantisipasi potensi perubahan dalam struktur manajemen dan arah operasional perusahaan ke depan.",
+      "based_on": [
+        "20260723173207-456/MPI/DIR/VII/2026_id-id",
+        "20260723185732-456./MPI/DIR/VII/2026_id-id"
+      ],
+      "doc_count": 2,
+      "updated_at": "2026-07-24T11:52:53.011800+00:00"
     }
   }
 }
