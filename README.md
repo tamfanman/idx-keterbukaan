@@ -1,51 +1,67 @@
 # Keterbukaan Informasi BEI — Auto Update (Gratis)
 
-Platform yang menarik data **Keterbukaan Informasi** dari [IDX/BEI](https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi/)
-secara otomatis **setiap 2 jam**, lalu menampilkannya di halaman web.
+Menarik data **Keterbukaan Informasi** dari [IDX/BEI](https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi/)
+otomatis **tiap 2 jam (07:00–21:00 WIB)** dan menampilkannya di web. **100% gratis.**
 
-**100% gratis** — jalan di GitHub Actions (scheduler + scraper) dan GitHub Pages (frontend). Tanpa server, tanpa biaya.
+🌐 **Situs:** https://tamfanman.github.io/idx-keterbukaan/
 
-## Kenapa pakai Playwright (bukan requests biasa)?
-Situs IDX dilindungi **Cloudflare Bot Management**. HTTP request biasa selalu kena `403 Forbidden`.
-Playwright menjalankan browser Chromium sungguhan sehingga lolos challenge Cloudflare, lalu
-menangkap response API `GetAnnouncement` yang di-fetch oleh halaman itu sendiri.
+## Arsitektur
 
-## Struktur
+Situs IDX dilindungi **Cloudflare Bot Management** yang **memblokir semua IP datacenter**
+(GitHub Actions, cloud gratis, dll). Jadi bagian pengambilan data **harus jalan dari IP
+residensial** — yaitu komputer ini. Frontend tetap gratis 24/7 di GitHub Pages.
+
 ```
-.github/workflows/fetch.yml   # scheduler cron tiap 2 jam + commit hasil
-fetcher/scrape.py             # scraper Playwright (capture response API IDX)
-fetcher/requirements.txt      # dependency Python
-docs/index.html               # frontend (GitHub Pages)
-docs/announcements.json       # hasil data (di-commit tiap run)
+PC ini (Task Scheduler, tiap 2 jam, 07-21 WIB)
+   └─ run_local.ps1
+        ├─ git pull
+        ├─ python fetcher/scrape.py   → patchright + Chrome (headed, jendela di luar layar)
+        │                               lolos Cloudflare → panggil API GetAnnouncement
+        │                               → docs/announcements.json
+        └─ git commit + push → GitHub
+GitHub Pages (docs/) → tampilkan data 24/7  (GRATIS, selalu online)
 ```
 
-## Cara setup (sekali saja)
+## File
+```
+fetcher/scrape.py        # scraper: patchright, lolos Cloudflare, ambil + normalisasi data
+fetcher/requirements.txt # dependency (patchright)
+run_local.ps1            # dipanggil Task Scheduler: pull → scrape → commit → push
+docs/index.html          # frontend (GitHub Pages): daftar pengumuman + cari + link PDF
+docs/announcements.json  # data (di-commit tiap update)
+run.log                  # log tiap run (tidak di-commit)
+```
 
-1. **Buat repo GitHub** (boleh private atau public) lalu push isi folder ini:
-   ```bash
-   git init
-   git add .
-   git commit -m "init: platform keterbukaan informasi BEI"
-   git branch -M main
-   git remote add origin https://github.com/<username>/<repo>.git
-   git push -u origin main
-   ```
+## Cara kerja & perawatan
 
-2. **Aktifkan GitHub Pages**: Settings → Pages → Source = `Deploy from a branch`,
-   Branch = `main`, Folder = `/docs`. Simpan. URL situs muncul di situ.
+- **Jadwal**: Windows Task Scheduler, task **"IDX Keterbukaan Informasi"**, tiap 2 jam
+  antara 07:00–21:00. Jalan hanya saat user login. Kalau PC mati, siklus terlewat &
+  lanjut saat nyala lagi.
+- **Mode browser**: headed dengan jendela ditaruh di luar layar (`--window-position=-2400,-2400`)
+  supaya andal lolos Cloudflare tapi tidak mengganggu. Set env `IDX_HEADLESS=1` untuk debug
+  headless (kurang andal).
+- **Endpoint data**: `www.idx.co.id/primary/ListedCompany/GetAnnouncement` (JSON).
+  Field unik = `Id2` (bukan `Id` yang selalu 0).
 
-3. **Tes scraper**: tab **Actions** → workflow *Fetch Keterbukaan Informasi IDX* →
-   **Run workflow**. Tunggu selesai, lihat log.
-   - ✅ Kalau hijau & `docs/announcements.json` terisi → berhasil.
-   - ⚠️ Kalau gagal capture, cek artifact/commit `docs/_raw_last_response.json`
-     dan screenshot debug untuk lihat struktur asli / blokir Cloudflare.
+### Perintah berguna (PowerShell)
+```powershell
+# Jalankan manual sekarang
+schtasks /Run /TN "IDX Keterbukaan Informasi"
 
-4. Setelah itu berjalan **otomatis tiap 2 jam**. Tidak perlu diapa-apakan lagi.
+# Lihat status / next run
+schtasks /Query /TN "IDX Keterbukaan Informasi" /FO LIST
+
+# Lihat log terakhir
+Get-Content run.log -Tail 20
+
+# Nonaktifkan / aktifkan
+schtasks /Change /TN "IDX Keterbukaan Informasi" /DISABLE
+schtasks /Change /TN "IDX Keterbukaan Informasi" /ENABLE
+
+# Jalankan scraper langsung (tanpa commit)
+& "$env:LOCALAPPDATA\Programs\Python\Python312\python.exe" fetcher/scrape.py
+```
 
 ## Catatan
-- Cron GitHub Actions kadang telat beberapa menit saat runner sibuk — wajar.
-- Repo **private yang idle 60 hari** akan menonaktifkan scheduled workflow; karena ini
-  jalan tiap 2 jam, tidak akan kena.
-- File pertama `docs/_raw_last_response.json` sangat berguna untuk memverifikasi/menyesuaikan
-  parsing di `fetcher/scrape.py` bila struktur field IDX berbeda dari perkiraan.
-- Patuhi Terms of Use IDX. Frekuensi 2 jam tergolong wajar untuk pemakaian pribadi/internal.
+- Prasyarat (sudah terpasang): Python 3.12, `pip install patchright`, `patchright install chrome`, Git, gh (login).
+- Patuhi Terms of Use IDX; frekuensi 2 jam pada jam kerja tergolong wajar untuk pemakaian pribadi.
