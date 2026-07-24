@@ -22,6 +22,8 @@
   h1 { font-size: 20px; margin:0; }
   .meta { color:var(--muted); font-size:13px; }
   a { color: var(--accent); }
+  .topbar { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:12px 0 4px; }
+  button:disabled { opacity:.6; cursor:progress; }
 
   .bar { display:flex; gap:10px; flex-wrap:wrap; margin:18px 0 10px; }
   input[type=search], input.code { background:var(--card); border:1px solid var(--line);
@@ -74,7 +76,11 @@
     <h1>Keterbukaan Informasi BEI</h1>
     <span class="meta" id="meta">memuat…</span>
   </header>
-  <p class="meta">Data otomatis dari IDX tiap 2 jam. Sumber:
+  <div class="topbar">
+    <button class="btn" id="btnRefresh" hidden>🔄 Refresh data</button>
+    <span class="meta" id="mode"></span>
+  </div>
+  <p class="meta">Sumber:
     <a id="src" href="#" target="_blank" rel="noopener">idx.co.id</a></p>
 
   <!-- Ringkasan per perusahaan -->
@@ -107,6 +113,7 @@ const $ = s => document.querySelector(s);
 let ALL = [];
 let COMPANY = {};   // ringkasan level-perusahaan (data.company_summaries)
 let activeCat = "all";
+let LOCAL = false;  // true bila ada backend lokal (tombol Refresh/Ringkas aktif)
 
 function esc(s){ return (s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 
@@ -151,9 +158,9 @@ function badge(cat){
 function summaryHTML(a){
   if (a.summary) return `<div class="sum"><span class="tag">🧠 RINGKASAN</span>${esc(a.summary)}</div>`;
   if (a.summary_status === "scan") return `<div class="sum scan">📄 Dokumen berupa scan/gambar — tidak bisa diringkas otomatis.</div>`;
-  if (a._cat === "aksi" || a._cat === "lap")
-    return `<div class="sum pending">⏳ Ringkasan sedang diproses (muncul dalam beberapa siklus).</div>`;
-  return "";   // spam / notsure: tidak diringkas
+  if (a._cat === "aksi")
+    return `<div class="sum pending">⏳ Ringkasan dibuat saat kamu klik "Ringkas" perusahaan ini.</div>`;
+  return "";   // hanya Aksi Korporasi yang diringkas
 }
 
 // ---- Render daftar ----
@@ -208,8 +215,8 @@ function renderChips(){
     b.addEventListener("click", () => { activeCat = b.dataset.cat; renderChips(); render(); }));
 }
 
-// ---- Ringkasan per perusahaan (gratis, dihitung di browser) ----
-function doSummary(){
+// ---- Tampilkan ringkasan perusahaan (dari data yang sudah ada) ----
+function renderSummary(){
   const code = $("#code").value.trim().toUpperCase();
   const box = $("#summary");
   if(!code){ box.innerHTML = `<p class="meta">Masukkan kode emiten dulu.</p>`; return; }
@@ -240,10 +247,10 @@ function doSummary(){
   const comp = COMPANY[code];
   const compHTML = (comp && comp.summary)
     ? `<div class="sum" style="margin:10px 0"><span class="tag">🧠 RINGKASAN PERUSAHAAN</span>${esc(comp.summary)}
-         <div style="color:var(--muted); font-size:12px; margin-top:6px">Merangkum ${comp.doc_count||0} pengumuman penting (Aksi Korporasi & Laporan/Perjanjian).</div></div>`
-    : ((cnt.aksi + cnt.lap) > 0
-        ? `<div class="sum pending" style="margin:10px 0">⏳ Ringkasan perusahaan sedang diproses (muncul dalam beberapa siklus).</div>`
-        : `<p class="meta" style="margin:8px 0">Tidak ada pengumuman Aksi Korporasi / Laporan & Perjanjian untuk diringkas.</p>`);
+         <div style="color:var(--muted); font-size:12px; margin-top:6px">Merangkum ${comp.doc_count||0} pengumuman Aksi Korporasi.</div></div>`
+    : (cnt.aksi > 0
+        ? `<div class="sum pending" style="margin:10px 0">⏳ Klik <b>Ringkas</b> untuk membuat rangkuman Aksi Korporasi emiten ini.</div>`
+        : `<p class="meta" style="margin:8px 0">Tidak ada pengumuman Aksi Korporasi untuk diringkas.</p>`);
 
   box.innerHTML = `
     <div style="border-top:1px solid var(--line); margin-top:12px; padding-top:12px">
@@ -261,28 +268,74 @@ function doSummary(){
     </div>`;
 }
 
+// ---- Muat data dari announcements.json ----
+async function loadData(){
+  const r = await fetch("./announcements.json?_=" + Date.now());
+  const data = await r.json();
+  ALL = (data.announcements || []).map(a => ({...a, _cat: classify(a)}));
+  COMPANY = data.company_summaries || {};
+  $("#meta").textContent = `${ALL.length} pengumuman • update: ` +
+    (data.updated_at ? new Date(data.updated_at).toLocaleString("id-ID") : "belum pernah");
+  if(data.source){ $("#src").href = data.source; }
+  const codes = [...new Set(ALL.map(a => (a.kode_emiten||"").trim()).filter(Boolean))].sort();
+  $("#codes").innerHTML = codes.map(c => `<option value="${esc(c)}">`).join("");
+  renderChips();
+  render();
+}
+
+// ---- Tombol Ringkas: app lokal -> generate on-demand; publik -> tampilkan tersimpan ----
+async function doSummary(){
+  const code = $("#code").value.trim().toUpperCase();
+  const box = $("#summary");
+  $("#btnClear").hidden = false;
+  if(!code){ box.innerHTML = `<p class="meta">Masukkan kode emiten dulu.</p>`; return; }
+  if(!LOCAL){ renderSummary(); return; }
+  const btn = $("#btnSum"); btn.disabled = true; const t0 = btn.textContent; btn.textContent = "⏳ Meringkas…";
+  box.innerHTML = `<p class="meta">⏳ Mengunduh PDF & meringkas <b>${esc(code)}</b> … (bisa 10–30 detik untuk pertama kali)</p>`;
+  try{
+    const r = await fetch("/api/summarize", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({code})});
+    const j = await r.json();
+    if(!j.ok) throw new Error(j.error||"gagal");
+    await loadData();
+    renderSummary();
+  }catch(e){
+    box.innerHTML = `<p class="meta">Gagal meringkas: ${esc(e.message)}</p>`;
+  }finally{
+    btn.disabled = false; btn.textContent = t0;
+  }
+}
+
+// ---- Tombol Refresh: scrape data terbaru (hanya app lokal) ----
+async function doRefresh(){
+  const btn = $("#btnRefresh"); btn.disabled = true; const t0 = btn.textContent; btn.textContent = "⏳ Mengambil data…";
+  $("#mode").textContent = "⏳ Mengambil data terbaru dari IDX…";
+  try{
+    const r = await fetch("/api/refresh", {method:"POST"});
+    const j = await r.json();
+    if(!j.ok) throw new Error(j.error||"gagal");
+    await loadData();
+    $("#mode").textContent = `✅ Data diperbarui (+${j.added} baru, total ${j.total})`;
+  }catch(e){
+    $("#mode").textContent = `Gagal refresh: ${e.message}`;
+  }finally{
+    btn.disabled = false; btn.textContent = t0;
+  }
+}
+
 // ---- Boot ----
 async function boot(){
-  try{
-    const r = await fetch("./announcements.json?_=" + Date.now());
-    const data = await r.json();
-    ALL = (data.announcements || []).map(a => ({...a, _cat: classify(a)}));
-    COMPANY = data.company_summaries || {};
-    $("#meta").textContent = `${ALL.length} pengumuman • update: ` +
-      (data.updated_at ? new Date(data.updated_at).toLocaleString("id-ID") : "belum pernah");
-    if(data.source){ $("#src").href = data.source; }
-    // datalist kode emiten unik
-    const codes = [...new Set(ALL.map(a => (a.kode_emiten||"").trim()).filter(Boolean))].sort();
-    $("#codes").innerHTML = codes.map(c => `<option value="${esc(c)}">`).join("");
-    renderChips();
-    render();
-  }catch(e){
-    $("#meta").textContent = "gagal memuat data";
-    $("#empty").hidden = false;
-  }
+  try{ LOCAL = (await fetch("/api/health", {cache:"no-store"})).ok; }
+  catch(e){ LOCAL = false; }
+  $("#btnRefresh").hidden = !LOCAL;
+  $("#mode").textContent = LOCAL
+    ? "🟢 App lokal — tombol Refresh & Ringkas aktif"
+    : "👁️ Mode lihat (situs publik). Buka app lokal di PC untuk Refresh & Ringkas.";
+  try{ await loadData(); }
+  catch(e){ $("#meta").textContent = "gagal memuat data"; $("#empty").hidden = false; }
 }
 $("#q").addEventListener("input", render);
 $("#btnSum").addEventListener("click", doSummary);
+$("#btnRefresh").addEventListener("click", doRefresh);
 $("#code").addEventListener("keydown", e => { if(e.key==="Enter") doSummary(); });
 $("#btnClear").addEventListener("click", () => { $("#summary").innerHTML=""; $("#btnClear").hidden=true; $("#code").value=""; });
 boot();

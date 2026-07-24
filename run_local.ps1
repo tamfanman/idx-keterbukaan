@@ -1,5 +1,6 @@
-# Runner lokal: ambil keterbukaan informasi IDX -> commit -> push ke GitHub.
-# Dipanggil otomatis oleh Windows Task Scheduler tiap 2 jam (jam kerja).
+# Backup pagi: scrape keterbukaan informasi IDX -> commit -> push ke GitHub.
+# Dipanggil Task Scheduler 1x tiap pagi (07:00 WIB) sebagai jaring pengaman.
+# Ringkasan TIDAK dibuat di sini (on-demand via app lokal / tombol Ringkas).
 # Jalan di IP residensial supaya lolos Cloudflare.
 
 # Catatan: git menulis info ke stderr (bukan error). Jadi JANGAN pakai
@@ -29,14 +30,9 @@ Log "=== mulai ==="
 & git pull --quiet --rebase --autostash origin main 2>&1 | Out-Null
 Log "pull selesai (exit $LASTEXITCODE)"
 
-# Jalankan scraper.
+# Jalankan scraper saja (ringkasan on-demand, bukan di sini).
 & $py "fetcher/scrape.py" 2>&1 | ForEach-Object { Log "  $_" }
 if ($LASTEXITCODE -ne 0) { Log "scraper gagal (exit $LASTEXITCODE)"; exit 1 }
-
-# Ringkas dokumen baru (Gemini). Kalau gagal (mis. kuota harian habis), JANGAN
-# gagalkan seluruh run -- data pengumuman tetap di-commit, ringkasan menyusul nanti.
-& $py "fetcher/summarize.py" 2>&1 | ForEach-Object { Log "  $_" }
-if ($LASTEXITCODE -ne 0) { Log "summarize gagal (exit $LASTEXITCODE) - dilanjut tanpa ringkasan baru" }
 
 # Commit hanya bila data berubah.
 $changed = & git status --porcelain docs/announcements.json

@@ -278,12 +278,13 @@ def capture() -> dict | None:
     return captured["payload"]
 
 
-def main() -> int:
+def run() -> dict:
+    """Scrape sekali: ambil data terbaru, merge, klasifikasi, simpan. Dipakai
+    oleh CLI (main) maupun server lokal (tombol Refresh)."""
     payload = capture()
     if payload is None:
-        print("[error] Tidak ada response GetAnnouncement tertangkap. "
-              "Cek screenshot debug; mungkin struktur halaman berubah.")
-        return 1
+        raise RuntimeError("Tidak ada response GetAnnouncement tertangkap "
+                           "(mungkin diblok Cloudflare atau struktur halaman berubah).")
 
     # Simpan raw untuk inspeksi struktur asli (sekali jalan pertama sangat berguna).
     RAW_DEBUG.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -334,7 +335,16 @@ def main() -> int:
     }
     OUT_FILE.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"[done] +{added} baru, total {len(merged)} -> {OUT_FILE}")
-    return 0
+    return {"added": added, "total": len(merged)}
+
+
+def main() -> int:
+    try:
+        run()
+        return 0
+    except Exception as e:
+        print(f"[error] {e}")
+        return 1
 
 
 if __name__ == "__main__":
