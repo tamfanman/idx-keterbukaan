@@ -265,7 +265,9 @@
           "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e8b7c7d4a8_c1729d7a23.pdf"
         }
       ],
-      "kategori": "aksi"
+      "kategori": "aksi",
+      "summary": "PT Summarecon Agung Tbk (SMRA) menyampaikan koreksi laporan penggunaan dana hasil Penawaran Umum Obligasi Berkelanjutan V Summarecon Agung Tahap I Tahun 2025 dengan hasil bersih sebesar Rp340,51. Dari total dana tersebut, realisasi penggunaannya telah mencapai Rp323,08 miliar untuk penyertaan modal anak usaha guna pembelian lahan serta modal kerja operasional. Saat ini, sisa dana sebesar Rp17,43 miliar ditempatkan dalam bentuk giro di Bank Permata dengan tingkat bunga 4,75%.",
+      "summary_status": "ok"
     },
     {
       "id": "20260724171000-0630/VII/DIR/SMRA/26._id-id",
@@ -284,7 +286,9 @@
           "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/6a205d5cbc_878d335a2e.pdf"
         }
       ],
-      "kategori": "aksi"
+      "kategori": "aksi",
+      "summary": "PT Summarecon Agung Tbk (SMRA) menyampaikan koreksi laporan penggunaan dana hasil Penawaran Umum Obligasi Berkelanjutan IV Summarecon Agung Tahap III Tahun 2024 dengan hasil bersih sebesar Rp1.292.869.000.000. Dana tersebut telah direalisasikan sepenuhnya (sisa dana Rp0), dengan alokasi utama untuk peningkatan penyertaan modal pada SMPD sebesar 46,5%, modal kerja operasional dan pembangunan di Summarecon Kelapa Gading serta Bekasi sebesar 38%, dan pembayaran pokok obligasi jatuh tempo sebesar 15,5%. Informasi ini penting bagi investor untuk memantau transparansi penggunaan dana emisi obligasi perusahaan secara akurat.",
+      "summary_status": "ok"
     },
     {
       "id": "20260724170715-LK/24072026/0015/1_id-id",
@@ -2659,6 +2663,15 @@
       ],
       "doc_count": 2,
       "updated_at": "2026-07-24T11:52:53.011800+00:00"
+    },
+    "SMRA": {
+      "summary": "PT Summarecon Agung Tbk (SMRA) telah menyampaikan koreksi laporan transparansi penggunaan dana dari dua instrumen obligasi berkelanjutan. Dari hasil bersih penawaran Obligasi Berkelanjutan V Tahap I 2025 sebesar Rp340,51 miliar, sebagian besar telah direalisasikan untuk penyertaan modal anak usaha dan modal kerja, menyisakan Rp17,43 miliar di rekening giro. Sementara itu, dana dari Obligasi Berkelanjutan IV Tahap III 2024 senilai Rp1,29 triliun telah terserap sepenuhnya untuk penyertaan modal, pembangunan proyek, operasional, serta pelunasan pokok obligasi yang jatuh tempo. Seluruh keterbukaan ini memberikan kejelasan bagi investor dalam memantau akuntabilitas, efisiensi alokasi modal, dan sisa likuiditas dari hasil emisi obligasi perusahaan.",
+      "based_on": [
+        "20260724171000-0630/VII/DIR/SMRA/26._id-id",
+        "20260724171029-0631/VII/DIR/SMRA/26._id-id"
+      ],
+      "doc_count": 2,
+      "updated_at": "2026-07-24T12:13:39.540162+00:00"
     }
   }
 }
