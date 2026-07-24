@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Keterbukaan Informasi BEI — Auto Update</title>
+<style>
+  :root {
+    --bg: #0f1115; --card: #171a21; --line: #262b36; --fg: #e6e9ef;
+    --muted: #9aa4b2; --accent: #4f9cff; --chip: #1e2530;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#f5f7fa; --card:#fff; --line:#e3e8ef; --fg:#1a1f2b; --muted:#5b6472; --accent:#1a6dff; --chip:#eef2f7; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+    font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { display:flex; flex-wrap:wrap; align-items:baseline; gap:12px; margin-bottom:4px; }
+  h1 { font-size: 20px; margin:0; }
+  .meta { color:var(--muted); font-size:13px; }
+  .bar { display:flex; gap:10px; flex-wrap:wrap; margin:18px 0; }
+  input[type=search] { flex:1; min-width:200px; background:var(--card); border:1px solid var(--line);
+    color:var(--fg); padding:10px 12px; border-radius:10px; font-size:14px; }
+  .list { display:flex; flex-direction:column; gap:10px; }
+  .item { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
+  .row1 { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:4px; }
+  .kode { font-weight:700; color:var(--accent); }
+  .chip { background:var(--chip); color:var(--muted); font-size:12px; padding:2px 8px; border-radius:999px; }
+  .judul { font-weight:500; }
+  .date { color:var(--muted); font-size:13px; margin-top:2px; }
+  .files { margin-top:8px; display:flex; flex-wrap:wrap; gap:8px; }
+  .files a { font-size:13px; color:var(--accent); text-decoration:none; border:1px solid var(--line);
+    padding:4px 10px; border-radius:8px; }
+  .files a:hover { border-color:var(--accent); }
+  .empty { color:var(--muted); text-align:center; padding:48px 0; }
+  footer { margin-top:32px; color:var(--muted); font-size:12px; text-align:center; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Keterbukaan Informasi BEI</h1>
+    <span class="meta" id="meta">memuat…</span>
+  </header>
+  <p class="meta">Data diambil otomatis dari IDX tiap 2 jam. Sumber:
+    <a id="src" href="#" target="_blank" rel="noopener">idx.co.id</a></p>
+
+  <div class="bar">
+    <input type="search" id="q" placeholder="Cari kode emiten / judul…" autocomplete="off" />
+  </div>
+
+  <div class="list" id="list"></div>
+  <div class="empty" id="empty" hidden>Belum ada data. Jalankan workflow "Run workflow" di GitHub Actions untuk mengisi.</div>
+
+  <footer>Auto-generated • GitHub Actions + GitHub Pages</footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+let ALL = [];
+
+function esc(s){ return (s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+
+function render(items){
+  const list = $("#list"), empty = $("#empty");
+  list.innerHTML = "";
+  if(!items.length){ empty.hidden = false; return; }
+  empty.hidden = true;
+  for(const a of items){
+    const files = (a.attachments||[]).map(f =>
+      `<a href="${esc(f.url)}" target="_blank" rel="noopener">📄 ${esc(f.name||"lampiran")}</a>`).join("");
+    list.insertAdjacentHTML("beforeend", `
+      <div class="item">
+        <div class="row1">
+          <span class="kode">${esc(a.kode_emiten||"—")}</span>
+          ${a.jenis?`<span class="chip">${esc(a.jenis)}</span>`:""}
+        </div>
+        <div class="judul">${esc(a.judul||"(tanpa judul)")}</div>
+        <div class="date">${esc(a.tanggal||"")}</div>
+        ${files?`<div class="files">${files}</div>`:""}
+      </div>`);
+  }
+}
+
+function applyFilter(){
+  const q = $("#q").value.trim().toLowerCase();
+  if(!q){ render(ALL); return; }
+  render(ALL.filter(a =>
+    (a.kode_emiten||"").toLowerCase().includes(q) ||
+    (a.judul||"").toLowerCase().includes(q)));
+}
+
+async function boot(){
+  try{
+    const r = await fetch("./announcements.json?_=" + Date.now());
+    const data = await r.json();
+    ALL = data.announcements || [];
+    $("#meta").textContent = `${data.count||ALL.length} pengumuman • update: ` +
+      (data.updated_at ? new Date(data.updated_at).toLocaleString("id-ID") : "belum pernah");
+    if(data.source){ $("#src").href = data.source; }
+    render(ALL);
+  }catch(e){
+    $("#meta").textContent = "gagal memuat data";
+    $("#empty").hidden = false;
+  }
+}
+$("#q").addEventListener("input", applyFilter);
+boot();
+</script>
+</body>
+</html>
