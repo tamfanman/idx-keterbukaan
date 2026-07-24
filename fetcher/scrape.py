@@ -150,18 +150,46 @@ def capture() -> dict | None:
 
         # Tunggu challenge Cloudflare selesai: judul akan berubah dari
         # "Just a moment..." / "Attention Required" jadi judul asli halaman.
-        cf_deadline = time.time() + 45
+        # Dari IP datacenter, challenge sering butuh waktu lama / klik Turnstile.
+        def on_challenge(t):
+            return any(m in t for m in ("Just a moment", "Attention Required", "Cloudflare"))
+
+        def try_click_turnstile():
+            # Turnstile ada di dalam iframe; coba klik checkbox-nya bila muncul.
+            for fr in page.frames:
+                if "challenges.cloudflare.com" in (fr.url or ""):
+                    for sel in ("input[type=checkbox]", "label", "body"):
+                        try:
+                            el = fr.query_selector(sel)
+                            if el:
+                                el.click(timeout=2000)
+                                print(f"[cf] klik Turnstile ({sel})")
+                                return
+                        except Exception:
+                            pass
+
+        cf_deadline = time.time() + 110
+        reloaded = False
         while time.time() < cf_deadline:
             try:
                 t = page.title()
             except Exception:
                 t = ""
-            if not any(m in t for m in ("Just a moment", "Attention Required", "Cloudflare")):
+            if not on_challenge(t):
                 print(f"[cf] challenge lewat. judul: {t!r}")
                 break
-            page.wait_for_timeout(2000)
+            try_click_turnstile()
+            # Reload sekali di tengah kalau masih nyangkut.
+            if not reloaded and time.time() > cf_deadline - 70:
+                print("[cf] masih nyangkut, reload sekali...")
+                try:
+                    page.reload(timeout=NAV_TIMEOUT_MS, wait_until="domcontentloaded")
+                except Exception:
+                    pass
+                reloaded = True
+            page.wait_for_timeout(3000)
         else:
-            print("[cf] challenge belum lewat setelah 45s (mungkin masih diblokir).")
+            print("[cf] challenge belum lewat setelah 110s (kemungkinan tembok reputasi IP datacenter).")
 
         # Picu XHR: tunggu jaringan tenang lalu scroll (banyak SPA lazy-load).
         try:
