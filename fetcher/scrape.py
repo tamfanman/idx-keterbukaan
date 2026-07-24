@@ -133,16 +133,20 @@ def capture() -> dict | None:
         #  - JANGAN override user_agent/viewport (bisa merusak stealth)
         #  - persistent context (profil nyata)
         profile_dir = str(Path(tempfile.gettempdir()) / "pw-idx-profile")
-        # Headless bikin tanpa jendela popup; headed lebih andal lolos Cloudflare.
-        # Atur lewat env IDX_HEADLESS=1 (default: headed).
+        # Headed jauh lebih andal lolos Cloudflare daripada headless. Supaya tidak
+        # mengganggu, jendela ditaruh JAUH di luar layar (praktis tak terlihat).
+        # IDX_HEADLESS=1 memaksa headless (kurang andal; hanya untuk debug).
         headless = os.environ.get("IDX_HEADLESS", "0") == "1"
         print(f"[cfg] headless={headless}")
+        args = ["--no-sandbox", "--disable-blink-features=AutomationControlled"]
+        if not headless:
+            args += ["--window-position=-32000,-32000", "--window-size=1200,900"]
         context = p.chromium.launch_persistent_context(
             user_data_dir=profile_dir,
             channel="chrome",
             headless=headless,
             no_viewport=True,
-            args=["--no-sandbox", "--disable-blink-features=AutomationControlled"],
+            args=args,
         )
         page = context.new_page()
 
@@ -201,17 +205,18 @@ def capture() -> dict | None:
                 except Exception as e:
                     print(f"[api] gagal fetch {api}: {e}")
                     continue
-                print(f"[api] {res['status']} <- {api}")
                 if res["status"] == 200:
                     try:
                         captured["payload"] = json.loads(res["body"])
                         captured["hit_url"] = api
-                        print(f"[api] JSON OK dari {api}")
+                        print(f"[api] 200 JSON OK <- {api}")
                         return True
                     except Exception as e:
-                        print(f"[api] 200 tapi bukan JSON ({e}); cuplikan: {res['body'][:160]}")
+                        print(f"[api] 200 tapi bukan JSON ({e}); cuplikan: {res['body'][:120]}")
                 else:
-                    print(f"[api] cuplikan body: {res['body'][:160]}")
+                    # 403 = masih diblok Cloudflare; jangan dump HTML-nya.
+                    print(f"[api] {res['status']} (diblok) <- ...{api[-40:]}")
+                    return False  # semua kandidat endpoint sama; kalau 1 diblok, semua diblok
             return False
 
         # Beri halaman waktu settle sebentar, lalu coba API DULUAN.
