@@ -20,7 +20,9 @@
           "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/853d687cb2_8cab5633f3.pdf"
         }
       ],
-      "kategori": "aksi"
+      "kategori": "aksi",
+      "summary": "PT Dayamitra Telekomunikasi Tbk (MTEL) telah merampungkan pembelian kembali saham (*buyback*) bagi pemegang saham yang tidak menyetujui penggabungan usaha (*dissenting rights*) yang dilakukan pada 3 hingga 10 Juli 2026, dengan tanggal penyelesaian pembayaran pada 17 Juli 2026. Seluruh proses pelaksanaan hak tersebut telah selesai sesuai dengan ketentuan perundang-undangan yang berlaku. Bagi investor, transaksi ini dipastikan tidak menimbulkan perubahan terhadap struktur kepemilikan, pengendalian, maupun kegiatan operasional, serta tidak berdampak material terhadap aspek hukum, kondisi keuangan, dan kelangsungan usaha perseroan.",
+      "summary_status": "ok"
     },
     {
       "id": "20260725224229-LK/25072026/0002/1_id-id",
@@ -5706,6 +5708,14 @@
       ],
       "doc_count": 2,
       "updated_at": "2026-07-24T12:13:39.540162+00:00"
+    },
+    "MTEL": {
+      "summary": "PT Dayamitra Telekomunikasi Tbk (MTEL) telah sukses merampungkan proses pembelian kembali saham (*buyback*) bagi pemegang saham yang tidak menyetujui penggabungan usaha (*dissenting rights*) pada Juli 2026. Aksi korporasi ini berjalan lancar sesuai ketentuan hukum yang berlaku tanpa memicu perubahan pada struktur kepemilikan, pengendalian, maupun kegiatan operasional perseroan. Bagi para investor, pelaksanaan hak tersebut dipastikan tidak memberikan dampak material terhadap kondisi keuangan maupun kelangsungan usaha MTEL secara keseluruhan.",
+      "based_on": [
+        "20260725231959-Tel.3865/LP210/DMT-12120000/2026_id-id"
+      ],
+      "doc_count": 1,
+      "updated_at": "2026-07-26T08:31:15.500960+00:00"
     }
   }
 }
