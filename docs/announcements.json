@@ -1,8 +1,412 @@
 {
-  "updated_at": "2026-07-28T04:42:51.626545+00:00",
-  "count": 411,
+  "updated_at": "2026-07-29T02:44:27.977260+00:00",
+  "count": 478,
   "source": "https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi/",
   "announcements": [
+    {
+      "id": "20260729093848-061/ASI/LT/CS/VII/2026_id-id",
+      "kode_emiten": "ATLA",
+      "judul": "Penjelasan atas Volatilitas Transaksi",
+      "perihal": "Penjelasan atas Volatilitas Tr",
+      "tanggal": "2026-07-29T09:38:48",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260729_ATLA_Tanggapan atas Permintaan Penjelasan Bursa_32115569.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/adc159c722_9ac995c63a.pdf"
+        },
+        {
+          "name": "20260729_ATLA_Tanggapan atas Permintaan Penjelasan Bursa_32115569_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e1ff4dd16e_2878bcdbb3.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260729093804-084/WSL/FIN/VII/26_id-id",
+      "kode_emiten": "WISL",
+      "judul": "Informasi Tambahan Ringkas Obligasi Berkelanjutan I Wahana Inti Selaras Tahap IV Tahun 2026",
+      "perihal": "Informasi Tambahan Ringkas Obl",
+      "tanggal": "2026-07-29T09:38:04",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260729_WISL_Laporan Informasi dan Fakta Material_32115578.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ce6a6b7c33_9d956fbe5b.pdf"
+        },
+        {
+          "name": "20260729_WISL_Laporan Informasi dan Fakta Material_32115578_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ec5c683a90_e7cbdb014a.pdf"
+        }
+      ],
+      "kategori": "aksi"
+    },
+    {
+      "id": "20260729093159-043/C01/CRS-EKS/VII/2026_id-id",
+      "kode_emiten": "DFAM",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-29T09:31:59",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260729_DFAM_Penyampaian Bukti Iklan_32115574.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/a6afea298b_3a8dfce864.pdf"
+        },
+        {
+          "name": "20260729_DFAM_Penyampaian Bukti Iklan_32115574_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/b15d2630c5_f00077d2ce.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260729084834-097/ERAA/CS/VII/2026_id-id",
+      "kode_emiten": "ERAA",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-29T08:48:34",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260729_ERAA_Penyampaian Bukti Iklan_32115550.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e3f5fc3b3f_251512c460.pdf"
+        },
+        {
+          "name": "20260729_ERAA_Penyampaian Bukti Iklan_32115550_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/b8d369e6a1_1813dc9014.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260729083832-029/IR-FINANCE/JT/PIKK/VII/2026_id-id",
+      "kode_emiten": "NISP",
+      "judul": "Penyampaian Pengumuman Ringkasan Rancangan Pengambilalihan Saham pada PT Great Eastern Life Indonesia (GELI).",
+      "perihal": "Penyampaian Pengumuman Ringkas",
+      "tanggal": "2026-07-29T08:38:32",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260729_NISP_Laporan Informasi dan Fakta Material_32115545.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/72e815d76c_f64e04e6be.pdf"
+        },
+        {
+          "name": "20260729_NISP_Laporan Informasi dan Fakta Material_32115545_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/92ad0aa079_1c15ad8883.pdf"
+        },
+        {
+          "name": "20260729_NISP_Laporan Informasi dan Fakta Material_32115545_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ed0512718c_2a74d4e28e.pdf"
+        }
+      ],
+      "kategori": "aksi"
+    },
+    {
+      "id": "20260729065411-298/SP-VII/2026_id-id",
+      "kode_emiten": "ADHI",
+      "judul": "Penjelasan atas Pemberitaan Media Massa",
+      "perihal": "Penjelasan atas Pemberitaan Me",
+      "tanggal": "2026-07-29T06:54:11",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260729_ADHI_Tanggapan atas Permintaan Penjelasan Bursa_32115528.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/a6fcc9ae56_ccf6053bff.pdf"
+        },
+        {
+          "name": "20260729_ADHI_Tanggapan atas Permintaan Penjelasan Bursa_32115528_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/198c670325_00c0f987f9.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260729065022-01905/FMS/OPS-BTIM/VII/26_id-id",
+      "kode_emiten": "XPIN",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-29T06:50:22",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260728_XPIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115517.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/56a951aa4b_05e1fb0d8f.pdf"
+        },
+        {
+          "name": "20260728_XPIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115517_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/11955eb3d1_684aebf5c5.pdf"
+        },
+        {
+          "name": "20260728_XPIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115517_lamp3.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/5974ca8026_bace0ef56a.xlsx"
+        },
+        {
+          "name": "20260728_XPIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115517_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/80813be6cb_59392dc6a6.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260729065005-01907/FMS/OPS-BTIM/VII/26_id-id",
+      "kode_emiten": "R-ABFII",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-29T06:50:05",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260728_R-ABFII_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115519.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/a713b86cee_a4250ebbf9.pdf"
+        },
+        {
+          "name": "20260728_R-ABFII_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115519_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/740d820869_15e867976e.pdf"
+        },
+        {
+          "name": "20260728_R-ABFII_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115519_lamp2.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/7bd18a88c3_2abafc1197.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260729064943-01906/FMS/OPS-BTIM/VII/26_id-id",
+      "kode_emiten": "XBIN",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-29T06:49:43",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260728_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115518.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/93205e96c7_86ee13a604.pdf"
+        },
+        {
+          "name": "20260728_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115518_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/3a04c03cf7_930e039a51.pdf"
+        },
+        {
+          "name": "20260728_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115518_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/b9437eaaa4_81cf35aa80.pdf"
+        },
+        {
+          "name": "20260728_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115518_lamp3.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/c224b0872e_970fa8ff69.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260729012522-Peng-P-00786/BEI.PP3/07-2026_id-id",
+      "kode_emiten": "XRDN",
+      "judul": "Pengumuman Bursa Pencatatan Tambahan ETF",
+      "perihal": "Pengumuman Bursa Pencatatan Ta",
+      "tanggal": "2026-07-29T01:25:22",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260728_XRDN_Pencatatan Awal//Tambahan ETF_32115357.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/468384e35b_bf7785a0d4.pdf"
+        },
+        {
+          "name": "20260728_XRDN_Pencatatan Awal//Tambahan ETF_32115357_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/744aa74369_31f93646f7.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260728171737-No.167/TBS/VII/2026_id-id",
+      "kode_emiten": "TOBA",
+      "judul": "Laporan Penggunaan Dana Hasil Penawaran Umum (KOREKSI)",
+      "perihal": "Laporan Penggunaan Dana Hasil",
+      "tanggal": "2026-07-28T17:17:37",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260725_TOBA_Laporan Penggunaan Dana Hasil Penawaran Umum_32114890.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/87d4f539f3_1788a04e58.pdf"
+        },
+        {
+          "name": "20260725_TOBA_Laporan Penggunaan Dana Hasil Penawaran Umum_32114890_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/da23b47bb7_2b5ff6151a.pdf"
+        }
+      ],
+      "kategori": "aksi"
+    },
+    {
+      "id": "20260728171211-4484/692/DCS/2026_id-id",
+      "kode_emiten": "ANTM",
+      "judul": "Rencana Penelaahan Terbatas Laporan Keuangan Konsolidasian Interim ANTAM untuk Tanggal dan Periode Enam Bulan yang Berakhir 30 Juni 2026",
+      "perihal": "Rencana Penelaahan Terbatas La",
+      "tanggal": "2026-07-28T17:12:11",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260728_ANTM_Laporan Informasi dan Fakta Material_32115444.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/724e950782_eedc1b4be8.pdf"
+        },
+        {
+          "name": "20260728_ANTM_Laporan Informasi dan Fakta Material_32115444_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/c71124b6b6_c3b0cd713f.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260728171103-LK/28072026/0015/1_id-id",
+      "kode_emiten": "NSSS",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "perihal": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA - SAMUEL SEKURITAS INDONESIA - Group:-",
+      "tanggal": "2026-07-28T17:11:03",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "LK-28072026-9241-00.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-28072026-9241-00.pdf-0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260728171032-No.166/TBS/VII/2026_id-id",
+      "kode_emiten": "TOBA",
+      "judul": "Laporan Penggunaan Dana Hasil Penawaran Umum (KOREKSI)",
+      "perihal": "Laporan Penggunaan Dana Hasil",
+      "tanggal": "2026-07-28T17:10:32",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260725_TOBA_Laporan Penggunaan Dana Hasil Penawaran Umum_32114889.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/409204832b_a382b64c05.pdf"
+        },
+        {
+          "name": "20260725_TOBA_Laporan Penggunaan Dana Hasil Penawaran Umum_32114889_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/199aae56a7_f6862dc4b4.pdf"
+        }
+      ],
+      "kategori": "aksi"
+    },
+    {
+      "id": "20260728170724-103/SKL/BLD-CORSEC-LEGAL/HN/VII/2026_id-id",
+      "kode_emiten": "ELTY",
+      "judul": "Perubahan Komite Audit",
+      "perihal": "Perubahan Komite Audit",
+      "tanggal": "2026-07-28T17:07:24",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260728_ELTY_Perubahan Corsec Komite Audit Alamat NPWP Internal Audit_32115409.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/abc79e1bcd_c15baebfe4.pdf"
+        },
+        {
+          "name": "20260728_ELTY_Perubahan Corsec Komite Audit Alamat NPWP Internal Audit_32115409_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e3429d596b_f3643aff6d.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260728170722-079/LTL-LCS/VII/2026_id-id",
+      "kode_emiten": "LTLS",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-28T17:07:22",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260728_LTLS_Penyampaian Bukti Iklan_32115434.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/66d9dc9613_07458f5a66.pdf"
+        },
+        {
+          "name": "20260728_LTLS_Penyampaian Bukti Iklan_32115434_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/6b4a58fec0_7c4043264d.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260728170427-90-JKT/AMI-CS/MP-L/VII/26_id-id",
+      "kode_emiten": "ADMR",
+      "judul": "Rencana Penyampaian Laporan Keuangan Kuartal II 2026 Ditelaah secara terbatas",
+      "perihal": "Rencana Penyampaian Laporan Ke",
+      "tanggal": "2026-07-28T17:04:27",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_ADMR_Rencana Penyampaian Laporan Keuangan_32114992.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/a0ef065a12_144f947e22.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260728170028-055-b/DPN/PTK/VII/2026_id-id",
+      "kode_emiten": "DPNS",
+      "judul": "Penjelasan atas Permintaan Penjelasan Bursa",
+      "perihal": "Penjelasan atas Permintaan Pen",
+      "tanggal": "2026-07-28T17:00:28",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260728_DPNS_Tanggapan atas Permintaan Penjelasan Bursa_32115435.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/48debed20e_757d5c1deb.pdf"
+        },
+        {
+          "name": "20260728_DPNS_Tanggapan atas Permintaan Penjelasan Bursa_32115435_lamp3.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/1c6a2ff921_184cb7bb0b.pdf"
+        },
+        {
+          "name": "20260728_DPNS_Tanggapan atas Permintaan Penjelasan Bursa_32115435_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/58eb137242_9f5c3daceb.pdf"
+        },
+        {
+          "name": "20260728_DPNS_Tanggapan atas Permintaan Penjelasan Bursa_32115435_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/cc1932b128_ee2b14e3f4.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260728170001-S-041A/API/CORP-LGL/VII/2026_id-id",
+      "kode_emiten": "MYTX",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "perihal": "Laporan Bulanan Registrasi Pem",
+      "tanggal": "2026-07-28T17:00:01",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260728_MYTX_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32115437.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/5a09d2e1c4_0c5c292afe.pdf"
+        },
+        {
+          "name": "20260728_MYTX_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32115437_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/3f9dae8220_dd4af0bc54.pdf"
+        },
+        {
+          "name": "20260728_MYTX_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32115437_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/9c08436607_a688b970e7.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260728165824-LK/28072026/0014/1_id-id",
+      "kode_emiten": "BKSL",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "perihal": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA - SAMUEL SEKURITAS INDONESIA - Group:-",
+      "tanggal": "2026-07-28T16:58:24",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "LK-28072026-7405-00.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-28072026-7405-00.pdf-0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
     {
       "id": "20260728113906-035/LD/OL/VII/2026_id-id",
       "kode_emiten": "AKPI",
@@ -396,6 +800,228 @@
       "kategori": "aksi"
     },
     {
+      "id": "20260727210541-S-35/1435-R/BRI-MI/ITO_id-id",
+      "kode_emiten": "XDIF",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio (KOREKSI)",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-27T21:05:41",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115192.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/7ac5931636_991943e2b4.pdf"
+        },
+        {
+          "name": "20260727_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115192_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/670871b448_3321ad4812.pdf"
+        },
+        {
+          "name": "20260727_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115192_lamp2.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/88f9bef489_25a8ee77a2.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260727205542-052/CORSEC/IJE/VII/2026_id-id",
+      "kode_emiten": "IJEE",
+      "judul": "Keterbukaan Informasi atas Penerbitan Samurai Bonds oleh PT Integrasi Jaringan Ekosistem",
+      "perihal": "Keterbukaan Informasi atas Pen",
+      "tanggal": "2026-07-27T20:55:42",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_IJEE_Laporan Informasi dan Fakta Material_32115162.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/5a9cde1992_b012a16641.pdf"
+        },
+        {
+          "name": "20260727_IJEE_Laporan Informasi dan Fakta Material_32115162_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/8768110c16_cfb7581894.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260727205510-046/CORPSEC/Jul/2026_id-id",
+      "kode_emiten": "ENAK",
+      "judul": "Tambahan Tanggapan Atas Surat Nomor  S-08684/BEI.PP2/07 2026",
+      "perihal": "Tambahan Tanggapan Atas Surat",
+      "tanggal": "2026-07-27T20:55:10",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_ENAK_Laporan Informasi dan Fakta Material_32115189.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/6599270625_f01a513c26.pdf"
+        },
+        {
+          "name": "20260727_ENAK_Laporan Informasi dan Fakta Material_32115189_lamp4.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/25b2e2fe12_74aa8bd534.pdf"
+        },
+        {
+          "name": "20260727_ENAK_Laporan Informasi dan Fakta Material_32115189_lamp3.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/85286b9223_80dd3dbef3.pdf"
+        },
+        {
+          "name": "20260727_ENAK_Laporan Informasi dan Fakta Material_32115189_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/b83695103d_30dfe4262e.pdf"
+        },
+        {
+          "name": "20260727_ENAK_Laporan Informasi dan Fakta Material_32115189_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/b8f0b1f308_794eaa3f40.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260727205321-S-35/1443-R/BRI-MI/ITO_id-id",
+      "kode_emiten": "XDIF",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio (KOREKSI)",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-27T20:53:21",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115191.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/7320f1ab1e_d57dcf13c1.pdf"
+        },
+        {
+          "name": "20260727_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115191_lamp2.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/2276eb2d95_68853629e3.xlsx"
+        },
+        {
+          "name": "20260727_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115191_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ea95636dcc_d209826076.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260727205103-S-35/1449-R/BRI-MI/ITO_id-id",
+      "kode_emiten": "XDIF",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio (KOREKSI)",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-27T20:51:03",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115190.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ffcfbb6c71_9ea8b8ee9e.pdf"
+        },
+        {
+          "name": "20260727_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115190_lamp2.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/5c86ee1491_db72981c3a.xlsx"
+        },
+        {
+          "name": "20260727_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115190_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/99a71682fe_2aa2cf9232.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260727204755-S-35/1449/BRI-MI/ITO_id-id",
+      "kode_emiten": "XDIF",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-27T20:47:55",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115188.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/662370f49b_a4afaa3e8f.pdf"
+        },
+        {
+          "name": "20260727_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115188_lamp2.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/a4b19f62ef_c627d67061.xlsx"
+        },
+        {
+          "name": "20260727_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32115188_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ba49b59ed6_1f84ed8b62.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260727202212-LK/27072026/0007/1_id-id",
+      "kode_emiten": "OMED",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "perihal": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA - YACOBUS JEMMY HARTANTO - Group:-",
+      "tanggal": "2026-07-27T20:22:12",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "LK-27072026-9830-00.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-27072026-9830-00.pdf-0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260727201957-051/HRME-CORSEC/VII/2026_id-id",
+      "kode_emiten": "HRME",
+      "judul": "Pemanggilan Rapat Umum Pemegang Saham Luar Biasa",
+      "perihal": "Pemanggilan Rapat Umum Pemegan",
+      "tanggal": "2026-07-27T20:19:57",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_HRME_Pemanggilan RUPS_32115165.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/2a1a34d2b7_314c23dbc6.pdf"
+        },
+        {
+          "name": "20260727_HRME_Pemanggilan RUPS_32115165_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/4d8d6148ec_85006468e5.pdf"
+        },
+        {
+          "name": "20260727_HRME_Pemanggilan RUPS_32115165_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/70fe4bdaa8_9053f76f1b.pdf"
+        }
+      ],
+      "kategori": "aksi"
+    },
+    {
+      "id": "20260727193816-Peng-P-00775/BEI.PP3/07-2026_id-id",
+      "kode_emiten": "PYFA",
+      "judul": "Pencatatan Saham",
+      "perihal": "Pencatatan Saham",
+      "tanggal": "2026-07-27T19:38:16",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_PYFA_Pencatatan Saham Tambahan dari Konversi_32114712.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/476b553895_340d9abc39.pdf"
+        },
+        {
+          "name": "20260724_PYFA_Pencatatan Saham Tambahan dari Konversi_32114712_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/85345a653f_45e432579c.pdf"
+        },
+        {
+          "name": "20260724_PYFA_Pencatatan Saham Tambahan dari Konversi_32114712_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/85d15033bb_7e8e17c1ef.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260727193755-Peng-P-00778/BEI.PP3/07-2026_id-id",
+      "kode_emiten": "PYFA",
+      "judul": "Pencatatan Saham",
+      "perihal": "Pencatatan Saham",
+      "tanggal": "2026-07-27T19:37:55",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_PYFA_Pencatatan Saham Tambahan dari Konversi_32115011.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/2afebfa613_17a85b8e8f.pdf"
+        },
+        {
+          "name": "20260727_PYFA_Pencatatan Saham Tambahan dari Konversi_32115011_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ec5d716c32_f16986da32.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
       "id": "20260727173725-1233/IPIM-RD/VII/2026_id-id",
       "kode_emiten": "XISR",
       "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
@@ -779,6 +1405,200 @@
         {
           "name": "20260727_MPRO_Tanggapan atas Permintaan Penjelasan Bursa_32115050_lamp1.pdf",
           "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/f46c5fcf97_33aa198390.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260727160510-SRT/030/CAM/CRMI/07-2026_id-id",
+      "kode_emiten": "XCID",
+      "judul": "Penyampain Informasi Mengenai Distribusi Keuntungan (DIVIDEN)",
+      "perihal": "Penyampain Informasi Mengenai",
+      "tanggal": "2026-07-27T16:05:10",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_XCID_Penyampaian Informasi Mengenai Distribusi Keuntungan (Dividen)_32115071.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/c748d3ac0d_9bfcf25724.pdf"
+        }
+      ],
+      "kategori": "aksi"
+    },
+    {
+      "id": "20260727160344-538a/DU-HUMI/VII/2026_id-id",
+      "kode_emiten": "HUMI",
+      "judul": "Laporan Penggunaan Dana Hasil Penawaran Umum",
+      "perihal": "Laporan Penggunaan Dana Hasil",
+      "tanggal": "2026-07-27T16:03:44",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_HUMI_Laporan Penggunaan Dana Hasil Penawaran Umum_32114919.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/255f5735eb_20703a5e35.pdf"
+        },
+        {
+          "name": "20260727_HUMI_Laporan Penggunaan Dana Hasil Penawaran Umum_32114919_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/740bab4d5c_a6259d4b09.pdf"
+        }
+      ],
+      "kategori": "aksi"
+    },
+    {
+      "id": "20260727160003-REC/CO/27.221/VII/2026_id-id",
+      "kode_emiten": "RATU",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "perihal": "Laporan Bulanan Registrasi Pem",
+      "tanggal": "2026-07-27T16:00:03",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_RATU_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32115068.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/79e4697e92_1668595b61.pdf"
+        },
+        {
+          "name": "20260727_RATU_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32115068_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/adeb0a9ca4_0611421287.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260727155154-002/PR000/27/VII/2026_id-id",
+      "kode_emiten": "KAEF",
+      "judul": "Keterbukaan Informasi terkait Informasi atau Fakta Material Lainnya",
+      "perihal": "Keterbukaan Informasi terkait",
+      "tanggal": "2026-07-27T15:51:54",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_KAEF_Laporan Informasi dan Fakta Material_32115060.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/8d962f69c1_21f7399992.pdf"
+        },
+        {
+          "name": "20260727_KAEF_Laporan Informasi dan Fakta Material_32115060_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/17d1db0e1c_5c4d214f08.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260727155026-047/SFC-CS/VII/2026_id-id",
+      "kode_emiten": "SFAN",
+      "judul": "Keterbukaan Informasi Sehubungan dengan Informasi atau Fakta Material Entitas Anak PT Surya Fajar Capital Tbk.",
+      "perihal": "Keterbukaan Informasi Sehubung",
+      "tanggal": "2026-07-27T15:50:26",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_SFAN_Laporan Informasi dan Fakta Material_32115019.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/a81e3802ee_16420b59de.pdf"
+        },
+        {
+          "name": "20260727_SFAN_Laporan Informasi dan Fakta Material_32115019_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/7ddfa61871_da3ac11f22.pdf"
+        },
+        {
+          "name": "20260727_SFAN_Laporan Informasi dan Fakta Material_32115019_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/a9c49b5ecb_40faa68425.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260727154158-67/MIKA-VII/2026KOR_id-id",
+      "kode_emiten": "MIKA",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "perihal": "Laporan Bulanan Registrasi Pem",
+      "tanggal": "2026-07-27T15:41:58",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_MIKA_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32115053.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/3e490c1c3a_a99fbd3ff4.pdf"
+        },
+        {
+          "name": "20260727_MIKA_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32115053_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/0b907115f0_b14ca575c7.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260727153728-023/SCNP/CS/LK-Q2/VII-2026_id-id",
+      "kode_emiten": "SCNP",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-27T15:37:28",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_SCNP_Penyampaian Bukti Iklan_32115051.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/b3cb16e643_04a9fd8791.pdf"
+        },
+        {
+          "name": "20260727_SCNP_Penyampaian Bukti Iklan_32115051_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/9c529b21be_cc63b2d50e.pdf"
+        },
+        {
+          "name": "20260727_SCNP_Penyampaian Bukti Iklan_32115051_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/d37dafa7e1_2eda57765d.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260727153001-LK/27072026/0004/1_id-id",
+      "kode_emiten": "TOWR",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "perihal": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA - LINGKARMULIA INDAH - Group:-",
+      "tanggal": "2026-07-27T15:30:01",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "LK-27072026-7321-00.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-27072026-7321-00.pdf-0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260727152347-2707202601/CORSEC/ANG/VII/2026._id-id",
+      "kode_emiten": "OLIV",
+      "judul": "Perubahan Corporate Secretary (KOREKSI)",
+      "perihal": "Perubahan Corporate Secretary",
+      "tanggal": "2026-07-27T15:23:47",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_OLIV_Perubahan Corsec Komite Audit Alamat NPWP Internal Audit_32115042.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/b27ed137cf_8ea021ae2c.pdf"
+        },
+        {
+          "name": "20260727_OLIV_Perubahan Corsec Komite Audit Alamat NPWP Internal Audit_32115042_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/eec84e31c0_fc407f5c1f.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260727152242-057/PTS-CS/BEI/VII/2026_id-id",
+      "kode_emiten": "TAMU",
+      "judul": "Penyampaian Materi Public Expose - Tahunan",
+      "perihal": "Penyampaian Materi Public Expo",
+      "tanggal": "2026-07-27T15:22:42",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260727_TAMU_Public Expose_32115041.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/064dedf584_c2ab410d1d.pdf"
+        },
+        {
+          "name": "20260727_TAMU_Public Expose_32115041_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/6b860fb8a3_88d6a7be0b.pdf"
+        },
+        {
+          "name": "20260727_TAMU_Public Expose_32115041_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/8c89086179_60456df158.pdf"
         }
       ],
       "kategori": "notsure"
@@ -1554,6 +2374,208 @@
         {
           "name": "20260724_XIPB_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114856_lamp1.xlsx",
           "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/fac2874686_8b09ab72fa.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724182138-1171/IPIM-RD/VII/2026_id-id",
+      "kode_emiten": "XIHD",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T18:21:38",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XIHD_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114852.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/863d0a6015_13476718b2.pdf"
+        },
+        {
+          "name": "20260724_XIHD_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114852_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/66e2ecd4c1_bc6cc4f103.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724182056-1170/IPIM-RD/VII/2026_id-id",
+      "kode_emiten": "XISB",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T18:20:56",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XISB_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114851.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/23380413b3_4a50df5210.pdf"
+        },
+        {
+          "name": "20260724_XISB_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114851_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/256c0f78ce_0d7cdc9965.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724181921-1169/IPIM-RD/VII/2026_id-id",
+      "kode_emiten": "XISC",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T18:19:21",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XISC_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114850.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/39955aca3a_81b1e16f84.pdf"
+        },
+        {
+          "name": "20260724_XISC_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114850_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/eee902dffb_aa9838b606.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724181714-1167/IPIM-RD/VII/2026_id-id",
+      "kode_emiten": "XISR",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T18:17:14",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XISR_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114849.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/8e21dc7261_de32e023d0.pdf"
+        },
+        {
+          "name": "20260724_XISR_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114849_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/ee722cfdf0_372c9de6ef.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724181631-1166/IPIM-RD/VII/2026_id-id",
+      "kode_emiten": "XISI",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T18:16:31",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XISI_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114848.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/c47d0debc0_47af908913.pdf"
+        },
+        {
+          "name": "20260724_XISI_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114848_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/575292aec2_247788c2fd.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724181448-S.2026.189/MBI/DIRCOMPLIANCE_id-id",
+      "kode_emiten": "BNII",
+      "judul": "Transaksi Afiliasi",
+      "perihal": "Transaksi Afiliasi",
+      "tanggal": "2026-07-24T18:14:48",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_BNII_Informasi Transaksi Afiliasi_32114837.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/1a276d1275_729bb14738.pdf"
+        },
+        {
+          "name": "20260724_BNII_Informasi Transaksi Afiliasi_32114837_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/1608850d94_c63f1d76dd.pdf"
+        },
+        {
+          "name": "20260724_BNII_Informasi Transaksi Afiliasi_32114837_lamp3.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/1beba01f19_ee7c94e424.pdf"
+        },
+        {
+          "name": "20260724_BNII_Informasi Transaksi Afiliasi_32114837_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/817827e30d_f72e04e058.pdf"
+        },
+        {
+          "name": "20260724_BNII_Informasi Transaksi Afiliasi_32114837_lamp5.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/b584df9fdb_27cc272644.pdf"
+        },
+        {
+          "name": "20260724_BNII_Informasi Transaksi Afiliasi_32114837_lamp4.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/b91f94af70_646b6eec7b.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260724181448-1165/IPIM-RD/VII/2026_id-id",
+      "kode_emiten": "XIJI",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T18:14:48",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XIJI_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114846.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/09b0da2b16_45795f6f71.pdf"
+        },
+        {
+          "name": "20260724_XIJI_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114846_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/6c0453f831_c02d8aa942.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260724181403-060/L-AKR-CS/2026_id-id",
+      "kode_emiten": "AKRA",
+      "judul": "Penyampaian Bukti Iklan Jadwal Pembagian dividen interim",
+      "perihal": "Penyampaian Bukti Iklan Jadwal",
+      "tanggal": "2026-07-24T18:14:03",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_AKRA_Penyampaian Bukti Iklan_32114776.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e9f3075c47_a744aa2b1e.pdf"
+        },
+        {
+          "name": "20260724_AKRA_Penyampaian Bukti Iklan_32114776_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/14e6105e1b_9aa064d548.pdf"
+        }
+      ],
+      "kategori": "aksi"
+    },
+    {
+      "id": "20260724181349-LK/24072026/0017/1_id-id",
+      "kode_emiten": "SINI",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "perihal": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA - EVER GRACE INTERNATIONAL TRADING LIMITED - Group:-",
+      "tanggal": "2026-07-24T18:13:49",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "LK-24072026-2300-00.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-24072026-2300-00.pdf-0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260724181346-1163/IPIM-RD/VII/2026_id-id",
+      "kode_emiten": "XIIT",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-24T18:13:46",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260724_XIIT_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114845.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/c68250db5b_d8bfd2d9ef.pdf"
+        },
+        {
+          "name": "20260724_XIIT_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114845_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/67c4d2854a_334f759a49.xlsx"
         }
       ],
       "kategori": "notsure"
@@ -4415,6 +5437,143 @@
       "kategori": "notsure"
     },
     {
+      "id": "20260723172817-1106/IPIM-RD/VII/2026_id-id",
+      "kode_emiten": "XISC",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-23T17:28:17",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260723_XISC_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114488.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/7668f68b40_067d668e37.pdf"
+        },
+        {
+          "name": "20260723_XISC_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114488_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/d4a9c2f83c_00c4a5e62d.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260723172748-1110/IPIM-RD/VII/2026_id-id",
+      "kode_emiten": "XIML",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-23T17:27:48",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260723_XIML_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114487.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/c4cf1436a3_34fa28bda8.pdf"
+        },
+        {
+          "name": "20260723_XIML_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114487_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/247f08d42c_d76cff98cf.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260723172739-230726/nav/xkiv_id-id",
+      "kode_emiten": "XKIV",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-23T17:27:39",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260723_XKIV_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114484.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/c19ed6252b_8908595097.pdf"
+        },
+        {
+          "name": "20260723_XKIV_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114484_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/6abb1294f7_d33581abfd.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260723172736-1105/IPIM-RD/VII/2026_id-id",
+      "kode_emiten": "XIIF",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-23T17:27:36",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260723_XIIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114486.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/67897fdfcf_22bc31b023.pdf"
+        },
+        {
+          "name": "20260723_XIIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114486_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/94e0cbbcc8_6fc67c6c6a.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260723172719-1111/IPIM-RD/VII/2026_id-id",
+      "kode_emiten": "XIID",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-23T17:27:19",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260723_XIID_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114485.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/1e0d9ab0ff_76c882ede5.pdf"
+        },
+        {
+          "name": "20260723_XIID_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114485_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/98958a0c92_d59b42fa8b.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260723172649-051/CRP/IK/VII/2026_id-id",
+      "kode_emiten": "INKP",
+      "judul": "Ringkasan Penyesuaian Pasal 3 Anggaran Dasar PT Indah Kiat Pulp & Paper Tbk (Perseroan)",
+      "perihal": "Ringkasan Penyesuaian Pasal 3",
+      "tanggal": "2026-07-23T17:26:49",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260723_INKP_Laporan Informasi dan Fakta Material_32114470.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/1e5c121945_e3cf6bbf7f.pdf"
+        },
+        {
+          "name": "20260723_INKP_Laporan Informasi dan Fakta Material_32114470_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/308b1752bf_105aa69004.pdf"
+        },
+        {
+          "name": "20260723_INKP_Laporan Informasi dan Fakta Material_32114470_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/b9b484083a_829329624b.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260723172642-1112/IPIM-RD/VII/2026_id-id",
+      "kode_emiten": "XIFE",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-23T17:26:42",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260723_XIFE_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114483.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/4c49c9f528_e88c5b23ab.pdf"
+        },
+        {
+          "name": "20260723_XIFE_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114483_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/675808522a_1aa319b9d8.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
       "id": "20260723161110-066/ECD-MSI/VII/2026_id-id",
       "kode_emiten": "ZP",
       "judul": "Laporan Jumlah Structured Warrant Beredar",
@@ -5201,6 +6360,236 @@
         }
       ],
       "kategori": "spam"
+    },
+    {
+      "id": "20260722211855-01859/FMS/OPS-BTIM/VII/26_id-id",
+      "kode_emiten": "R-ABFII",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-22T21:18:55",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260722_R-ABFII_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114239.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/65010facb5_7b7dc7333a.pdf"
+        },
+        {
+          "name": "20260722_R-ABFII_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114239_lamp3.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/30c83014f9_9aa78868f9.xlsx"
+        },
+        {
+          "name": "20260722_R-ABFII_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114239_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/35d3cf0d40_3d013cb5bb.pdf"
+        },
+        {
+          "name": "20260722_R-ABFII_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114239_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e1d4a61562_c4cad47ddd.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260722205625-01840/FMS/OPS-BTIM/VII/26_id-id",
+      "kode_emiten": "XBIN",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio (KOREKSI)",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-22T20:56:25",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260722_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114237.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/c96916140c_61046bdb9d.pdf"
+        },
+        {
+          "name": "20260722_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114237_lamp3.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/27a3654c16_3529892cc9.xlsx"
+        },
+        {
+          "name": "20260722_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114237_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/3b18443d70_6b944c2c23.pdf"
+        },
+        {
+          "name": "20260722_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114237_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/3faf26b94e_fabbe8ab5a.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260722205445-01839/FMS/OPS-BTIM/VII/26_id-id",
+      "kode_emiten": "XBIN",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-22T20:54:45",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260721_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32113933.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/61530870f7_f281f64224.pdf"
+        },
+        {
+          "name": "20260721_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32113933_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/1294b2e172_8848118e18.pdf"
+        },
+        {
+          "name": "20260721_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32113933_lamp3.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/aeec98409c_cd0ca589b1.xlsx"
+        },
+        {
+          "name": "20260721_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32113933_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/dea8f337cc_7079f08b4f.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260722205424-01856/FMS/OPS-BTIM/VII/26_id-id",
+      "kode_emiten": "XBIN",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-22T20:54:24",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260722_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114228.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/5711212542_29d17baadb.pdf"
+        },
+        {
+          "name": "20260722_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114228_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/03c3df4ee9_e9fd734b15.pdf"
+        },
+        {
+          "name": "20260722_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114228_lamp3.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/9409f49470_1b91937ff1.xlsx"
+        },
+        {
+          "name": "20260722_XBIN_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114228_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e26b3bc250_89889c81eb.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260722204341-S-35/1438/BRI-MI/ITO_id-id",
+      "kode_emiten": "XDIF",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-22T20:43:41",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260722_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114235.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/f205e5ea8e_706db24cb3.pdf"
+        },
+        {
+          "name": "20260722_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114235_lamp2.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/0f440dd255_7d67f5cdbb.xlsx"
+        },
+        {
+          "name": "20260722_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114235_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/2d17015470_3bd03166dd.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260722203643-Maximus/640/DIR/214/07/2026_id-id",
+      "kode_emiten": "ASMI",
+      "judul": "Pembatalan Rencana Pelaksanaan Paparan Publik PT Asuransi Maximus Graha Persda Tbk di Tahun 2026",
+      "perihal": "Pembatalan Rencana Pelaksanaan",
+      "tanggal": "2026-07-22T20:36:43",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260722_ASMI_Laporan Informasi dan Fakta Material_32114233.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/dbc3670df5_05cd0e2892.pdf"
+        },
+        {
+          "name": "20260722_ASMI_Laporan Informasi dan Fakta Material_32114233_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/57f74b9fb0_3c0bda7732.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260722202939-S.07/MBE-CLO/0726/0345_id-id",
+      "kode_emiten": "OASA",
+      "judul": "Rencana Penyelenggaraan Public Expose - Tahunan",
+      "perihal": "Rencana Penyelenggaraan Public",
+      "tanggal": "2026-07-22T20:29:39",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260722_OASA_Public Expose_32114232.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/4e33e50097_e9eebc352d.pdf"
+        },
+        {
+          "name": "20260722_OASA_Public Expose_32114232_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/08bd2397a3_2ddbceb2d5.pdf"
+        },
+        {
+          "name": "20260722_OASA_Public Expose_32114232_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/455149a004_e2a000c476.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260722201944-357/DIR/FABS/PHG/VII/2026_id-id",
+      "kode_emiten": "PRAY",
+      "judul": "Laporan Penggunaan Dana Hasil Penawaran Umum (KOREKSI)",
+      "perihal": "Laporan Penggunaan Dana Hasil",
+      "tanggal": "2026-07-22T20:19:44",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260715_PRAY_Laporan Penggunaan Dana Hasil Penawaran Umum_32112316.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/48ba72c088_58a1644b4c.pdf"
+        },
+        {
+          "name": "20260715_PRAY_Laporan Penggunaan Dana Hasil Penawaran Umum_32112316_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/f5b5dc100f_1de560d566.pdf"
+        }
+      ],
+      "kategori": "aksi"
+    },
+    {
+      "id": "20260722200231-131/NAV-XPTD/VII/26_id-id",
+      "kode_emiten": "XPTD",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-22T20:02:31",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260722_XPTD_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114230.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/b6683109a9_8d22f0b9d6.pdf"
+        },
+        {
+          "name": "20260722_XPTD_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32114230_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/add6464b99_83b3f24c62.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260722194726-042/CORPSEC/Jul/2026_id-id",
+      "kode_emiten": "ENAK",
+      "judul": "Penjelasan atas Permintaan Penjelasan Bursa",
+      "perihal": "Penjelasan atas Permintaan Pen",
+      "tanggal": "2026-07-22T19:47:26",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260722_ENAK_Tanggapan atas Permintaan Penjelasan Bursa_32114222.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/0537b754f6_aff6fa0395.pdf"
+        },
+        {
+          "name": "20260722_ENAK_Tanggapan atas Permintaan Penjelasan Bursa_32114222_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ec03fbd432_da980f03d4.pdf"
+        }
+      ],
+      "kategori": "notsure"
     },
     {
       "id": "20260722180215-22/XPDV/VII/2026_id-id",
