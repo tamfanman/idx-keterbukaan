@@ -1,8 +1,2274 @@
 {
-  "updated_at": "2026-07-31T01:53:56.970197+00:00",
-  "count": 616,
+  "updated_at": "2026-08-01T03:53:55.734502+00:00",
+  "count": 696,
   "source": "https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi/",
   "announcements": [
+    {
+      "id": "20260801094911-HO/DIR/VII/2026/00129_id-id",
+      "kode_emiten": "KING",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-08-01T09:49:11",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-KING.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801095703-64049-0/FinancialStatement-2026-II-KING.pdf"
+        },
+        {
+          "name": "Final Report Juni 2026 HC konsol.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801095703-64049-0/Final Report Juni 2026 HC konsol.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-KING.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801095703-64049-0/FinancialStatement-2026-II-KING.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801095703-64049-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801095703-64049-0/instance.zip"
+        },
+        {
+          "name": "perubahan 20persen.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801095703-64049-0/perubahan 20persen.pdf"
+        },
+        {
+          "name": "SPD.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801095703-64049-0/SPD.pdf"
+        },
+        {
+          "name": "surat pengantar.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801095703-64049-0/surat pengantar.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260801085416-022/CS-HSJI/VII/2026_id-id",
+      "kode_emiten": "SHID",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-08-01T08:54:16",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-SHID.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801090551-63687-0/FinancialStatement-2026-II-SHID.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-SHID.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801090551-63687-0/FinancialStatement-2026-II-SHID.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801090551-63687-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801090551-63687-0/instance.zip"
+        },
+        {
+          "name": "Laporan Keuangan  Triwulan 2_Juni 26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801090551-63687-0/Laporan Keuangan  Triwulan 2_Juni 26.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260801081507-LK/01082026/0001/1_id-id",
+      "kode_emiten": "ELPI",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "perihal": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA - GMT KAPITAL ASIA - Group:-",
+      "tanggal": "2026-08-01T08:15:07",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "LK-01082026-4102-00.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-01082026-4102-00.pdf-0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260801041441-006/R-GTC/07/2026_id-id",
+      "kode_emiten": "GLVA",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-08-01T04:14:41",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-GLVA.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801041536-64110-0/FinancialStatement-2026-II-GLVA.pdf"
+        },
+        {
+          "name": "2026.07_GLVA_LK Interim_Q22026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801041536-64110-0/2026.07_GLVA_LK Interim_Q22026.pdf"
+        },
+        {
+          "name": "2026.07_GLVA_SPD 30Jun26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801041536-64110-0/2026.07_GLVA_SPD 30Jun26.pdf"
+        },
+        {
+          "name": "2026.07_GLVA_Surat Pengantar_BEI.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801041536-64110-0/2026.07_GLVA_Surat Pengantar_BEI.pdf"
+        },
+        {
+          "name": "2026.07_GLVA_Surat Pengantar_OJK.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801041536-64110-0/2026.07_GLVA_Surat Pengantar_OJK.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-GLVA.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801041536-64110-0/FinancialStatement-2026-II-GLVA.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801041536-64110-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801041536-64110-0/instance.zip"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260801010030-007/PDES/CSE/VII/2026_id-id",
+      "kode_emiten": "PDES",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-08-01T01:00:30",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-PDES.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801011058-64065-0/FinancialStatement-2026-II-PDES.pdf"
+        },
+        {
+          "name": "Checklist OJK DTN Q2 - 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801011058-64065-0/Checklist OJK DTN Q2 - 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-PDES.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801011058-64065-0/FinancialStatement-2026-II-PDES.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801011058-64065-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801011058-64065-0/instance.zip"
+        },
+        {
+          "name": "Laporan Keuangan DTN Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801011058-64065-0/Laporan Keuangan DTN Q2 2026.pdf"
+        },
+        {
+          "name": "Surat Penganatar Lap Keu Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801011058-64065-0/Surat Penganatar Lap Keu Q2 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260801002131-03/BEI/SMI/VII/2026_id-id",
+      "kode_emiten": "LUCK",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-08-01T00:21:31",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-LUCK.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801003427-64036-0/FinancialStatement-2026-II-LUCK.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-LUCK.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801003427-64036-0/FinancialStatement-2026-II-LUCK.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801003427-64036-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801003427-64036-0/instance.zip"
+        },
+        {
+          "name": "PT SENTRAL MITRA INFORMATIKA Tbk Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801003427-64036-0/PT SENTRAL MITRA INFORMATIKA Tbk Q2 2026.pdf"
+        },
+        {
+          "name": "SPD Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801003427-64036-0/SPD Q2 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260801001659-003/PGL/VII/2026_id-id",
+      "kode_emiten": "PPGL",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-08-01T00:16:59",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-PPGL.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801002756-63726-0/FinancialStatement-2026-II-PPGL.pdf"
+        },
+        {
+          "name": "Checklist 30Jun26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801002756-63726-0/Checklist 30Jun26.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-PPGL.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801002756-63726-0/FinancialStatement-2026-II-PPGL.xlsx"
+        },
+        {
+          "name": "FS_30Juni2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801002756-63726-0/FS_30Juni2026.pdf"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801002756-63726-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801002756-63726-0/instance.zip"
+        },
+        {
+          "name": "PenjelasanTotalAsetLiabilitas_30Jun26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801002756-63726-0/PenjelasanTotalAsetLiabilitas_30Jun26.pdf"
+        },
+        {
+          "name": "SPD_30Jun26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801002756-63726-0/SPD_30Jun26.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260801000638--_id-id",
+      "kode_emiten": "PIHC",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-08-01T00:06:38",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-PIHC.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801001248-63497-0/FinancialStatement-2026-II-PIHC.pdf"
+        },
+        {
+          "name": "1. Surat Pernyataan Direksi LKTT 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801001248-63497-0/1. Surat Pernyataan Direksi LKTT 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-PIHC.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801001248-63497-0/FinancialStatement-2026-II-PIHC.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801001248-63497-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801001248-63497-0/instance.zip"
+        },
+        {
+          "name": "PIHC_LKTT_2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801001248-63497-0/PIHC_LKTT_2026.pdf"
+        },
+        {
+          "name": "Surat Penjelasan atas di Atas 20 persen Signed.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/20260801001248-63497-0/Surat Penjelasan atas di Atas 20 persen Signed.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731235449-S-041A./API/CORP-LGL/VII/2026_id-id",
+      "kode_emiten": "MYTX",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "perihal": "Laporan Bulanan Registrasi Pem",
+      "tanggal": "2026-07-31T23:54:49",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_MYTX_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32116912.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e516cda161_a37ab1d4bf.pdf"
+        },
+        {
+          "name": "20260731_MYTX_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32116912_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/61805352e3_769c0eca99.pdf"
+        },
+        {
+          "name": "20260731_MYTX_Laporan Bulanan Registrasi Pemegang Efek//Perubahan Struktur Pemegang Saham_32116912_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/964068a45c_a12149ef17.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260731235437-SK/0201/DIRUT/VII/2026_id-id",
+      "kode_emiten": "INPC",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-31T23:54:37",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_INPC_Penyampaian Bukti Iklan_32116910.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/8bead60daa_8926ca78a4.pdf"
+        },
+        {
+          "name": "20260731_INPC_Penyampaian Bukti Iklan_32116910_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/5e904b8810_b92693dd94.pdf"
+        },
+        {
+          "name": "20260731_INPC_Penyampaian Bukti Iklan_32116910_lamp3.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/7654741f71_b1ff3d4b68.pdf"
+        },
+        {
+          "name": "20260731_INPC_Penyampaian Bukti Iklan_32116910_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/d500146b9c_56fa92ad04.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731195315-017/Lap.Fin/CSM/VII/2026_id-id",
+      "kode_emiten": "DKHH",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T19:53:15",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-DKHH.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731200935-62108-0/FinancialStatement-2026-II-DKHH.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-DKHH.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731200935-62108-0/FinancialStatement-2026-II-DKHH.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731200935-62108-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731200935-62108-0/instance.zip"
+        },
+        {
+          "name": "LK PT CSM Tbk Q2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731200935-62108-0/LK PT CSM Tbk Q2.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731195127-088/PTCH/SKLR-DIR/VII/2026_id-id",
+      "kode_emiten": "RSCH",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T19:51:27",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-RSCH.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195951-64005-0/FinancialStatement-2026-II-RSCH.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-RSCH.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195951-64005-0/FinancialStatement-2026-II-RSCH.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195951-64005-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195951-64005-0/instance.zip"
+        },
+        {
+          "name": "RSCH - BEI Surat Pengantar LK 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195951-64005-0/RSCH - BEI Surat Pengantar LK 30 Juni 2026.pdf"
+        },
+        {
+          "name": "RSCH - LK Interm 30June2026 (tidak diaudit).pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195951-64005-0/RSCH - LK Interm 30June2026 (tidak diaudit).pdf"
+        },
+        {
+          "name": "RSCH - OJK Surat Pengantar LK 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195951-64005-0/RSCH - OJK Surat Pengantar LK 30 Juni 2026.pdf"
+        },
+        {
+          "name": "RSCH - SPD LK TW II LK 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195951-64005-0/RSCH - SPD LK TW II LK 30 Juni 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731195046-028/Corpsec/Metland/VII/2026_id-id",
+      "kode_emiten": "MTLA",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-31T19:50:46",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_MTLA_Penyampaian Bukti Iklan_32116855.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e65124b993_9279303d9b.pdf"
+        },
+        {
+          "name": "20260731_MTLA_Penyampaian Bukti Iklan_32116855_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/d300e04bb1_ea8bd3cf52.pdf"
+        },
+        {
+          "name": "20260731_MTLA_Penyampaian Bukti Iklan_32116855_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/dcc95ea255_66bf0a8f5a.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731194938-0053/PTS-CS/BEI/VII/2026_id-id",
+      "kode_emiten": "TAMU",
+      "judul": "Penjelasan atas Permintaan Penjelasan Bursa (KOREKSI)",
+      "perihal": "Penjelasan atas Permintaan Pen",
+      "tanggal": "2026-07-31T19:49:38",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_TAMU_Tanggapan atas Permintaan Penjelasan Bursa_32116870.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/423ccdd18f_0170cd1616.pdf"
+        },
+        {
+          "name": "20260731_TAMU_Tanggapan atas Permintaan Penjelasan Bursa_32116870_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/4ad12ca28b_7b6fdbaee1.pdf"
+        },
+        {
+          "name": "20260731_TAMU_Tanggapan atas Permintaan Penjelasan Bursa_32116870_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e975308879_bf82e08008.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260731194759-002/BPP/LK/0726_id-id",
+      "kode_emiten": "BLUE",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T19:47:59",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-BLUE.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195943-64064-0/FinancialStatement-2026-II-BLUE.pdf"
+        },
+        {
+          "name": "BOD 30 jun  2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195943-64064-0/BOD 30 jun  2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-BLUE.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195943-64064-0/FinancialStatement-2026-II-BLUE.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195943-64064-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195943-64064-0/instance.zip"
+        },
+        {
+          "name": "Lap tw2 PT BPP June 30 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195943-64064-0/Lap tw2 PT BPP June 30 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731194540-138/MKNT-OJK/VII/2026_id-id",
+      "kode_emiten": "MKNT",
+      "judul": "Pemanggilan Rapat Umum Pemegang Saham Luar Biasa",
+      "perihal": "Pemanggilan Rapat Umum Pemegan",
+      "tanggal": "2026-07-31T19:45:40",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_MKNT_Pemanggilan RUPS_32116874.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/76ab48fdfa_196fa7c698.pdf"
+        },
+        {
+          "name": "20260731_MKNT_Pemanggilan RUPS_32116874_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/14e4d9e05b_308058520a.pdf"
+        },
+        {
+          "name": "20260731_MKNT_Pemanggilan RUPS_32116874_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ec82bf345d_439d319412.pdf"
+        }
+      ],
+      "kategori": "aksi"
+    },
+    {
+      "id": "20260731194506-108/EMAS-JKT/CORSEC/XI/2026_id-id",
+      "kode_emiten": "EMAS",
+      "judul": "Transaksi Material Amendemen Pertama atas Perjanjian Uang Muka Peningkatan Modal yang dibuat antara PT Pani Industri Nusantara dengan PT Gorontalo Sejahtera Mining dan PT Puncak Emas Tani Sejahtera",
+      "perihal": "Transaksi Material Amendemen P",
+      "tanggal": "2026-07-31T19:45:06",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_EMAS_Laporan Informasi dan Fakta Material_32116754.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/31a14bbd67_7f56f29423.pdf"
+        },
+        {
+          "name": "20260731_EMAS_Laporan Informasi dan Fakta Material_32116754_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/9e124eb4b0_8d47846ac1.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731194335-045/Corsec/LK/VII/2026_id-id",
+      "kode_emiten": "REAL",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T19:43:35",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-REAL.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195227-64029-0/FinancialStatement-2026-II-REAL.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-REAL.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195227-64029-0/FinancialStatement-2026-II-REAL.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195227-64029-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195227-64029-0/instance.zip"
+        },
+        {
+          "name": "PENJELASAN PERUBAHAN LK Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195227-64029-0/PENJELASAN PERUBAHAN LK Q2 2026.pdf"
+        },
+        {
+          "name": "Repower Asia Indonesia Tbk 30 Jun 2026 - Final.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195227-64029-0/Repower Asia Indonesia Tbk 30 Jun 2026 - Final.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731194213-116/EXT-CORP/DIVA/VII/2026_id-id",
+      "kode_emiten": "DIVA",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T19:42:13",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-DIVA.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731214321-63989-0/FinancialStatement-2026-II-DIVA.pdf"
+        },
+        {
+          "name": "26.06 DIVA - Checklist  Pengungkapan LK.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731214321-63989-0/26.06 DIVA - Checklist  Pengungkapan LK.pdf"
+        },
+        {
+          "name": "DIVA - Interim Consolidated FS June 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731214321-63989-0/DIVA - Interim Consolidated FS June 2026.pdf"
+        },
+        {
+          "name": "DIVA - Perubahan Total Liabilitas LK Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731214321-63989-0/DIVA - Perubahan Total Liabilitas LK Q2 2026.pdf"
+        },
+        {
+          "name": "DIVA - Surat Pengantar LK Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731214321-63989-0/DIVA - Surat Pengantar LK Q2 2026.pdf"
+        },
+        {
+          "name": "DIVA - Surat Pernyataan Direksi LK Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731214321-63989-0/DIVA - Surat Pernyataan Direksi LK Q2 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-DIVA.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731214321-63989-0/FinancialStatement-2026-II-DIVA.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731214321-63989-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731214321-63989-0/instance.zip"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731194142-4.04/MBT/FIN/RA/HR/260082_id-id",
+      "kode_emiten": "MLBI",
+      "judul": "Penyampaian Laporan Keuangan Interim (KOREKSI)",
+      "perihal": null,
+      "tanggal": "2026-07-31T19:41:42",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-MLBI.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195126-64103-0/FinancialStatement-2026-II-MLBI.pdf"
+        },
+        {
+          "name": "CHEKLIST LAPORAN KEUANGAN Q2 2026 - MBI.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195126-64103-0/CHEKLIST LAPORAN KEUANGAN Q2 2026 - MBI.pdf"
+        },
+        {
+          "name": "Consolidated Financial Statement 30 June 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195126-64103-0/Consolidated Financial Statement 30 June 2026.pdf"
+        },
+        {
+          "name": "Cover Letter 31 Jun 26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195126-64103-0/Cover Letter 31 Jun 26.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-MLBI.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195126-64103-0/FinancialStatement-2026-II-MLBI.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195126-64103-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195126-64103-0/instance.zip"
+        },
+        {
+          "name": "Penjelasan perubahan 20persen 30 Jun 26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731195126-64103-0/Penjelasan perubahan 20persen 30 Jun 26.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731175945-431/OJK-TI/DIR/VII/2026_id-id",
+      "kode_emiten": "TFAS",
+      "judul": "Laporan Pengalihan Kembali Saham Hasil Buy Back",
+      "perihal": "Laporan Pengalihan Kembali Sah",
+      "tanggal": "2026-07-31T17:59:45",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_TFAS_Laporan Pengalihan Saham Hasil Buy Back_32116814.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/dca32cc941_d9a6e9632d.pdf"
+        },
+        {
+          "name": "20260731_TFAS_Laporan Pengalihan Saham Hasil Buy Back_32116814_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/27686c56cf_dab179ba59.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260731175941-032/CFI-IDXSPE/VII/2026_id-id",
+      "kode_emiten": "CASA",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T17:59:41",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-CASA.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180533-63889-0/FinancialStatement-2026-II-CASA.pdf"
+        },
+        {
+          "name": "Checklist CFI 0626.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180533-63889-0/Checklist CFI 0626.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-CASA.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180533-63889-0/FinancialStatement-2026-II-CASA.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180533-63889-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180533-63889-0/instance.zip"
+        },
+        {
+          "name": "LapKeu CASA 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180533-63889-0/LapKeu CASA 30 Juni 2026.pdf"
+        },
+        {
+          "name": "SPD LK TW II 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180533-63889-0/SPD LK TW II 2026.pdf"
+        },
+        {
+          "name": "Srt Penyam LK 30 Juni 2026_BEI.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180533-63889-0/Srt Penyam LK 30 Juni 2026_BEI.pdf"
+        },
+        {
+          "name": "Srt Penyam LK 30 Juni 2026_OJK.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180533-63889-0/Srt Penyam LK 30 Juni 2026_OJK.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731175931-125-OJK-BEI/MVN-CS/EXT/VII/2026_id-id",
+      "kode_emiten": "IPTV",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T17:59:31",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-IPTV.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731182310-63199-0/FinancialStatement-2026-II-IPTV.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-IPTV.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731182310-63199-0/FinancialStatement-2026-II-IPTV.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731182310-63199-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731182310-63199-0/instance.zip"
+        },
+        {
+          "name": "LK IPTV JUNI 2026-UNAUDITED.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731182310-63199-0/LK IPTV JUNI 2026-UNAUDITED.pdf"
+        },
+        {
+          "name": "SURAT PENGANTAR LK IPTV JUNI 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731182310-63199-0/SURAT PENGANTAR LK IPTV JUNI 2026.pdf"
+        },
+        {
+          "name": "SURAT PERNYATAAN  DIREKSI IPTV JUNI 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731182310-63199-0/SURAT PERNYATAAN  DIREKSI IPTV JUNI 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731175925-061/APF-CS/VII/2026_id-id",
+      "kode_emiten": "POLY",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-31T17:59:25",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_POLY_Penyampaian Bukti Iklan_32116807.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/92aa0324ad_bad89a1e97.pdf"
+        },
+        {
+          "name": "20260731_POLY_Penyampaian Bukti Iklan_32116807_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20617cbb93_77a3a987fe.pdf"
+        },
+        {
+          "name": "20260731_POLY_Penyampaian Bukti Iklan_32116807_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/f7c85d4f2a_ea14a0f4cf.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731175728-026/MHA-CORSEC/TGP/VII/2026_id-id",
+      "kode_emiten": "MAHA",
+      "judul": "Penjelasan atas Volatilitas Transaksi",
+      "perihal": "Penjelasan atas Volatilitas Tr",
+      "tanggal": "2026-07-31T17:57:28",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_MAHA_Tanggapan atas Permintaan Penjelasan Bursa_32116753.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/4166a93444_c30ab53d73.pdf"
+        },
+        {
+          "name": "20260731_MAHA_Tanggapan atas Permintaan Penjelasan Bursa_32116753_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ac6833f357_a443b57d09.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260731175659-Tel.64/LP 000/COP-M0000000/2026_id-id",
+      "kode_emiten": "TLKM",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T17:56:59",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-TLKM.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180701-62614-0/FinancialStatement-2026-II-TLKM.pdf"
+        },
+        {
+          "name": "Checklist OJK Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180701-62614-0/Checklist OJK Q2 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-TLKM.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180701-62614-0/FinancialStatement-2026-II-TLKM.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180701-62614-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180701-62614-0/instance.zip"
+        },
+        {
+          "name": "Laporan Keuangan Telkom TW II 2026 (ENG).pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180701-62614-0/Laporan Keuangan Telkom TW II 2026 (ENG).pdf"
+        },
+        {
+          "name": "Laporan Keuangan Telkom TW II 2026 (IND).pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180701-62614-0/Laporan Keuangan Telkom TW II 2026 (IND).pdf"
+        },
+        {
+          "name": "Penjelasan Total Liablilitas LK Telkom TW II 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180701-62614-0/Penjelasan Total Liablilitas LK Telkom TW II 2026.pdf"
+        },
+        {
+          "name": "Surat Penyampaian LK Telkom Unaudited TW II 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180701-62614-0/Surat Penyampaian LK Telkom Unaudited TW II 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731175614-0069/CVG/2026_id-id",
+      "kode_emiten": "BBCA",
+      "judul": "Perubahan dalam pengendalian baik langsung maupun tidak langsung terhadap Emiten atau Perusahaan Publik",
+      "perihal": "Perubahan dalam pengendalian b",
+      "tanggal": "2026-07-31T17:56:14",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_BBCA_Laporan Informasi dan Fakta Material_32116657.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/59c9d62180_96a02df66f.pdf"
+        },
+        {
+          "name": "20260731_BBCA_Laporan Informasi dan Fakta Material_32116657_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/0b9ec31383_5b374efdf5.pdf"
+        },
+        {
+          "name": "20260731_BBCA_Laporan Informasi dan Fakta Material_32116657_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/db24579a40_b573109a83.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260731175517-37/KMI/A/VII/2026_id-id",
+      "kode_emiten": "KBLI",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T17:55:17",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-KBLI.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180949-63734-0/FinancialStatement-2026-II-KBLI.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-KBLI.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180949-63734-0/FinancialStatement-2026-II-KBLI.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180949-63734-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180949-63734-0/instance.zip"
+        },
+        {
+          "name": "Perubahan 20 persen Jun 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180949-63734-0/Perubahan 20 persen Jun 2026.pdf"
+        },
+        {
+          "name": "PT KMI - Checklist Final.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180949-63734-0/PT KMI - Checklist Final.pdf"
+        },
+        {
+          "name": "PT KMI - Laporan Keuangan Q2-2026 (final).pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180949-63734-0/PT KMI - Laporan Keuangan Q2-2026 (final).pdf"
+        },
+        {
+          "name": "SPD Jun 26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731180949-63734-0/SPD Jun 26.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731175218-002/SK-DIR/VII/2026_id-id",
+      "kode_emiten": "DAAZ",
+      "judul": "Perubahan Corporate Secretary",
+      "perihal": "Perubahan Corporate Secretary",
+      "tanggal": "2026-07-31T17:52:18",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_DAAZ_Perubahan Corsec Komite Audit Alamat NPWP Internal Audit_32116448.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/7cc52a576b_bd0eb36715.pdf"
+        },
+        {
+          "name": "20260731_DAAZ_Perubahan Corsec Komite Audit Alamat NPWP Internal Audit_32116448_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/078dcd07a8_7ffbf788c6.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260731174859-31/XPDV-A/VII/2026_id-id",
+      "kode_emiten": "XPDV",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio (KOREKSI)",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-31T17:48:59",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_XPDV_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32116809.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/f5d801a45d_52140a31d5.pdf"
+        },
+        {
+          "name": "20260731_XPDV_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32116809_lamp1.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/cc387ee424_97d0da3299.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260731163650-00023/E087/KGI/07/2026_id-id",
+      "kode_emiten": "HD",
+      "judul": "Laporan Jumlah Structured Warrant Beredar",
+      "perihal": "Laporan Jumlah Structured Warr",
+      "tanggal": "2026-07-31T16:36:50",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_HD_Laporan Jumlah Structured Warrant Beredar_32116745.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/0a1e106328_e11b193944.pdf"
+        },
+        {
+          "name": "20260731_HD_Laporan Jumlah Structured Warrant Beredar_32116745_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/fd5b23c605_ba49da2b3b.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260731163622-033/CS/KJN/VII/2026_id-id",
+      "kode_emiten": "KJEN",
+      "judul": "Penyampaian Laporan Keuangan Interim (KOREKSI)",
+      "perihal": null,
+      "tanggal": "2026-07-31T16:36:22",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-KJEN.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731165947-64090-0/FinancialStatement-2026-II-KJEN.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-KJEN.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731165947-64090-0/FinancialStatement-2026-II-KJEN.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731165947-64090-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731165947-64090-0/instance.zip"
+        },
+        {
+          "name": "Laporan Keuangan- KJN - 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731165947-64090-0/Laporan Keuangan- KJN - 30 Juni 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731163411-AI/276-VII/26/SA/FA_id-id",
+      "kode_emiten": "ADIN",
+      "judul": "Rencana Penyampaian Laporan Keuangan Kuartal II 2026 Ditelaah secara terbatas",
+      "perihal": "Rencana Penyampaian Laporan Ke",
+      "tanggal": "2026-07-31T16:34:11",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260729_ADIN_Rencana Penyampaian Laporan Keuangan_32115678.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/0cf1fdce3d_e949201d98.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731163403-030/HEXA/9034/VII/2026_id-id",
+      "kode_emiten": "HEXA",
+      "judul": "Penyampaian Laporan Tahunan & Keberlanjutan dan ESG",
+      "perihal": "Penyampaian Laporan Tahunan &",
+      "tanggal": "2026-07-31T16:34:03",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "ESG2025-HEXA.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/edd2b26dce_417a2bfbbe.pdf"
+        },
+        {
+          "name": "AnnualReport2025-HEXA-att1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/051dd16e4c_ea4a923956.pdf"
+        },
+        {
+          "name": "AnnualReport2025-HEXA-att2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/3809fa591d_678c1433fb.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731163348-118/CorSec/PST/VII/2026.TRIM_id-id",
+      "kode_emiten": "TRIM",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T16:33:48",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-TRIM.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731163914-63046-0/FinancialStatement-2026-II-TRIM.pdf"
+        },
+        {
+          "name": "Analisa Mutasi Aset 20 persen - 30 Jun 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731163914-63046-0/Analisa Mutasi Aset 20 persen - 30 Jun 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-TRIM.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731163914-63046-0/FinancialStatement-2026-II-TRIM.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731163914-63046-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731163914-63046-0/instance.zip"
+        },
+        {
+          "name": "trimegah sekuritas indonesia 30 juni 2026 released.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731163914-63046-0/trimegah sekuritas indonesia 30 juni 2026 released.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731163300-099/BULL/DIR/IDX/VII/2026_id-id",
+      "kode_emiten": "BULL",
+      "judul": "Rencana Penyampaian Laporan Keuangan Kuartal II 2026 Diaudit",
+      "perihal": "Rencana Penyampaian Laporan Ke",
+      "tanggal": "2026-07-31T16:33:00",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_BULL_Rencana Penyampaian Laporan Keuangan_32116741.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/6c370d9363_23d7f85883.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731163238-S.363/LGL-MIF/VII/2026_id-id",
+      "kode_emiten": "BIIF",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-31T16:32:38",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_BIIF_Penyampaian Bukti Iklan_32116737.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/4ea0b0d426_98ade02abf.pdf"
+        },
+        {
+          "name": "20260731_BIIF_Penyampaian Bukti Iklan_32116737_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/1fc9876740_09e7590e0c.pdf"
+        },
+        {
+          "name": "20260731_BIIF_Penyampaian Bukti Iklan_32116737_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20130fe321_d70a3f6931.pdf"
+        },
+        {
+          "name": "20260731_BIIF_Penyampaian Bukti Iklan_32116737_lamp3.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/f36eb621d9_0b4dac2483.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731163126-124/YUPI-FIN/VII/2026_id-id",
+      "kode_emiten": "YUPI",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-31T16:31:26",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_YUPI_Penyampaian Bukti Iklan_32116421.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/7ccc3f6da9_8c575618b9.pdf"
+        },
+        {
+          "name": "20260731_YUPI_Penyampaian Bukti Iklan_32116421_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/581c83493b_bacdffe28d.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731163055-070/PBS-CSL/VII/2026_id-id",
+      "kode_emiten": "PBSA",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T16:30:55",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-PBSA.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731165517-63382-0/FinancialStatement-2026-II-PBSA.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-PBSA.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731165517-63382-0/FinancialStatement-2026-II-PBSA.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731165517-63382-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731165517-63382-0/instance.zip"
+        },
+        {
+          "name": "Report PBSA Q2 2026 Final.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731165517-63382-0/Report PBSA Q2 2026 Final.pdf"
+        },
+        {
+          "name": "SPD PBSA Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731165517-63382-0/SPD PBSA Juni 2026.pdf"
+        },
+        {
+          "name": "Surat Manajemen 30 Jun 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731165517-63382-0/Surat Manajemen 30 Jun 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731163037-041/BP/M-Corps/VII/2026_id-id",
+      "kode_emiten": "BRPT",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T16:30:37",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-BRPT.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731164448-63317-0/FinancialStatement-2026-II-BRPT.pdf"
+        },
+        {
+          "name": "BRPT Checklist FS 30 June 2026 OJK-.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731164448-63317-0/BRPT Checklist FS 30 June 2026 OJK-.pdf"
+        },
+        {
+          "name": "BRPT Financial Statement 30 June 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731164448-63317-0/BRPT Financial Statement 30 June 2026.pdf"
+        },
+        {
+          "name": "BRPT SP FS 30 June 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731164448-63317-0/BRPT SP FS 30 June 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-BRPT.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731164448-63317-0/FinancialStatement-2026-II-BRPT.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731164448-63317-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731164448-63317-0/instance.zip"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731150641-163/JRP/CS/VII/2026_id-id",
+      "kode_emiten": "JRPT",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T15:06:41",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-JRPT.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151517-63103-0/FinancialStatement-2026-II-JRPT.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-JRPT.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151517-63103-0/FinancialStatement-2026-II-JRPT.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151517-63103-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151517-63103-0/instance.zip"
+        },
+        {
+          "name": "JRPT LK Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151517-63103-0/JRPT LK Q2 2026.pdf"
+        },
+        {
+          "name": "JRPT_Checklist Pengungkapan LK Q2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151517-63103-0/JRPT_Checklist Pengungkapan LK Q2.pdf"
+        },
+        {
+          "name": "SPD Interim 2026 PT JRP Tbk.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151517-63103-0/SPD Interim 2026 PT JRP Tbk.pdf"
+        },
+        {
+          "name": "Surat Pengantar.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151517-63103-0/Surat Pengantar.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731150516-005/CORSEC/MBIT.CP/VII/2026_id-id",
+      "kode_emiten": "MLBI",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-31T15:05:16",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_MLBI_Penyampaian Bukti Iklan_32116663.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/13bfe1b27f_6de604bfc0.pdf"
+        },
+        {
+          "name": "20260731_MLBI_Penyampaian Bukti Iklan_32116663_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/a8063dfa4b_ed63f0c938.pdf"
+        },
+        {
+          "name": "20260731_MLBI_Penyampaian Bukti Iklan_32116663_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ccdaedb240_502120c4eb.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731150335-013/CORSEC/EMS/SRT/VII/2026_id-id",
+      "kode_emiten": "DOOH",
+      "judul": "Penjelasan atas Volatilitas Transaksi",
+      "perihal": "Penjelasan atas Volatilitas Tr",
+      "tanggal": "2026-07-31T15:03:35",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_DOOH_Tanggapan atas Permintaan Penjelasan Bursa_32116665.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/682e39513f_90fc458b85.pdf"
+        },
+        {
+          "name": "20260731_DOOH_Tanggapan atas Permintaan Penjelasan Bursa_32116665_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e3661e0470_80cc07c07a.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260731150323-037/KLINKO/VII/2026_id-id",
+      "kode_emiten": "KLIN",
+      "judul": "Rencana Penyampaian Laporan Keuangan Kuartal II 2026 Diaudit",
+      "perihal": "Rencana Penyampaian Laporan Ke",
+      "tanggal": "2026-07-31T15:03:23",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_KLIN_Rencana Penyampaian Laporan Keuangan_32116652.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/86b143496c_3147279591.pdf"
+        },
+        {
+          "name": "20260731_KLIN_Rencana Penyampaian Laporan Keuangan_32116652_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/e5b030f942_397663c280.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731150314-DIR/WCT/JKT/0726/072_id-id",
+      "kode_emiten": "FWCT",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T15:03:14",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-FWCT.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731152333-63861-0/FinancialStatement-2026-II-FWCT.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-FWCT.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731152333-63861-0/FinancialStatement-2026-II-FWCT.xlsx"
+        },
+        {
+          "name": "FWCT_Laporan Keuangan Kuartal II 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731152333-63861-0/FWCT_Laporan Keuangan Kuartal II 2026.pdf"
+        },
+        {
+          "name": "FWCT_Penyampaian Laporan Keuangan Kuartal II.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731152333-63861-0/FWCT_Penyampaian Laporan Keuangan Kuartal II.pdf"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731152333-63861-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731152333-63861-0/instance.zip"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731150253-033/LPI/VII/2026_id-id",
+      "kode_emiten": "LPPS",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T15:02:53",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-LPPS.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151543-63704-0/FinancialStatement-2026-II-LPPS.pdf"
+        },
+        {
+          "name": "CekList-LPPS-LapQ2-2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151543-63704-0/CekList-LPPS-LapQ2-2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-LPPS.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151543-63704-0/FinancialStatement-2026-II-LPPS.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151543-63704-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151543-63704-0/instance.zip"
+        },
+        {
+          "name": "LPPS_LK_TW_II_2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151543-63704-0/LPPS_LK_TW_II_2026.pdf"
+        },
+        {
+          "name": "Perub20prsnt-LPPS-LapQ2-2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151543-63704-0/Perub20prsnt-LPPS-LapQ2-2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731150205-._id-id",
+      "kode_emiten": "NOBU",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T15:02:05",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-NOBU.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151039-63607-0/FinancialStatement-2026-II-NOBU.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-NOBU.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151039-63607-0/FinancialStatement-2026-II-NOBU.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151039-63607-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151039-63607-0/instance.zip"
+        },
+        {
+          "name": "SPD LK 31 Mar 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151039-63607-0/SPD LK 31 Mar 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731145837-014/LKT-EURO/VII/2026_id-id",
+      "kode_emiten": "EURO",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T14:58:37",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-EURO.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151148-63115-0/FinancialStatement-2026-II-EURO.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-EURO.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151148-63115-0/FinancialStatement-2026-II-EURO.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151148-63115-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151148-63115-0/instance.zip"
+        },
+        {
+          "name": "Laporan Keuangan Tengah Tahun 2026 - EURO.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151148-63115-0/Laporan Keuangan Tengah Tahun 2026 - EURO.pdf"
+        },
+        {
+          "name": "Penyampaian LK Tengah Tahunan Jun 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731151148-63115-0/Penyampaian LK Tengah Tahunan Jun 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731145712-107/SS/DIR-FIN/VII/2026_id-id",
+      "kode_emiten": "SAFE",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T14:57:12",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-SAFE.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731152950-63963-0/FinancialStatement-2026-II-SAFE.pdf"
+        },
+        {
+          "name": "Checklist LK TW 02 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731152950-63963-0/Checklist LK TW 02 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-SAFE.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731152950-63963-0/FinancialStatement-2026-II-SAFE.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731152950-63963-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731152950-63963-0/instance.zip"
+        },
+        {
+          "name": "LK SAFE TW 02 2026_FINAL.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731152950-63963-0/LK SAFE TW 02 2026_FINAL.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731145623-004/PT-SRAJ/VII/2026_id-id",
+      "kode_emiten": "SRAJ",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-31T14:56:23",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_SRAJ_Penyampaian Bukti Iklan_32116597.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/eba41f425b_fabf1db6fe.pdf"
+        },
+        {
+          "name": "20260731_SRAJ_Penyampaian Bukti Iklan_32116597_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/3c7758695f_fd7e0ae5ca.pdf"
+        },
+        {
+          "name": "20260731_SRAJ_Penyampaian Bukti Iklan_32116597_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/56deb837ce_2f6d7263e6.pdf"
+        },
+        {
+          "name": "20260731_SRAJ_Penyampaian Bukti Iklan_32116597_lamp3.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ad1b686045_ed2f6ebefb.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731123633-LK/31072026/0006/1_id-id",
+      "kode_emiten": "WINS",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "perihal": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA - JANTO LILI - Group:-",
+      "tanggal": "2026-07-31T12:36:33",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "LK-31072026-5368-00.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-31072026-5368-00.pdf-0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260731123541-086/H/DIR/VII/2026_id-id",
+      "kode_emiten": "HILL",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T12:35:41",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-HILL.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731124605-63913-0/FinancialStatement-2026-II-HILL.pdf"
+        },
+        {
+          "name": "300726 Hill_FS as of 30 Jun 2026_3.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731124605-63913-0/300726 Hill_FS as of 30 Jun 2026_3.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-HILL.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731124605-63913-0/FinancialStatement-2026-II-HILL.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731124605-63913-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731124605-63913-0/instance.zip"
+        },
+        {
+          "name": "Srt Pernyataan_30 Jun 26_0001.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731124605-63913-0/Srt Pernyataan_30 Jun 26_0001.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731122828-10/MIC/CORPSEC/VII/2026_id-id",
+      "kode_emiten": "MICE",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T12:28:28",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-MICE.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123913-63940-0/FinancialStatement-2026-II-MICE.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-MICE.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123913-63940-0/FinancialStatement-2026-II-MICE.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123913-63940-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123913-63940-0/instance.zip"
+        },
+        {
+          "name": "LK-MIC-Konsol-30 Juni 2026 FINAL.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123913-63940-0/LK-MIC-Konsol-30 Juni 2026 FINAL.pdf"
+        },
+        {
+          "name": "Prubhan lbh dr 20persen Aset n Liab 31Jun26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123913-63940-0/Prubhan lbh dr 20persen Aset n Liab 31Jun26.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731121757-0009/DGWG-CORSEC/VII/2026_id-id",
+      "kode_emiten": "DGWG",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T12:17:57",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-DGWG.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123007-63737-0/FinancialStatement-2026-II-DGWG.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-DGWG.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123007-63737-0/FinancialStatement-2026-II-DGWG.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123007-63737-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123007-63737-0/instance.zip"
+        },
+        {
+          "name": "OJK Checklist 0626.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123007-63737-0/OJK Checklist 0626.pdf"
+        },
+        {
+          "name": "Signed Dirstat 0626.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123007-63737-0/Signed Dirstat 0626.pdf"
+        },
+        {
+          "name": "Signed FS DGWG 0626.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731123007-63737-0/Signed FS DGWG 0626.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731121718-031/SP-DIR/RG-PURA/VII/2026_id-id",
+      "kode_emiten": "PURA",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T12:17:18",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-PURA.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122513-63830-0/FinancialStatement-2026-II-PURA.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-PURA.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122513-63830-0/FinancialStatement-2026-II-PURA.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122513-63830-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122513-63830-0/instance.zip"
+        },
+        {
+          "name": "PT Putra Rajawali Kencana Tbk 30 Jun 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122513-63830-0/PT Putra Rajawali Kencana Tbk 30 Jun 2026.pdf"
+        },
+        {
+          "name": "spd pura(2).pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122513-63830-0/spd pura(2).pdf"
+        },
+        {
+          "name": "Surat Perubahan Aset Liabilitas.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122513-63830-0/Surat Perubahan Aset Liabilitas.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731121604-057/CS/CTI-IDX/VII/2026_id-id",
+      "kode_emiten": "CENT",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T12:16:04",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-CENT.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122505-63394-0/FinancialStatement-2026-II-CENT.pdf"
+        },
+        {
+          "name": "CENT - Surat Pengantar FS Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122505-63394-0/CENT - Surat Pengantar FS Q2 2026.pdf"
+        },
+        {
+          "name": "CTI_FS Q2 2026 released.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122505-63394-0/CTI_FS Q2 2026 released.pdf"
+        },
+        {
+          "name": "CTI_OJK Checklist Q2 2026_Signed.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122505-63394-0/CTI_OJK Checklist Q2 2026_Signed.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-CENT.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122505-63394-0/FinancialStatement-2026-II-CENT.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122505-63394-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122505-63394-0/instance.zip"
+        },
+        {
+          "name": "SPD Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122505-63394-0/SPD Q2 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731121506-0033/POWR/07/2026_id-id",
+      "kode_emiten": "POWR",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T12:15:06",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-POWR.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122223-63863-0/FinancialStatement-2026-II-POWR.pdf"
+        },
+        {
+          "name": "0033 POWR Laporan Keuangan 1H26 (Surat Pengantar).pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122223-63863-0/0033 POWR Laporan Keuangan 1H26 (Surat Pengantar).pdf"
+        },
+        {
+          "name": "0033 POWR Laporan Keuangan 1H26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122223-63863-0/0033 POWR Laporan Keuangan 1H26.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-POWR.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122223-63863-0/FinancialStatement-2026-II-POWR.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122223-63863-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122223-63863-0/instance.zip"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731120646-S.071/CCS/VII/2026_id-id",
+      "kode_emiten": "BTPN",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T12:06:46",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-BTPN.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122009-63932-0/FinancialStatement-2026-II-BTPN.pdf"
+        },
+        {
+          "name": "FINAL Director Statement 30 Jun 26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122009-63932-0/FINAL Director Statement 30 Jun 26.pdf"
+        },
+        {
+          "name": "FINAL FS SMBCI 30 Jun 26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122009-63932-0/FINAL FS SMBCI 30 Jun 26.pdf"
+        },
+        {
+          "name": "FINAL Penj Lap Keu 30 Jun 26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122009-63932-0/FINAL Penj Lap Keu 30 Jun 26.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-BTPN.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122009-63932-0/FinancialStatement-2026-II-BTPN.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122009-63932-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122009-63932-0/instance.zip"
+        },
+        {
+          "name": "Publikasi LapKeu Triwulanan Jun 26 (EN).pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122009-63932-0/Publikasi LapKeu Triwulanan Jun 26 (EN).pdf"
+        },
+        {
+          "name": "Publikasi LapKeu Triwulanan Jun 26 (ID).pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122009-63932-0/Publikasi LapKeu Triwulanan Jun 26 (ID).pdf"
+        },
+        {
+          "name": "S.071 - Peny LKK 30 Jun 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731122009-63932-0/S.071 - Peny LKK 30 Jun 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731120542-045/Corsec-STAR/VII/2026_id-id",
+      "kode_emiten": "STAR",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T12:05:42",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-STAR.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121507-63236-0/FinancialStatement-2026-II-STAR.pdf"
+        },
+        {
+          "name": "Checklist OJK - STAR - 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121507-63236-0/Checklist OJK - STAR - 30 Juni 2026.pdf"
+        },
+        {
+          "name": "FINAL REPORT STAR JUNI 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121507-63236-0/FINAL REPORT STAR JUNI 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-STAR.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121507-63236-0/FinancialStatement-2026-II-STAR.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121507-63236-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121507-63236-0/instance.zip"
+        },
+        {
+          "name": "Penjelasan penurunan liabilitas.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121507-63236-0/Penjelasan penurunan liabilitas.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731120255-003/PT-SRAJ/VII/2026_id-id",
+      "kode_emiten": "SRAJ",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T12:02:55",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-SRAJ.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121504-63352-0/FinancialStatement-2026-II-SRAJ.pdf"
+        },
+        {
+          "name": "Consolidated FS SRAJ 30 June 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121504-63352-0/Consolidated FS SRAJ 30 June 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-SRAJ.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121504-63352-0/FinancialStatement-2026-II-SRAJ.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121504-63352-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121504-63352-0/instance.zip"
+        },
+        {
+          "name": "OJK Checklist 30 June 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121504-63352-0/OJK Checklist 30 June 2026.pdf"
+        },
+        {
+          "name": "VII-003-2026 SP LKTT SRAJ 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731121504-63352-0/VII-003-2026 SP LKTT SRAJ 30 Juni 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731092530-123/CORPSEC-MP/VII/26R_id-id",
+      "kode_emiten": "ZONE",
+      "judul": "Penyampaian Laporan Keuangan Interim (KOREKSI)",
+      "perihal": null,
+      "tanggal": "2026-07-31T09:25:30",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-ZONE.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093844-64046-0/FinancialStatement-2026-II-ZONE.pdf"
+        },
+        {
+          "name": "2026 - Checklist Laporan Keuangan MP Q2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093844-64046-0/2026 - Checklist Laporan Keuangan MP Q2.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-ZONE.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093844-64046-0/FinancialStatement-2026-II-ZONE.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093844-64046-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093844-64046-0/instance.zip"
+        },
+        {
+          "name": "KI Kenaikan Penurunan Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093844-64046-0/KI Kenaikan Penurunan Q2 2026.pdf"
+        },
+        {
+          "name": "Lampiran Surat Pengantar  Laporan Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093844-64046-0/Lampiran Surat Pengantar  Laporan Q2 2026.pdf"
+        },
+        {
+          "name": "PT Mega Perintis Tbk Jun 2026 Q2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093844-64046-0/PT Mega Perintis Tbk Jun 2026 Q2.pdf"
+        },
+        {
+          "name": "SPD Q2 26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093844-64046-0/SPD Q2 26.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731092440-0237/LO-CS/ATI/VII/2026_id-id",
+      "kode_emiten": "ATIC",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T09:24:40",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-ATIC.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731094622-63084-0/FinancialStatement-2026-II-ATIC.pdf"
+        },
+        {
+          "name": "ATIC - Penjelasan Perubahan Liabilitas.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731094622-63084-0/ATIC - Penjelasan Perubahan Liabilitas.pdf"
+        },
+        {
+          "name": "ATIC LK 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731094622-63084-0/ATIC LK 30 Juni 2026.pdf"
+        },
+        {
+          "name": "CHECKLIST PENGUNGKAPAN LK 30 JUNI 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731094622-63084-0/CHECKLIST PENGUNGKAPAN LK 30 JUNI 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-ATIC.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731094622-63084-0/FinancialStatement-2026-II-ATIC.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731094622-63084-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731094622-63084-0/instance.zip"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731092204-052/STTI-VII/2026_id-id",
+      "kode_emiten": "SONA",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T09:22:04",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-SONA.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093508-63086-0/FinancialStatement-2026-II-SONA.pdf"
+        },
+        {
+          "name": "Checklist OJK - 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093508-63086-0/Checklist OJK - 30 Juni 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-SONA.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093508-63086-0/FinancialStatement-2026-II-SONA.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093508-63086-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093508-63086-0/instance.zip"
+        },
+        {
+          "name": "LK STTI Konsolidasian 30 Juni 2026 sent to OJK.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093508-63086-0/LK STTI Konsolidasian 30 Juni 2026 sent to OJK.pdf"
+        },
+        {
+          "name": "S-052 Surat Pengantar LK STTI 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093508-63086-0/S-052 Surat Pengantar LK STTI 30 Juni 2026.pdf"
+        },
+        {
+          "name": "Surat Pernyataan Direksi (SPD) LK 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093508-63086-0/Surat Pernyataan Direksi (SPD) LK 30 Juni 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731092111--_id-id",
+      "kode_emiten": "KOKA",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T09:21:11",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-KOKA.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093256-63930-0/FinancialStatement-2026-II-KOKA.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-KOKA.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093256-63930-0/FinancialStatement-2026-II-KOKA.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093256-63930-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093256-63930-0/instance.zip"
+        },
+        {
+          "name": "PT Koka Indonesia Tbk Q2 FY 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731093256-63930-0/PT Koka Indonesia Tbk Q2 FY 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731091729-76/Srt-KBFMF/CORSEC/VII/2026_id-id",
+      "kode_emiten": "FMFN",
+      "judul": "Perubahan anggota Direksi dan/atau anggota Dewan Komisaris",
+      "perihal": "Perubahan anggota Direksi dan/",
+      "tanggal": "2026-07-31T09:17:29",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260730_FMFN_Laporan Informasi dan Fakta Material_32116021.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/15afbbeda4_cd5ca8147f.pdf"
+        },
+        {
+          "name": "20260730_FMFN_Laporan Informasi dan Fakta Material_32116021_lamp3.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/0f18e3958d_93e0b6c41b.pdf"
+        },
+        {
+          "name": "20260730_FMFN_Laporan Informasi dan Fakta Material_32116021_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/3a79a86735_2b44010c81.pdf"
+        },
+        {
+          "name": "20260730_FMFN_Laporan Informasi dan Fakta Material_32116021_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/cd4c6aa86e_fd02f3651d.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260731091524-028/CS/VI/26_id-id",
+      "kode_emiten": "MAIN",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T09:15:24",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-MAIN.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092746-63171-0/FinancialStatement-2026-II-MAIN.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-MAIN.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092746-63171-0/FinancialStatement-2026-II-MAIN.xlsx"
+        },
+        {
+          "name": "FSDC 0626.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092746-63171-0/FSDC 0626.pdf"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092746-63171-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092746-63171-0/instance.zip"
+        },
+        {
+          "name": "Malindo Feedmill Tbk 0626.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092746-63171-0/Malindo Feedmill Tbk 0626.pdf"
+        },
+        {
+          "name": "Surat Penjelasan OJK 0626.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092746-63171-0/Surat Penjelasan OJK 0626.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731091250-861/PAR/VII/26/RO/GC_id-id",
+      "kode_emiten": "SGRO",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T09:12:50",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-SGRO.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092526-63015-0/FinancialStatement-2026-II-SGRO.pdf"
+        },
+        {
+          "name": "Checklist Pengungkapan Laporan Keuangan_PAR 0626.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092526-63015-0/Checklist Pengungkapan Laporan Keuangan_PAR 0626.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-SGRO.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092526-63015-0/FinancialStatement-2026-II-SGRO.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092526-63015-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092526-63015-0/instance.zip"
+        },
+        {
+          "name": "prime agri resources tbk_billingual_30 Jun 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092526-63015-0/prime agri resources tbk_billingual_30 Jun 2026.pdf"
+        },
+        {
+          "name": "SGRO - Cover Letter Laporan Keuangan Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092526-63015-0/SGRO - Cover Letter Laporan Keuangan Q2 2026.pdf"
+        },
+        {
+          "name": "SGRO - SP Direksi Q2 - 31 Jul 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731092526-63015-0/SGRO - SP Direksi Q2 - 31 Jul 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731090949-018/Dir-SAM/II/VII/2026_id-id",
+      "kode_emiten": "SAMF",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T09:09:49",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-SAMF.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091707-63664-0/FinancialStatement-2026-II-SAMF.pdf"
+        },
+        {
+          "name": "6. Penyampaian Perubahan Aset dan Liabilitas.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091707-63664-0/6. Penyampaian Perubahan Aset dan Liabilitas.pdf"
+        },
+        {
+          "name": "Checklist OJK - SAMF Q2 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091707-63664-0/Checklist OJK - SAMF Q2 Juni 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-SAMF.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091707-63664-0/FinancialStatement-2026-II-SAMF.xlsx"
+        },
+        {
+          "name": "FS SAMF Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091707-63664-0/FS SAMF Juni 2026.pdf"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091707-63664-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091707-63664-0/instance.zip"
+        },
+        {
+          "name": "SPD SAMF JUNI 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091707-63664-0/SPD SAMF JUNI 2026.pdf"
+        },
+        {
+          "name": "Surat Pengantar Laporan Interim TW 2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091707-63664-0/Surat Pengantar Laporan Interim TW 2 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260731090547-S-35/1464/BRI-MI/ITO_id-id",
+      "kode_emiten": "XDIF",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "perihal": "Laporan Harian atas Nilai Akti",
+      "tanggal": "2026-07-31T09:05:47",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260731_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32116430.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ff3369e258_67e0e19a31.pdf"
+        },
+        {
+          "name": "20260731_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32116430_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/a7c5edd340_cb99416925.pdf"
+        },
+        {
+          "name": "20260731_XDIF_Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio_32116430_lamp2.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_INAV/202607/c90d9d63e2_bcc14713f4.xlsx"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260731090317-053/DIR-IAR/VII/2026_id-id",
+      "kode_emiten": "IIKP",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-31T09:03:17",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-IIKP.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091007-63682-0/FinancialStatement-2026-II-IIKP.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-IIKP.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091007-63682-0/FinancialStatement-2026-II-IIKP.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091007-63682-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091007-63682-0/instance.zip"
+        },
+        {
+          "name": "LK PT IAR Tbk 30 Jun 26.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731091007-63682-0/LK PT IAR Tbk 30 Jun 26.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
     {
       "id": "20260731084654-1222/YH-JT/CORSEC/VII/2026_id-id",
       "kode_emiten": "JAST",
@@ -289,6 +2555,288 @@
         {
           "name": "Surat Pernyataan Direksi PT PMUI.pdf",
           "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260731083223-63582-0/Surat Pernyataan Direksi PT PMUI.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260730193214-0269/ALI-CORSEC/VII/26_id-id",
+      "kode_emiten": "ALII",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-30T19:32:14",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-ALII.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730194354-63364-0/FinancialStatement-2026-II-ALII.pdf"
+        },
+        {
+          "name": "ALI - Checklist LK periode 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730194354-63364-0/ALI - Checklist LK periode 30 Juni 2026.pdf"
+        },
+        {
+          "name": "ALI - LK Konsolidasian Interim 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730194354-63364-0/ALI - LK Konsolidasian Interim 30 Juni 2026.pdf"
+        },
+        {
+          "name": "ALI - Penjelasan Kenaikan Liabilitas 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730194354-63364-0/ALI - Penjelasan Kenaikan Liabilitas 30 Juni 2026.pdf"
+        },
+        {
+          "name": "ALI - SP LK Konsolidasian Interm 30 Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730194354-63364-0/ALI - SP LK Konsolidasian Interm 30 Juni 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-ALII.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730194354-63364-0/FinancialStatement-2026-II-ALII.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730194354-63364-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730194354-63364-0/instance.zip"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260730192727-Peng-P-00795/BEI.PP3/07-2026_id-id",
+      "kode_emiten": "PYFA",
+      "judul": "Pencatatan Saham",
+      "perihal": "Pencatatan Saham",
+      "tanggal": "2026-07-30T19:27:27",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260730_PYFA_Pencatatan Saham Tambahan dari Konversi_32116079.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/4ef1a68097_d4d93ba088.pdf"
+        },
+        {
+          "name": "20260730_PYFA_Pencatatan Saham Tambahan dari Konversi_32116079_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/a95f73e78e_5f1d908d0b.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260730192637-Peng-P-00796/BEI.PP3/07-2026_id-id",
+      "kode_emiten": "MGNA",
+      "judul": "Pencatatan Saham",
+      "perihal": "Pencatatan Saham",
+      "tanggal": "2026-07-30T19:26:37",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260730_MGNA_Pencatatan Saham Tambahan dari Konversi_32116052.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/3cbcf5a499_ac89756c53.pdf"
+        },
+        {
+          "name": "20260730_MGNA_Pencatatan Saham Tambahan dari Konversi_32116052_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/46f74ed3f9_85b08005c0.pdf"
+        }
+      ],
+      "kategori": "spam"
+    },
+    {
+      "id": "20260730192107-047/IR-CS/DP/VII/2026_id-id",
+      "kode_emiten": "DUTI",
+      "judul": "Penyampaian Laporan Keuangan Interim (KOREKSI)",
+      "perihal": null,
+      "tanggal": "2026-07-30T19:21:07",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-DUTI.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730193441-64003-0/FinancialStatement-2026-II-DUTI.pdf"
+        },
+        {
+          "name": "045.IR-CS.DP.VII.2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730193441-64003-0/045.IR-CS.DP.VII.2026.pdf"
+        },
+        {
+          "name": "047.IR-CS.DP.VII.2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730193441-64003-0/047.IR-CS.DP.VII.2026.pdf"
+        },
+        {
+          "name": "DUTI Checklist LK Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730193441-64003-0/DUTI Checklist LK Q2 2026.pdf"
+        },
+        {
+          "name": "DUTI LK Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730193441-64003-0/DUTI LK Q2 2026.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-DUTI.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730193441-64003-0/FinancialStatement-2026-II-DUTI.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730193441-64003-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730193441-64003-0/instance.zip"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260730192101-CS-002/CG/VII/2026_id-id",
+      "kode_emiten": "CMNT",
+      "judul": "Cemindo Melanjutkan Penguatan Kinerja pada Semester I 2026",
+      "perihal": "Cemindo Melanjutkan Penguatan",
+      "tanggal": "2026-07-30T19:21:01",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260730_CMNT_Laporan Informasi dan Fakta Material_32116258.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/15e5b17a27_c0161a7285.pdf"
+        },
+        {
+          "name": "20260730_CMNT_Laporan Informasi dan Fakta Material_32116258_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/0920b650f9_65ffe86064.pdf"
+        },
+        {
+          "name": "20260730_CMNT_Laporan Informasi dan Fakta Material_32116258_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/6224127776_f7b3324bb4.pdf"
+        }
+      ],
+      "kategori": "notsure"
+    },
+    {
+      "id": "20260730191406-No.137/DIR/EXT-OJK/VII/2026_id-id",
+      "kode_emiten": "PNBS",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-30T19:14:06",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260730_PNBS_Penyampaian Bukti Iklan_32116174.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/a18d017a9d_7005665f23.pdf"
+        },
+        {
+          "name": "20260730_PNBS_Penyampaian Bukti Iklan_32116174_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/2beaebba92_33b16ff7ae.pdf"
+        },
+        {
+          "name": "20260730_PNBS_Penyampaian Bukti Iklan_32116174_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/43661cc4c6_b45754e57f.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260730191357-027/NI-CORSEC/VII/26_id-id",
+      "kode_emiten": "META",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-30T19:13:57",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-META.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730192359-63887-0/FinancialStatement-2026-II-META.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-META.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730192359-63887-0/FinancialStatement-2026-II-META.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730192359-63887-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730192359-63887-0/instance.zip"
+        },
+        {
+          "name": "NI_META_Juni 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730192359-63887-0/NI_META_Juni 2026.pdf"
+        },
+        {
+          "name": "Penyampaian Lap Keu Interim 30 Jun 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730192359-63887-0/Penyampaian Lap Keu Interim 30 Jun 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260730191232-No.136/DIR/EXT-OJK/VII/2026_id-id",
+      "kode_emiten": "PNBS",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-30T19:12:32",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260730_PNBS_Penyampaian Bukti Iklan_32116182.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/0dc7747825_43a0febc49.pdf"
+        },
+        {
+          "name": "20260730_PNBS_Penyampaian Bukti Iklan_32116182_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/9e65917e61_56c2a60a20.pdf"
+        },
+        {
+          "name": "20260730_PNBS_Penyampaian Bukti Iklan_32116182_lamp2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/edd9764a18_1dedd4bd0d.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260730191205-0080/GTI/CORSEC/IDX/VII/2026_id-id",
+      "kode_emiten": "GHON",
+      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+      "perihal": null,
+      "tanggal": "2026-07-30T19:12:05",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "FinancialStatement-2026-II-GHON.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730192427-63552-0/FinancialStatement-2026-II-GHON.pdf"
+        },
+        {
+          "name": "Final Report GHON 2026 - Q2.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730192427-63552-0/Final Report GHON 2026 - Q2.pdf"
+        },
+        {
+          "name": "FinancialStatement-2026-II-GHON.xlsx",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730192427-63552-0/FinancialStatement-2026-II-GHON.xlsx"
+        },
+        {
+          "name": "inlineXBRL.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730192427-63552-0/inlineXBRL.zip"
+        },
+        {
+          "name": "instance.zip",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730192427-63552-0/instance.zip"
+        },
+        {
+          "name": "Surat Penjelasan Kenaikan Liabilitas Q2 2026.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/20260730192427-63552-0/Surat Penjelasan Kenaikan Liabilitas Q2 2026.pdf"
+        }
+      ],
+      "kategori": "lap"
+    },
+    {
+      "id": "20260730191035-048/GLP/DIR/VII/2026_id-id",
+      "kode_emiten": "BLTZ",
+      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+      "perihal": "Penyampaian Bukti Iklan Inform",
+      "tanggal": "2026-07-30T19:10:35",
+      "jenis": "STOCK",
+      "attachments": [
+        {
+          "name": "20260730_BLTZ_Penyampaian Bukti Iklan_32116287.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/ad8e42ba76_f186032706.pdf"
+        },
+        {
+          "name": "20260730_BLTZ_Penyampaian Bukti Iklan_32116287_lamp1.pdf",
+          "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202607/d0a25bd6bf_86320c3eee.pdf"
         }
       ],
       "kategori": "lap"
